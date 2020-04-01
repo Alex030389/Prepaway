@@ -1,0 +1,73 @@
+.btn {
+  border-radius: 4px;
+  background-color: $c-green-1;
+  color:$c-secondary;
+  border: none;
+  padding: 14px 23px;
+  font-size: 19px;
+  transition: .2s;
+
+  &:hover {
+    background-color: $c-green-2;
+  }
+
+  &._ml_-8 {
+    margin-left: -10px;
+  }
+}
+
+
+.btn-2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 15px;
+  box-shadow: 0 5px 10px 0 rgba(252, 101, 0, 0.3);
+  background-image: linear-gradient(180deg, #fdb726 0%, #fca218 100%);
+
+  // width: 100%;
+  width: 100px;
+}
+
+
+
+.btn-up {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $c-green-1;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  opacity: .4;
+  transition: .3s;
+  transform: translateX(100px);
+  z-index: 100;
+
+  svg {
+    width: 15px;
+    height: 15px;
+    fill: #fff;
+    transform: rotate(-90deg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+// ========================================= common ===
+.mxw-250px {
+  max-width: 250px;
+}
+
+.w-100 {
+  width: 100%;
+}

@@ -1,0 +1,64 @@
+//base
+@import "base/font";
+@import "base/var";
+@import "base/global";
+@import "base/util";
+
+
+
+//blocks
+@import "blocks/time-discount";
+@import "blocks/header/header";
+@import "blocks/logo";
+
+
+
+// ==================================== title ===
+@import "blocks/title";
+
+
+
+// ==================================== link ===
+@import "blocks/link/link";
+
+
+
+// ==================================== btn ===
+@import "blocks/btn";
+
+
+
+// ==================================== form ===
+@import "blocks/form/search-form";
+@import "blocks/form/input";
+
+
+
+// ==================================== nav ===
+@import "blocks/nav/nav-user";
+@import "blocks/nav/nav-main";
+@import "blocks/nav/nav-exams";
+
+
+
+// ==================================== slider ===
+@import "blocks/slider/slider";
+
+
+
+// ==================================== table ===
+@import "blocks/table/table";
+
+
+
+// ==================================== aside ===
+@import "blocks/aside/aside";
+
+
+
+@import "blocks/promo";
+@import "blocks/training-card";
+@import "blocks/footer/footer";
+
+// =================================== modal ===
+@import "blocks/modal/modal";

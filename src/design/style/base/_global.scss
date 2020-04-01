@@ -1,0 +1,149 @@
+html {
+  // height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: $ff-main;
+  color: $c-main;
+  font-size: $fz-main;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+::-moz-input-placeholder {
+  color: inherit;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+:-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+:focus::-moz-input-placeholder {
+  opacity: 0;
+}
+
+:focus:-moz-placeholder {
+  opacity: 0;
+}
+
+:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+:disabled,
+.disabled {
+  cursor: default;
+}
+
+/* удаляет крестик в input ie */
+::-ms-clear {
+  display: none;
+}
+
+select {
+  //-webkit-appearance: none;
+  //-moz-appearance: none;
+  //appearance: none;
+}
+
+select::-ms-expand {
+  //display: none;
+}
+
+:focus {
+  //outline: none;
+}
+
+ //.no-touch {
+ //  &:hover,
+ //  &:focus {
+ //
+ //  }
+ //}
+
+/* изменить цвет автозаполнения формы */
+:-webkit-autofill {
+  box-shadow: 0 0 100px #fff inset;
+  -webkit-text-fill-color: currentColor;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+
+// =============== custom bootstrap grid ===
+@media (min-width: 1510px) {
+  .container {
+    max-width: 1450px;
+  }
+}
+
+@media (min-width: 1510px) {
+  .d-sxl-none {
+    display: none !important;
+  }
+  .d-sxl-inline {
+    display: inline !important;
+  }
+  .d-sxl-inline-block {
+    display: inline-block !important;
+  }
+  .d-sxl-block {
+    display: block !important;
+  }
+  .d-sxl-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+// custom gutter width
+.gutters-10 {
+  margin-right: -5px;
+  margin-left: -5px;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+

@@ -1,0 +1,39 @@
+.time-discount {
+  background-color: $c-orange-1;
+
+  &__body {
+    max-width: 400px;
+    width: 100%;
+    padding: 10px 40px;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    font-family: $ff-title;
+
+    @media (max-width: $sm) {
+      font-size: 16px;
+    }
+  }
+
+  &__timer {
+    font-size: 20px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+
+
+    svg {
+      fill: black;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

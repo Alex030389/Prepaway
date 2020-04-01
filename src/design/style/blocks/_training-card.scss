@@ -1,0 +1,64 @@
+.training-card {
+  max-width: 455px;
+  position: relative;
+
+  &__box-img-price {
+    margin-bottom: 22px;
+  }
+
+  &__price {
+    font-family: $ff-title;
+    background-image: linear-gradient(180deg, #fdb726 0%, #fca218 100%);
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 13px 4px;
+    border-radius: 1.5em;
+  }
+
+  &__img {
+
+  }
+
+  &__link {
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 18px;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > div:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+
+    svg {
+      width: 22px;
+      height: 22px;
+      margin-right: 6px;
+    }
+
+    &._students {
+      fill: $c-green-1;
+    }
+
+    &._rating {
+      fill: $c-orange-1;
+    }
+
+    &._duration {
+      fill: $c-blue-2;
+    }
+  }
+}

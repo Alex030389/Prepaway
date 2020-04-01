@@ -1,0 +1,17 @@
+.input {
+  border: 1px solid $c-lite-gray;
+  color: #354c5e;
+  letter-spacing: -0.8px;
+  padding: 13px 20px;
+  border-radius: 4px;
+  font-size: 19px;
+
+  &::placeholder {
+    color: #c0c9cf;
+  }
+
+  &:focus {
+    border-color: #3EB53E;
+    outline: none;
+  }
+}

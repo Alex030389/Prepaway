@@ -1,0 +1,62 @@
+table {
+  width: 100%;
+
+  th, td {
+    padding: 20px 10px;
+
+    &:first-child {
+      padding-left: 30px;
+
+      @media (max-width: $lg) {
+        padding-left: 10px;
+      }
+    }
+
+    &:nth-child(-n + 2) {
+      width: 170px;
+
+      @media (max-width: $sm) {
+        width: 50%px;
+      }
+    }
+
+    @media (max-width: $sm) {
+      padding: 5px 10px;
+    }
+  }
+
+  thead {
+
+    @media (max-width: $sm) {
+      display: none;
+    }
+
+    th {
+      font-size: 19px;
+    }
+  }
+
+  tbody {
+
+    tr {
+
+      &:nth-child(odd) {
+        background-color: $c-lite-blue;
+      }
+
+      @media (max-width: $sm) {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+
+    td {
+      @media (max-width: $sm) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

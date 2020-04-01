@@ -1,0 +1,76 @@
+.header {
+  &__top {
+    height: 120px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $xl) {
+      height: 60px;
+      justify-content: center;
+    }
+  }
+
+  &__mobile-btn {
+    @extend .btn-reset;
+
+    &:first-child {
+      margin-right: 8px;
+
+      @media (max-width: 370px) {
+        margin-right: 5px;
+      }
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      @media (max-width: 370px) {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &._green {
+      svg {
+        fill: $c-green-1;
+      }
+    }
+
+    &._yellow {
+      fill: $c-orange-2;
+    }
+  }
+
+  &__logo {
+    margin-right: 70px;
+
+    @media (max-width: $xl) {
+      width: 140px;
+    }
+
+    @media (max-width: $sxl) {
+      margin-right: 30px;
+    }
+
+    @media (max-width: $xl) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  &__search-form {
+
+    input {
+      width: 505px;
+
+      @media (max-width: $sxl) {
+        width: 340px;
+      }
+    }
+  }
+
+  &__nav-user {
+    margin-left: auto;
+  }
+}
