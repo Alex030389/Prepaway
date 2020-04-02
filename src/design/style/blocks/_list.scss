@@ -1,0 +1,19 @@
+.list {
+  @extend .list-reset;
+  border: 1px solid $c-lite-gray;
+  padding: 1.25rem;
+  background-color: $c-lite-blue;
+  font-size: 1.19rem;
+  border-radius: 4px;
+  width: 100%;
+
+  &._maw_570px {
+    max-width: 570px;
+  }
+
+  li {
+    padding-left: 40px;
+    background: url(../img/icon/check.svg) no-repeat left center;
+    margin-bottom: 0.375rem;
+  }
+}

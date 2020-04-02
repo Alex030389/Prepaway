@@ -4,7 +4,10 @@
 @import "base/global";
 @import "base/util";
 
-
+// translate px to rem
+@function rem($pixels) {
+  @return #{$pixels/16}rem;
+}
 
 //blocks
 @import "blocks/time-discount";
@@ -23,6 +26,11 @@
 
 
 
+// ==================================== list ===
+@import "blocks/list";
+
+
+
 // ==================================== btn ===
 @import "blocks/btn";
 
@@ -38,11 +46,13 @@
 @import "blocks/nav/nav-user";
 @import "blocks/nav/nav-main";
 @import "blocks/nav/nav-exams";
+@import "blocks/nav/nav-mbl";
 
 
 
 // ==================================== slider ===
 @import "blocks/slider/slider";
+@import "blocks/slider/slider-2";
 
 
 
@@ -58,7 +68,31 @@
 
 @import "blocks/promo";
 @import "blocks/training-card";
+@import "blocks/discount-label";
+@import "blocks/subs-opt";
+@import "blocks/total-due";
+
+
 @import "blocks/footer/footer";
 
 // =================================== modal ===
 @import "blocks/modal/modal";
+
+
+// =================================== reuse ===
+
+// =================================== color
+.c-orange-2 {
+  color: $c-orange-2;
+}
+
+.c-blue-1 {
+  color: $c-blue-1;
+}
+
+// =================================== font-size
+.fz {
+  &_19 {
+    font-size: 1.19rem;
+  }
+}

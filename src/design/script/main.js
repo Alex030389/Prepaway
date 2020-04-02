@@ -39,6 +39,26 @@ $('.slider__list').slick({
 });
 
 
+$('.slider-2__list').slick({
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: true,
+  variableWidth: true,
+  prevArrow: '<button type="button" class="slider-2__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+  nextArrow: '<button type="button" class="slider-2__arrow slick-next"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+
+
 // todo scrollTop
 // ============================================================= arrow top
 $(window).scroll(function () {

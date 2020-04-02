@@ -1,15 +1,15 @@
 .title {
+  font-family: $ff-title;
+  font-weight: 700;
+  font-size: 2.125rem;
+  letter-spacing: -1.8px;
 }
-
 
 .title-2 {
   font-family: $ff-title;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 600;
   color: $c-main;
   margin-bottom: 15px;
-
-&._press_1-3 {
-  letter-spacing: -1px;
-}
+  letter-spacing: -1.8px;
 }
