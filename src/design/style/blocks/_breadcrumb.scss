@@ -1,0 +1,23 @@
+.breadcrumb {
+  @extend .list-reset;
+  font-size: rem(17);
+  padding: rem(15) 0;
+
+  li {
+    position: relative;
+    display: inline-block;
+    color: $c-grey;
+    padding: 4px 0;
+
+    &:not(:last-child) {
+      padding-right: rem(20);
+      margin-right: rem(6);
+      background: url(../img/icon/arrow-bredcrumb.svg) no-repeat right rem(10) / rem(10);
+
+    }
+  }
+
+  a {
+    @extend .link-reset;
+  }
+}

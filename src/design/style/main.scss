@@ -3,11 +3,9 @@
 @import "base/var";
 @import "base/global";
 @import "base/util";
+@import "base/mixin";
 
-// translate px to rem
-@function rem($pixels) {
-  @return #{$pixels/16}rem;
-}
+
 
 //blocks
 @import "blocks/time-discount";
@@ -65,12 +63,13 @@
 @import "blocks/aside/aside";
 
 
-
+// ==================================== ather ===
 @import "blocks/promo";
 @import "blocks/training-card";
 @import "blocks/discount-label";
 @import "blocks/subs-opt";
-@import "blocks/total-due";
+@import "blocks/premium-total";
+@import "blocks/breadcrumb";
 
 
 @import "blocks/footer/footer";
@@ -79,9 +78,10 @@
 @import "blocks/modal/modal";
 
 
-// =================================== reuse ===
 
-// =================================== color
+// =================================== common font ===
+
+// color
 .c-orange-2 {
   color: $c-orange-2;
 }
@@ -90,9 +90,28 @@
   color: $c-blue-1;
 }
 
-// =================================== font-size
+.c-grey {
+  color: $c-grey;
+}
+
+.c-green-1 {
+  color: $c-green-1;
+}
+
+//  font-size
 .fz {
-  &_19 {
-    font-size: 1.19rem;
+  &-19 {
+    font-size: rem(19);
+  }
+
+  &-16 {
+    font-size: rem(16);
+  }
+}
+
+// font weight
+.fw {
+  &-700 {
+    font-weight: 700;
   }
 }

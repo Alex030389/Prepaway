@@ -1,4 +1,4 @@
-table {
+.table {
   width: 100%;
 
   th, td {
@@ -56,6 +56,85 @@ table {
       @media (max-width: $sm) {
         display: flex;
         flex-direction: column;
+      }
+    }
+  }
+}
+
+
+
+// ====================================== table-2
+.wrap-table-2 {
+  width: 100%;
+}
+
+.table-2 {
+  width: 100%;
+
+  tr {
+    border: 1px solid $c-lite-gray;
+    margin-top: -1px;
+
+    @media (max-width: $md) {
+      display: flex;
+      flex-wrap: wrap;
+      padding: rem(10);
+    }
+  }
+
+  td {
+    padding: rem(10) rem(20);
+
+    @media (max-width: $md) {
+      padding: rem(5) rem(10);
+    }
+
+    &:nth-child(1) {
+      min-width: 160px;
+
+      @media (max-width: $sxl) {
+        min-width: 120px;
+      }
+
+      @media (max-width: $md) {
+        min-width: auto;
+        width: 30%;
+      }
+
+      a {
+        display: block;
+
+        &:first-child {
+          font-size: rem(20);
+          margin-bottom: rem(8);
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      font-size: rem(20);
+
+      @media (max-width: $md) {
+        order: 1;
+        flex-wrap: wrap;
+      }
+
+      a {
+        word-break: break-all;
+
+        @media (max-width: $xl) {
+          font-size: rem(16);
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      min-width: 250px;
+      text-align: center;
+
+      @media (max-width: $md) {
+        min-width: auto;
+        width: 70%;
       }
     }
   }
