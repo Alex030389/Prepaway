@@ -1,13 +1,31 @@
 .header {
+
   &__top {
+    width: 100%;
     height: 120px;
-    display: flex;
-    align-items: center;
+
 
     @media (max-width: $xl) {
       height: 60px;
+    }
+  }
+
+  &__top-inner-1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    @media (max-width: $xl) {
       justify-content: center;
     }
+  }
+
+  &__top-inner-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   &__mobile-btn {
@@ -44,10 +62,6 @@
 
   &__logo {
     margin-right: 70px;
-
-    @media (max-width: $xl) {
-      width: 140px;
-    }
 
     @media (max-width: $sxl) {
       margin-right: 30px;

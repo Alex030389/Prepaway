@@ -2,8 +2,60 @@
 
 svg4everybody();
 
+// ==================================== mobile menu
+const headerMblBtnHamburger = document.querySelector('.header__mobile-btn._hamburger');
+const headerMblBtnSearch = document.querySelector('.header__mobile-btn._search');
+const navMbl = document.querySelector('.nav-mbl');
+const navMblBtnClose = document.querySelector('.nav-mbl__btn-close');
+const navMblBody = document.querySelector('.nav-mbl__body');
+const headerSearchForm = document.querySelector('.header__search-form');
+const headerTop1 = document.querySelector('.header__top-inner-1');
+const headerTop2 = document.querySelector('.header__top-inner-2');
 
-$('.slider__list').slick({
+window.addEventListener('resize', function() {
+  if(getComputedStyle(headerSearchForm).display != 'none') {
+    hideMblMenu();
+  }
+})
+
+headerMblBtnHamburger.addEventListener('click', function(e) {
+  showMblMenu();
+});
+
+navMblBtnClose.addEventListener('click', function() {
+  hideMblMenu();
+});
+
+navMbl.addEventListener('click', function(e) {
+  if(e.target.classList.contains('nav-mbl')) {
+    hideMblMenu();
+  }
+});
+
+headerMblBtnSearch.addEventListener ('click', function() {
+  headerTop1.classList.add('d-none');
+  headerTop2.classList.remove('d-none');
+})
+
+function showMblMenu() {
+  document.body.classList.add('overflow-hidden');
+  navMbl.classList.remove('d-none');
+  setTimeout(function() {
+    navMbl.classList.add('_active');
+  }, 10);
+}
+
+function hideMblMenu() {
+  document.body.classList.remove('overflow-hidden');
+  navMbl.classList.remove('_active');
+  setTimeout(function() {
+    navMbl.classList.add('d-none');
+  }, 300);
+}
+
+
+// ================================================== slider ===
+$('.slick-1').slick({
   // infinite: false,
   dots: true,
   speed: 300,
@@ -55,6 +107,41 @@ $('.slider-2__list').slick({
         slidesToScroll: 1,
       }
     }
+  ]
+});
+
+$('.slick-3').slick({
+  dots: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  prevArrow: '<button type="button" class="slider__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+  nextArrow: '<button type="button" class="slider__arrow slick-next"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
   ]
 });
 

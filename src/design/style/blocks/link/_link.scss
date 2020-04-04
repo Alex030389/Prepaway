@@ -5,6 +5,7 @@
   text-decoration-color: #d8e5f3;
   transition: .2s;
   line-height: 1.2;
+  display: inline-block;
 
   &:hover {
     color: #07a1fb;
@@ -20,6 +21,7 @@
   border-bottom: 1px solid #d8e5f3;
   transition: .2s;
   line-height: 1.2;
+  display: inline-block;
 
   &._pb_4 {
     padding-bottom: 4px;

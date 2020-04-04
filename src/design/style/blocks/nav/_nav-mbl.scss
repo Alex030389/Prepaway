@@ -1,33 +1,26 @@
 .nav-mbl {
-  display: none;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
   z-index: 1000;
+  transition: .3s;
 
-  // &:before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  // }
 
   &__body {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: -1000px;
     max-width: 300px;
     width: 100%;
     background-color: #fff;
     padding: 20px 0;
     font-size: 15px;
     overflow-y: auto;
+    transition: .3s;
   }
 
   &__arrow-svg {
@@ -66,7 +59,6 @@
 
   &__wrap-img {
     width: 40px;
-    // max-height: 20px;
     margin-right: 8px;
 
     img {
@@ -89,6 +81,14 @@
 
     svg {
       margin-left: auto;
+    }
+  }
+
+  &._active {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .nav-mbl__body {
+      left: 0;
     }
   }
 }

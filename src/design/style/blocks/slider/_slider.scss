@@ -1,5 +1,5 @@
 .slider {
-  background: url("/design/img/bg/slider-bg.jpg") repeat-x bottom center;
+  background: url("/design/img/ui/slider-bg.jpg") repeat-x bottom center;
   background-size: auto 240px;
   padding-bottom: 40px;
 
@@ -13,6 +13,32 @@
 
     @media (max-width: 1700px) {
       margin: 0;
+    }
+
+    .slick-arrow {
+      position: absolute;
+      top: 21%;
+    }
+
+    .slick-dots {
+      padding-top: rem(25);
+
+      @media (max-width: $lg) {
+        padding-top: rem(0);
+      }
+    }
+  }
+
+  &__list-2 {
+    margin: 0 -20px;
+
+    @media (max-width: $md) {
+      margin: 0 -5px;
+    }
+
+    .slick-arrow {
+      position: absolute;
+      top: 35%;
     }
   }
 
@@ -29,6 +55,19 @@
       text-decoration-color: #07a1fb;
     }
 
+  }
+
+  &__item-2 {
+    background-color: #ffffff;
+    border: 1px solid #eff1f2;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 15px 15px 0px rgba(32, 70, 128, 0.21);
+    margin: 0 20px 34px;
+
+    @media (max-width: $md) {
+      margin: 0 5px 28px;
+    }
   }
 
   &__wrap-img {
@@ -105,11 +144,6 @@
     }
   }
 
-  .slick-arrow {
-    position: absolute;
-    top: 21%;
-  }
-
   .slick-prev {
     right: calc(100% + 30px);
     z-index: 10;
@@ -139,11 +173,14 @@
   .slick-dots {
     @extend .list-reset;
     text-align: center;
-    padding-top: 30px;
     margin: 0;
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
+
+    @media(max-width: $md) {
+      padding-top: rem(15px)
+    }
   }
 
   .slick-dots li {

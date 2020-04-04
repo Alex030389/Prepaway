@@ -1,0 +1,98 @@
+.vumingo {
+  padding: rem(36) rem(20) rem(40);
+  text-align: center;
+  background: #eff6ff;
+  background: linear-gradient(to bottom, #eff6ff 0%, #c2d8f7 100%);
+
+  &__logo {
+    max-width: rem(220);
+    margin: 0 auto rem(20);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    font-size: rem(19);
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: rem(30);
+  }
+
+  &__screenshot {
+    max-width: 292px;
+    margin: 0 auto rem(40);
+  }
+
+  &__btn-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__btn {
+    @extend .link-reset;
+    color: #fff;
+    font-size: rem(24);
+    padding: rem(16) rem(24);
+    text-align: left;
+    position: relative;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 320px;
+    transition: .3s;
+
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+
+    &._green {
+      background-color: $c-green-1;
+
+      span {
+        &:nth-child(1) {
+          margin-right: rem(20);
+
+          @media (max-width: $xl) {
+            display: block;
+          }
+
+          @media (max-width: $lg) {
+            display: inline;
+          }
+        }
+
+        &:nth-child(2) {
+          opacity: .7;
+        }
+      }
+    }
+
+    &._orange {
+      background-color: $c-orange-2;
+    }
+
+    &._blue {
+      background-color: $c-blue-1;
+    }
+
+    svg {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      fill: $c-lite-blue;
+    }
+
+    &:hover {
+      color: $c-lite-blue;
+      filter: brightness(0.95);
+    }
+  }
+}

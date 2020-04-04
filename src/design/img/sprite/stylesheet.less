@@ -1,0 +1,46 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+[class^="sprite-"] {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+ 
+.sprite {
+    &-bronze {  
+        .stitches-sprite(-291px, -5px, 42px, 47px);
+    }
+    &-silver {
+        .stitches-sprite(-343px, -5px, 42px, 47px);
+    }
+    &-gold {
+        .stitches-sprite(-395px, -5px, 42px, 47px);
+    }
+    &-platinum {
+        .stitches-sprite(-447px, -5px, 42px, 47px);
+    }
+    &-diamond {
+        .stitches-sprite(-499px, -5px, 42px, 47px);
+    }
+
+    &-email {
+        .stitches-sprite(-72px, -10px, 37px, 37px);
+    }
+
+    &-facebook {
+        .stitches-sprite(-129px, -10px, 21px, 41px);
+    }
+
+    &-google-plus {
+        .stitches-sprite(-170px, -10px, 42px, 40px);
+    }
+
+    &-instagram {
+        .stitches-sprite(-232px, -10px, 39px, 39px);
+    }
+ 
+}

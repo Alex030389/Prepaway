@@ -4,79 +4,7 @@
 @import "base/global";
 @import "base/util";
 @import "base/mixin";
-
-
-
-//blocks
-@import "blocks/time-discount";
-@import "blocks/header/header";
-@import "blocks/logo";
-
-
-
-// ==================================== title ===
-@import "blocks/title";
-
-
-
-// ==================================== link ===
-@import "blocks/link/link";
-
-
-
-// ==================================== list ===
-@import "blocks/list";
-
-
-
-// ==================================== btn ===
-@import "blocks/btn";
-
-
-
-// ==================================== form ===
-@import "blocks/form/search-form";
-@import "blocks/form/input";
-
-
-
-// ==================================== nav ===
-@import "blocks/nav/nav-user";
-@import "blocks/nav/nav-main";
-@import "blocks/nav/nav-exams";
-@import "blocks/nav/nav-mbl";
-
-
-
-// ==================================== slider ===
-@import "blocks/slider/slider";
-@import "blocks/slider/slider-2";
-
-
-
-// ==================================== table ===
-@import "blocks/table/table";
-
-
-
-// ==================================== aside ===
-@import "blocks/aside/aside";
-
-
-// ==================================== ather ===
-@import "blocks/promo";
-@import "blocks/training-card";
-@import "blocks/discount-label";
-@import "blocks/subs-opt";
-@import "blocks/premium-total";
-@import "blocks/breadcrumb";
-
-
-@import "blocks/footer/footer";
-
-// =================================== modal ===
-@import "blocks/modal/modal";
-
+@import "base/bootstrap-custom";
 
 
 // =================================== common font ===
@@ -115,3 +43,53 @@
     font-weight: 700;
   }
 }
+
+.overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+
+// ================================================ blocks ===
+@import "blocks/time-discount";
+@import "blocks/header/header";
+@import "blocks/logo";
+@import "blocks/promo";
+// ================================================ card ===
+@import "blocks/training-card";
+@import "blocks/course-card";
+@import "blocks/discount-label";
+@import "blocks/subs-opt";
+@import "blocks/premium-total";
+@import "blocks/breadcrumb";
+@import "blocks/vumingo";
+@import "blocks/price-label";
+@import "blocks/star-rating";
+// ==================================== title ===
+@import "blocks/title";
+// ==================================== link ===
+@import "blocks/link/link";
+// ==================================== list ===
+@import "blocks/list";
+// ==================================== btn ===
+@import "blocks/btn";
+// ==================================== form ===
+@import "blocks/form/search-form";
+@import "blocks/form/input";
+// ==================================== nav ===
+@import "blocks/nav/nav-user";
+@import "blocks/nav/nav-main";
+@import "blocks/nav/nav-exams";
+@import "blocks/nav/nav-mbl";
+// ==================================== slider ===
+@import "blocks/slider/slider";
+@import "blocks/slider/slider-2";
+// ==================================== table ===
+@import "blocks/table/table";
+// ==================================== aside ===
+@import "blocks/aside/aside";
+@import "blocks/footer/footer";
+// ==================================== modal ===
+@import "blocks/modal/modal";
