@@ -8,3 +8,31 @@
     }
   }
 }
+
+
+
+.label-2 {
+  position: relative;
+  padding-left: 28px;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 1px solid $c-lite-gray;
+    border-radius: 2px;
+  }
+}
+
+.checkbox:checked + .label-2::after {
+  background-color: red;
+}
+
+.checkbox:focus + .label-2::after {
+  outline: 2px solid #A6C7FE;
+}
