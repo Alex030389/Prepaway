@@ -3,11 +3,6 @@
   background-size: auto 240px;
   padding-bottom: 40px;
 
-  @media (max-width: $sm) {
-    padding-bottom: 20px;
-    background-size: auto 140px;
-  }
-
   &__list {
     margin: 0 -30px;
 
@@ -70,6 +65,10 @@
     }
   }
 
+  &__caption {
+    width: 100%;
+  }
+
   &__wrap-img {
     background-color: #ffffff;
     border: 1px solid #eff1f2;
@@ -124,11 +123,6 @@
     @media (max-width: 1700px) {
       width: 50px;
       height: 50px;
-      opacity: .5;
-
-      &:hover {
-        opacity: 1;
-      }
     }
 
     svg {
@@ -212,5 +206,10 @@
     margin: none;
     background-color: #fbc140;
     background-image: linear-gradient(to bottom, #fceb65 0%, #faa537 100%);
+  }
+
+  @media (max-width: $sm) {
+    padding-bottom: 20px;
+    background-size: auto 140px;
   }
 }

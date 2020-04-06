@@ -16,15 +16,18 @@
 .title-2 {
   font-family: $ff-title;
   font-size: rem(28);
-  font-weight: 600;
-  color: $c-main;
-  margin-bottom: 15px;
-  letter-spacing: -1.8px;
-}
-
-.title-3 {
-  font-family: $ff-title;
-  font-size: rem(28);
   font-weight: 700;
   letter-spacing: -1.8px;
+
+  &._fw_600 {
+    font-weight: 600;
+  }
+
+  @media (max-width: $lg) {
+    font-size: rem(24);
+  }
+
+  @media (max-width: $sm) {
+    text-align: center;
+  }
 }

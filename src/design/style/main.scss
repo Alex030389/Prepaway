@@ -28,12 +28,17 @@
 
 //  font-size
 .fz {
+
+  &-16 {
+    font-size: rem(16);
+  }
+
   &-19 {
     font-size: rem(19);
   }
 
-  &-16 {
-    font-size: rem(16);
+  &-22 {
+    font-size: rem(22);
   }
 }
 
@@ -41,6 +46,13 @@
 .fw {
   &-700 {
     font-weight: 700;
+  }
+}
+
+// text-align
+.ta-sm-center {
+  @media (max-width: $sm) {
+    text-align: center;
   }
 }
 
@@ -52,14 +64,37 @@
 }
 
 
+
+
+
 // ================================================ blocks ===
 @import "blocks/time-discount";
 @import "blocks/header/header";
 @import "blocks/logo";
+@import "blocks/search";
 @import "blocks/promo";
+// ==================================== title ===
+@import "blocks/title";
+// ==================================== link ===
+@import "blocks/link/link";
+// ==================================== btn ===
+@import "blocks/btn";
+// ==================================== list ===
+@import "blocks/list";
+// ==================================== form ===
+@import "blocks/form/search-form";
+@import "blocks/form/input";
+@import "blocks/form/label";
+@import "blocks/form/verification";
+// ==================================== nav ===
+@import "blocks/nav/nav-user";
+@import "blocks/nav/nav-main";
+@import "blocks/nav/nav-exams";
+@import "blocks/nav/nav-mbl";
 // ================================================ card ===
 @import "blocks/training-card";
 @import "blocks/course-card";
+// ================================================ ather ===
 @import "blocks/discount-label";
 @import "blocks/subs-opt";
 @import "blocks/premium-total";
@@ -67,22 +102,8 @@
 @import "blocks/vumingo";
 @import "blocks/price-label";
 @import "blocks/star-rating";
-// ==================================== title ===
-@import "blocks/title";
-// ==================================== link ===
-@import "blocks/link/link";
-// ==================================== list ===
-@import "blocks/list";
-// ==================================== btn ===
-@import "blocks/btn";
-// ==================================== form ===
-@import "blocks/form/search-form";
-@import "blocks/form/input";
-// ==================================== nav ===
-@import "blocks/nav/nav-user";
-@import "blocks/nav/nav-main";
-@import "blocks/nav/nav-exams";
-@import "blocks/nav/nav-mbl";
+@import "blocks/contact-us";
+@import "blocks/req-exam-s";
 // ==================================== slider ===
 @import "blocks/slider/slider";
 @import "blocks/slider/slider-2";

@@ -1,0 +1,5 @@
+.req-exam-s {
+  &:not(:last-child) {
+    border-bottom: 1px solid $c-lite-gray-2;
+  }
+}

@@ -11,10 +11,17 @@ const navMblBody = document.querySelector('.nav-mbl__body');
 const headerSearchForm = document.querySelector('.header__search-form');
 const headerTop1 = document.querySelector('.header__top-inner-1');
 const headerTop2 = document.querySelector('.header__top-inner-2');
+const searchBtnBack = document.querySelector('.search__btn-back');
+const searchInput = document.querySelector('.search__input');
 
 window.addEventListener('resize', function() {
   if(getComputedStyle(headerSearchForm).display != 'none') {
     hideMblMenu();
+  }
+
+  if(getComputedStyle(headerTop2).display != 'none') {
+    headerTop1.classList.remove('d-none');
+    headerTop2.classList.add('d-none');
   }
 })
 
@@ -35,6 +42,12 @@ navMbl.addEventListener('click', function(e) {
 headerMblBtnSearch.addEventListener ('click', function() {
   headerTop1.classList.add('d-none');
   headerTop2.classList.remove('d-none');
+  searchInput.focus();
+})
+
+searchBtnBack.addEventListener('click', function() {
+  headerTop2.classList.add('d-none');
+  headerTop1.classList.remove('d-none');
 })
 
 function showMblMenu() {
@@ -65,8 +78,15 @@ $('.slick-1').slick({
   nextArrow: '<button type="button" class="slider__arrow slick-next"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
   responsive: [
     {
+      breakpoint: 1200,
+      settings: {
+        arrows: false
+      }
+    },
+    {
       breakpoint: 992,
       settings: {
+        arrows: false,
         slidesToShow: 3,
         slidesToScroll: 3,
       }
