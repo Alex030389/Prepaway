@@ -166,8 +166,24 @@ $('.slick-3').slick({
 });
 
 
+// ========================================================= reseller-progress ===
+const resProgrLevels = document.querySelectorAll('.res-progr__level');
+const resProgrInnerLine = document.querySelector('.res-progr__inner-line');
+
+for(let i = 0; i < resProgrLevels.length; i++) {
+  if(resProgrLevels[i].classList.contains('_active')) {
+    for(let ii = 0; ii <= i; ii++) {
+      resProgrLevels[ii].querySelector('.res-progr__point').classList.add('_orange');
+    }
+
+    let innerLineWidht = 25 * i;
+    resProgrInnerLine.style.width = innerLineWidht + '%';
+  }
+}
+
+
 // todo scrollTop
-// ============================================================= arrow top
+// ========================================================= arrow top
 $(window).scroll(function () {
   if ($(this).scrollTop() > 1500) {
     // $('.btn-up').fadeIn();

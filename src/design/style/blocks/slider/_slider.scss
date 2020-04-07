@@ -13,12 +13,16 @@
     .slick-arrow {
       position: absolute;
       top: 21%;
+
+      @media (max-width: $sxl) {
+        top: 17%;
+      }
     }
 
     .slick-dots {
       padding-top: rem(25);
 
-      @media (max-width: $lg) {
+      @media (max-width: $sxl) {
         padding-top: rem(0);
       }
     }
@@ -74,13 +78,9 @@
     border: 1px solid #eff1f2;
     border-radius: 4px;
     box-shadow: 0 15px 15px 0px rgba(32, 70, 128, 0.21);
-    height: 188px;
-    padding: 30px;
+    padding: 30px 10px;
     max-width: 240px;
     margin: 0 auto 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     @media (max-width: $sxl) {
       padding: 15px;
@@ -97,6 +97,7 @@
 
     img {
       max-height: 100%;
+      margin: 0 auto;
     }
   }
 
@@ -172,9 +173,9 @@
     max-width: 100%;
     overflow-x: auto;
 
-    @media(max-width: $md) {
-      padding-top: rem(15px)
-    }
+    // @media(max-width: $md) {
+    //   padding-top: rem(15px)
+    // }
   }
 
   .slick-dots li {
