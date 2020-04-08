@@ -2,6 +2,11 @@
   margin-bottom: 15px;
   font-size: rem(18);
 
+  span {
+    color: red;
+    font-weight: 700;
+  }
+
   &._mb-md_0 {
     @media (max-width: $md) {
       margin-bottom: 0;

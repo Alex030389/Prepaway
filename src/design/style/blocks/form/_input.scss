@@ -6,6 +6,11 @@
   border-radius: rem(4);
   font-size: rem(19);
 
+  &:focus {
+    outline: 1px dotted #000;
+	  outline: -webkit-focus-ring-color auto 5px;
+  }
+
   &::placeholder {
     color: #c0c9cf;
   }

@@ -1,0 +1,7 @@
+.faq {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $c-lite-gray;
+    margin-bottom: rem(25);
+    padding-bottom: rem(15);
+  }
+}

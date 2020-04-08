@@ -1,0 +1,124 @@
+//= blocks/head.html
+//= blocks/header/header.html
+
+<main class="main flex-shrink-0 flex-grow-1">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li>Free Files</li>
+    </ul>
+    <div class="row pb-0 pb-sm-3">
+      <section class="col-12 col-xl-8 pb-3">
+        <h1 class="title mb-3">Share ETE or PDF file</h1>
+        <p class="fz-19 mb-4 mb-lg-5">If you have ETE or PDF exam file - Share it with others. Thank you for your help in advance!</p>
+        <form action="#">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4 mb-lg-5">
+              <label class="label" for="lab1">Your name:<span>*</span></label>
+              <input class="input" id="lab1" type="text">
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-5">
+              <label class="label" for="lab2">Your e-mail:<span>*</span></label>
+              <input class="input" id="lab2" type="email">
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-5">
+              <label class="label" for="lab3">Exam vendor (e.g. Microsoft):<span>*</span></label>
+              <select class="input" id="lab3">
+                <option value="" selected="true" disabled="disabled">Select a Vendor</option>
+                <option value="291">ABA</option>
+                <option value="277">ACAMS</option>
+                <option value="285">ACFE</option>
+                <option value="111">ACI</option>
+                <option value="107">ACSM</option>
+                <option value="25">Adobe</option>
+                <option value="287">AHIMA</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-5">
+              <label class="label" for="lab4">Supplier of questions (e.g. PracticeTest):<span>*</span></label>
+              <input class="input" id="lab4" type="text">
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-5">
+              <label class="label" for="lab5">Exam code / number:<span>*</span></label>
+              <select class="input" id="lab5">
+                <option value="" disabled="" selected="selected">Select exam code</option>
+                <option value="">...</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-5">
+              <label class="label" for="lab6">File version or date (e.g. 2018-04-01):</label>
+              <input class="input" id="lab6" type="text">
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-5">
+              <label class="label" for="lab7">Number of questions:</label>
+              <input class="input" id="lab7" type="text">
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-5">
+              <div class="label">File (max size: 60 Mb):<span>*</span></div>
+              <div class="input-file">
+                <input name="file" type="file" name="file" id="field__file-2" class="input-file__input visually-hidden" multiple>
+
+                <label class="input-file__label input" for="field__file-2">
+                  <div class="input-file__status">No file selected</div>
+                  <div class="input-file__btn">Choose file</div>
+                </label>
+             </div>
+            </div>
+            <div class="col-12 ta-center fz-19 c-blue-1 mb-4">
+              Supported file types: .ete, .pdf, .txt, .doc, .docx, .zip, .rar.
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-5">
+              <label class="label" for="lab9">Exam code / number:</label>
+              <div class="d-flex align-items-center">
+                <input class="input" id="lab9" type="text">
+                <!-- <img class="verification" src="/securimage.php/cid_ERequest" alt="verification"> -->
+                <img class="verification" src="/design/img/test-verification/cid_ERequest.png" alt="verification">
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-4 pt-2 mb-lg-5 d-flex justify-content-center justify-content-md-end">
+              <button class="btn-2 mxw-250px w-100 ptb-12 fz-22 align-self-end">Send Request</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <div class="col-12 col-xl-4 pb-5">
+        <aside class="aside">
+          <div class="aside__vumingo vumingo">
+            <div class="vumingo__logo">
+              <img src="/design/img/ui/vumingo-logo.svg" alt="vumingo">
+            </div>
+            <a class="vumingo__link link-2" href="">How to open ETE Files</a>
+            <p class="vumingo__text">Use ETE Exam Simulator to open ETE files</p>
+            <div class="vumingo__screenshot">
+              <img src="/design/img/content/sidebar-vumingo-app-screenshot.jpg" alt="vumingo-screenshot">
+            </div>
+            <div class="vumingo__btn-list">
+              <a class="vumingo__btn _green" href="#"><span>Sign Up</span> <span>Free Demo</span>
+                <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+                  <use xlink:href="./design/img/symbol/sprite.svg#arrow-mbl"></use>
+                </svg>
+              </a>
+              <a class="vumingo__btn _orange" href="#">Learn More
+                <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+                  <use xlink:href="./design/img/symbol/sprite.svg#arrow-mbl"></use>
+                </svg>
+
+              </a>
+              <a class="vumingo__btn _blue" href="#">Full Version
+                <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+                  <use xlink:href="./design/img/symbol/sprite.svg#arrow-mbl"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</main>
+
+//= blocks/footer/footer.html
+//= blocks/modal/modal-1.html
+//= blocks/scripts.html

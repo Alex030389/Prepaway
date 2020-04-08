@@ -182,6 +182,25 @@ for(let i = 0; i < resProgrLevels.length; i++) {
 }
 
 
+// ===================================================== input file
+let inputFile = document.querySelectorAll('.input-file__input');
+Array.prototype.forEach.call(inputFile, function (input) {
+  let label = input.nextElementSibling,
+  inputFileStatus = label.querySelector('.input-file__status').innerText;
+
+  input.addEventListener('change', function (e) {
+    let countFiles = '';
+    if (this.files && this.files.length >= 1)
+      countFiles = this.files.length;
+
+    if (countFiles)
+      label.querySelector('.input-file__status').innerText = 'Selected: ' + countFiles;
+    else
+      label.querySelector('.input-file__status').innerText = inputFileStatus;
+  });
+});
+
+
 // todo scrollTop
 // ========================================================= arrow top
 $(window).scroll(function () {

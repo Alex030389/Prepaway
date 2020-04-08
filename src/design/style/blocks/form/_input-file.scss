@@ -1,0 +1,29 @@
+.input-file {
+  width: 100%;
+}
+
+.input-file__input:focus + label {
+  outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.input-file__label {
+  position: relative;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.input-file__btn {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 130px;
+  height: calc(100% + 2px);
+  background: $c-blue-2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 rem(4) rem(4) 0;
+  cursor: pointer;
+}

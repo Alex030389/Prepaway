@@ -50,6 +50,10 @@
 }
 
 // text-align
+.ta-center {
+  text-align: center;
+}
+
 .ta-sm-center {
   @media (max-width: $sm) {
     text-align: center;
@@ -65,8 +69,6 @@
 
 
 
-
-
 // ================================================ blocks ===
 @import "blocks/time-discount";
 @import "blocks/header/header";
@@ -76,7 +78,7 @@
 // ==================================== title ===
 @import "blocks/title";
 // ==================================== link ===
-@import "blocks/link/link";
+@import "blocks/link";
 // ==================================== btn ===
 @import "blocks/btn";
 // ==================================== list ===
@@ -88,6 +90,7 @@
 @import "blocks/form/verification";
 @import "blocks/form/form-check";
 @import "blocks/form/checkbox";
+@import "blocks/form/input-file";
 // ==================================== nav ===
 @import "blocks/nav/nav-user";
 @import "blocks/nav/nav-main";
@@ -109,6 +112,7 @@
 @import "blocks/step";
 @import "blocks/res-progr";
 @import "blocks/res-list";
+@import "blocks/faq";
 // ==================================== slider ===
 @import "blocks/slider/slider";
 @import "blocks/slider/slider-2";
