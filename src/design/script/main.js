@@ -15,40 +15,42 @@ const searchBtnBack = document.querySelector('.search__btn-back');
 const searchInput = document.querySelector('.search__input');
 
 window.addEventListener('resize', function() {
-  if(getComputedStyle(headerSearchForm).display != 'none') {
-    hideMblMenu();
+  if(headerTop1 !=null) {
+    if(getComputedStyle(headerSearchForm).display != 'none') {
+      hideMblMenu();
+    }
+  
+    if(getComputedStyle(headerTop2).display != 'none') {
+      headerTop1.classList.remove('d-none');
+      headerTop2.classList.add('d-none');
+    }
   }
+})
 
-  if(getComputedStyle(headerTop2).display != 'none') {
-    headerTop1.classList.remove('d-none');
+if(headerTop1 !=null) {
+  headerMblBtnHamburger.addEventListener('click', function(e) {
+    showMblMenu();
+  });
+  navMblBtnClose.addEventListener('click', function() {
+    hideMblMenu();
+  });
+  navMbl.addEventListener('click', function(e) {
+    if(e.target.classList.contains('nav-mbl')) {
+      hideMblMenu();
+    }
+  });
+  headerMblBtnSearch.addEventListener ('click', function() {
+    headerTop1.classList.add('d-none');
+    headerTop2.classList.remove('d-none');
+    searchInput.focus();
+  })
+  
+  searchBtnBack.addEventListener('click', function() {
     headerTop2.classList.add('d-none');
-  }
-})
+    headerTop1.classList.remove('d-none');
+  })
+}
 
-headerMblBtnHamburger.addEventListener('click', function(e) {
-  showMblMenu();
-});
-
-navMblBtnClose.addEventListener('click', function() {
-  hideMblMenu();
-});
-
-navMbl.addEventListener('click', function(e) {
-  if(e.target.classList.contains('nav-mbl')) {
-    hideMblMenu();
-  }
-});
-
-headerMblBtnSearch.addEventListener ('click', function() {
-  headerTop1.classList.add('d-none');
-  headerTop2.classList.remove('d-none');
-  searchInput.focus();
-})
-
-searchBtnBack.addEventListener('click', function() {
-  headerTop2.classList.add('d-none');
-  headerTop1.classList.remove('d-none');
-})
 
 function showMblMenu() {
   document.body.classList.add('overflow-hidden');
@@ -64,6 +66,20 @@ function hideMblMenu() {
   setTimeout(function() {
     navMbl.classList.add('d-none');
   }, 300);
+}
+
+// ================================================= modal
+$('[data-mfp-src="#modal-1"]').magnificPopup({
+  // type:'inline',
+  showCloseBtn: false,
+  midClick: true 
+});
+
+const modalBtnClose = document.querySelector('.modal__btn-close');
+if(modalBtnClose != null) {
+  modalBtnClose.addEventListener('click', function() {
+    $.magnificPopup.close();
+  })
 }
 
 

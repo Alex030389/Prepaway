@@ -42,18 +42,12 @@
   }
 
   &__item {
+    position: relative;
     margin: 0 30px;
-    @extend .link-reset;
 
     @media (max-width: 1700px) {
       margin: 0 10px;
     }
-
-    &:hover .slider__caption {
-      color: #07a1fb;
-      text-decoration-color: #07a1fb;
-    }
-
   }
 
   &__item-2 {
@@ -69,8 +63,9 @@
     }
   }
 
-  &__caption {
-    width: 100%;
+  &__link {
+    display: block;
+    text-align: center;
   }
 
   &__wrap-img {

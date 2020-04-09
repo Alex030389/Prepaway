@@ -11,6 +11,15 @@
     color: #07a1fb;
     text-decoration-color: #07a1fb;
   }
+
+  &._c_grey {
+    color: $c-grey;
+    text-decoration-color: $c-grey;
+
+    &:hover {
+      text-decoration-color: $c-grey;
+    }
+  }
 }
 
 

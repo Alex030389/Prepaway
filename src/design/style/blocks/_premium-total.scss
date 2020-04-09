@@ -2,7 +2,11 @@
   background-color: #eff4fb;
 
   &__total-box {
-
+    @media (max-width: $md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__total {
@@ -66,7 +70,9 @@
 
 
   &__support-box {
-
+    @media (max-width: $md) {
+      text-align: center;
+    }
   }
 
   &__link-support {
@@ -101,7 +107,12 @@
   &__card-box {
     // background-color: #E6ECF6;
     img {
+      display: inline-block;
       margin-bottom: rem(15);
+    }
+
+    @media (max-width: $md) {
+      text-align: center;
     }
   }
 }
