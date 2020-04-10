@@ -70,16 +70,23 @@ function hideMblMenu() {
 
 // ================================================= modal
 $('[data-mfp-src="#modal-1"]').magnificPopup({
-  // type:'inline',
+  showCloseBtn: false,
+  midClick: true 
+});
+$('[data-mfp-src="#modal-2"]').magnificPopup({
   showCloseBtn: false,
   midClick: true 
 });
 
-const modalBtnClose = document.querySelector('.modal__btn-close');
-if(modalBtnClose != null) {
-  modalBtnClose.addEventListener('click', function() {
-    $.magnificPopup.close();
-  })
+const modalBtnCloseAr = document.querySelectorAll('.modal__btn-close');
+
+if(modalBtnCloseAr != null) {
+  for(let i = 0; i < modalBtnCloseAr.length; i++) {
+    modalBtnCloseAr[i].addEventListener('click', function() {
+      $.magnificPopup.close();
+    })
+  }
+  
 }
 
 
@@ -90,8 +97,8 @@ $('.slick-1').slick({
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 5,
-  prevArrow: '<button type="button" class="slider__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
-  nextArrow: '<button type="button" class="slider__arrow slick-next"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+  prevArrow: '<button type="button" class="slider__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+  nextArrow: '<button type="button" class="slider__arrow slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
   responsive: [
     {
       breakpoint: 1200,
@@ -133,8 +140,8 @@ $('.slider-2__list').slick({
   slidesToScroll: 1,
   centerMode: true,
   variableWidth: true,
-  prevArrow: '<button type="button" class="slider-2__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
-  nextArrow: '<button type="button" class="slider-2__arrow slick-next"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+  prevArrow: '<button type="button" class="slider-2__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+  nextArrow: '<button type="button" class="slider-2__arrow slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
   responsive: [
     {
       breakpoint: 992,
@@ -151,8 +158,8 @@ $('.slick-3').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
-  prevArrow: '<button type="button" class="slider__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
-  nextArrow: '<button type="button" class="slider__arrow slick-next"><svg aria-hidden="true"><use xlink:href="./design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+  prevArrow: '<button type="button" class="slider__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+  nextArrow: '<button type="button" class="slider__arrow slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
   responsive: [
     {
       breakpoint: 1200,
