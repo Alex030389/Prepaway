@@ -136,6 +136,16 @@
     margin-bottom: rem(15)
   }
 
+  &__url-link {
+    @extend .link-reset;
+    color: $c-green-1;
+    font-weight: 700;
+    font-size: rem(22);
+    margin: 0 auto rem(10);
+    display: block;
+    text-align: center;
+  }
+
   @media (max-width: $lg) {
     max-width: 600px;
   }

@@ -77,6 +77,10 @@ $('[data-mfp-src="#modal-2"]').magnificPopup({
   showCloseBtn: false,
   midClick: true 
 });
+$('[data-mfp-src="#modal-3"]').magnificPopup({
+  showCloseBtn: false,
+  midClick: true 
+});
 
 const modalBtnCloseAr = document.querySelectorAll('.modal__btn-close');
 

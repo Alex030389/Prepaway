@@ -36,7 +36,7 @@
 
 .checkbox:checked + .label-2::after {
   background-color: red;
-  background: url(./design/img/icon/check-2.svg) no-repeat center center / 100%;
+  background: url(/design/img/icon/check-2.svg) no-repeat center center / 100%;
 }
 
 .checkbox:focus + .label-2::after {
