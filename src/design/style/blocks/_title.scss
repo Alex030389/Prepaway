@@ -23,6 +23,10 @@
     font-weight: 600;
   }
 
+  &._lh_1-1 {
+    line-height: 1.1;
+  }
+
   @media (max-width: $lg) {
     font-size: rem(24);
   }

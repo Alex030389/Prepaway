@@ -33,7 +33,7 @@
     @extend .btn-reset;
     display: flex;
     align-items: center;
-    background-color: $c-lite-gray;
+    background-color: $c-lite-grey;
     width: 100%;
     padding: 10px 15px;
     margin-bottom: 8px;
@@ -76,7 +76,7 @@
     transition: .3s;
 
     &:hover {
-      background-color: $c-lite-gray-3;
+      background-color: $c-lite-grey-3;
     }
 
     svg {

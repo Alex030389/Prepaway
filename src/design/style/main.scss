@@ -32,7 +32,6 @@
 
 //  font-size
 .fz {
-
   &-16 {
     font-size: rem(16);
   }
@@ -50,12 +49,14 @@
   }
 }
 
+
 // font weight
 .fw {
   &-700 {
     font-weight: 700;
   }
 }
+
 
 // text-align
 .ta-center {
@@ -68,6 +69,8 @@
   }
 }
 
+
+// overflow
 .overflow-ellipsis {
   white-space: nowrap;
   overflow: hidden;
@@ -99,6 +102,7 @@
 @import "blocks/form/form-check";
 @import "blocks/form/checkbox";
 @import "blocks/form/input-file";
+
 // ==================================== nav ===
 @import "blocks/nav/nav-user";
 @import "blocks/nav/nav-main";
@@ -123,9 +127,14 @@
 @import "blocks/faq";
 @import "blocks/cart-cert";
 @import "blocks/top-cert";
+@import "blocks/about";
+@import "blocks/comments";
+@import "blocks/sprite";
+@import "blocks/add-comments";
 // ==================================== slider ===
 @import "blocks/slider/slider";
 @import "blocks/slider/slider-2";
+@import "blocks/slider/slider-3";
 // ==================================== table ===
 @import "blocks/table/table";
 

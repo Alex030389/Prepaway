@@ -41,7 +41,7 @@
     tr {
 
       &:nth-child(odd) {
-        background-color: $c-lite-gray-2;
+        background-color: $c-lite-grey-2;
       }
 
       @media (max-width: $sm) {
@@ -59,6 +59,16 @@
       }
     }
   }
+
+  &._col_2 {
+    th:nth-child(2) {
+      display: none;
+    }
+
+    td:nth-child(2) {
+      display: none;
+    }
+  }
 }
 
 
@@ -72,7 +82,7 @@
   width: 100%;
 
   tr {
-    border: 1px solid $c-lite-gray;
+    border: 1px solid $c-lite-grey;
     margin-top: -1px;
 
     @media (max-width: $md) {
@@ -153,7 +163,7 @@
   }
 
   tr {
-    border: 1px solid $c-lite-gray;
+    border: 1px solid $c-lite-grey;
     margin-top: -1px;
 
     @media (max-width: $sm) {
@@ -224,4 +234,54 @@
   &:not(:last-of-type) {
     margin-bottom: rem(30);
   }
+}
+
+
+// =================================================== table-4
+.table-4 {
+  width: 100%;
+
+  tr {
+    border: 1px solid $c-lite-grey;
+    margin-top: -1px;
+    padding: rem(10) rem(20);
+  }
+
+  th {
+    padding: rem(20);
+  }
+
+  td {
+    padding: rem(8);
+  }
+
+  &__tr-exam {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__box-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    color: $c-grey;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+    svg {
+      display: inline-block;
+      width: rem(16);
+      height: rem(16);
+      margin-right: rem(6);
+    }
+
+    @media (max-width: $md) {
+      color: $c-main;
+    }
+  }
+
+  
 }

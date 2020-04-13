@@ -10,7 +10,7 @@
     left: 10%;
     width: 80%;
     height: 3px;
-    background-color: $c-lite-gray;
+    background-color: $c-lite-grey;
 
     @media (max-width: $md) {
       top: 94px;
@@ -75,7 +75,7 @@
     z-index: 10;
     width: 14px;
     height: 14px;
-    background-color: $c-lite-gray;
+    background-color: $c-lite-grey;
     border-radius: 50%;
 
     &._orange {
