@@ -6,6 +6,79 @@
 @import "base/mixin";
 @import "base/bootstrap-custom";
 
+// ================================================ blocks ===
+@import "blocks/time-discount";
+@import "blocks/header/header";
+@import "blocks/logo";
+@import "blocks/search";
+@import "blocks/promo";
+// ==================================== title ===
+@import "blocks/title";
+// ==================================== link ===
+@import "blocks/link";
+// ==================================== btn ===
+@import "blocks/btn";
+// ==================================== list ===
+@import "blocks/list";
+// ==================================== form ===
+@import "blocks/form/search-form";
+@import "blocks/form/input";
+@import "blocks/form/label";
+@import "blocks/form/verification";
+@import "blocks/form/form-check";
+@import "blocks/form/checkbox";
+@import "blocks/form/input-file";
+
+// ==================================== nav ===
+@import "blocks/nav/nav-user";
+@import "blocks/nav/nav-main";
+@import "blocks/nav/nav-exams";
+@import "blocks/nav/nav-mbl";
+// ==================================== card ===
+@import "blocks/training-card";
+@import "blocks/course-card";
+// ======================================================== ather ===
+@import "blocks/discount-label";
+@import "blocks/subs-opt";
+@import "blocks/premium-total";
+@import "blocks/breadcrumb";
+@import "blocks/vumingo";
+@import "blocks/price-label";
+@import "blocks/star-rating";
+@import "blocks/contact-us";
+@import "blocks/req-exam-s";
+@import "blocks/step";
+@import "blocks/premium-box";
+@import "blocks/res-progr";
+@import "blocks/res-list";
+@import "blocks/faq";
+@import "blocks/aside";
+@import "blocks/cart-cert";
+@import "blocks/top-cert";
+@import "blocks/about";
+@import "blocks/comments";
+@import "blocks/sprite";
+@import "blocks/add-comments";
+@import "blocks/week-result";
+@import "blocks/top-exams";
+@import "blocks/exam";
+// ==================================== slider ===
+@import "blocks/slider/slider";
+@import "blocks/slider/slider-2";
+@import "blocks/slider/slider-3";
+@import "blocks/slider/slider-4";
+// ==================================== table ===
+@import "blocks/table/table";
+
+@import "blocks/footer/footer";
+// ==================================== modal ===
+@import "blocks/modal/modal";
+
+
+// ================================== custom magnific popup
+.mfp-close {
+  cursor: pointer !important;
+}
 
 // =================================== common font ===
 
@@ -47,11 +120,19 @@
   &-26 {
     font-size: rem(26);
   }
+
+  &-32 {
+    font-size: rem(32);
+  }
 }
 
 
 // font weight
 .fw {
+  &-400 {
+    font-weight: 400;
+  }
+
   &-700 {
     font-weight: 700;
   }
@@ -78,66 +159,11 @@
   width: 100%;
 }
 
+// ======================================================= common size
+.w-100 {
+  width: 100%;
+}
 
-
-// ================================================ blocks ===
-@import "blocks/time-discount";
-@import "blocks/header/header";
-@import "blocks/logo";
-@import "blocks/search";
-@import "blocks/promo";
-// ==================================== title ===
-@import "blocks/title";
-// ==================================== link ===
-@import "blocks/link";
-// ==================================== btn ===
-@import "blocks/btn";
-// ==================================== list ===
-@import "blocks/list";
-// ==================================== form ===
-@import "blocks/form/search-form";
-@import "blocks/form/input";
-@import "blocks/form/label";
-@import "blocks/form/verification";
-@import "blocks/form/form-check";
-@import "blocks/form/checkbox";
-@import "blocks/form/input-file";
-
-// ==================================== nav ===
-@import "blocks/nav/nav-user";
-@import "blocks/nav/nav-main";
-@import "blocks/nav/nav-exams";
-@import "blocks/nav/nav-mbl";
-// ==================================== card ===
-@import "blocks/training-card";
-@import "blocks/course-card";
-// =============================================================== ather ===
-@import "blocks/discount-label";
-@import "blocks/subs-opt";
-@import "blocks/premium-total";
-@import "blocks/breadcrumb";
-@import "blocks/vumingo";
-@import "blocks/price-label";
-@import "blocks/star-rating";
-@import "blocks/contact-us";
-@import "blocks/req-exam-s";
-@import "blocks/step";
-@import "blocks/res-progr";
-@import "blocks/res-list";
-@import "blocks/faq";
-@import "blocks/cart-cert";
-@import "blocks/top-cert";
-@import "blocks/about";
-@import "blocks/comments";
-@import "blocks/sprite";
-@import "blocks/add-comments";
-// ==================================== slider ===
-@import "blocks/slider/slider";
-@import "blocks/slider/slider-2";
-@import "blocks/slider/slider-3";
-// ==================================== table ===
-@import "blocks/table/table";
-
-@import "blocks/footer/footer";
-// ==================================== modal ===
-@import "blocks/modal/modal";
+.h-100 {
+  height: 100%;
+}

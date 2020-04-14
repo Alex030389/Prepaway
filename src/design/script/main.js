@@ -73,11 +73,18 @@ $('[data-mfp-src="#modal-1"]').magnificPopup({
   showCloseBtn: false,
   midClick: true 
 });
+
 $('[data-mfp-src="#modal-2"]').magnificPopup({
   showCloseBtn: false,
   midClick: true 
 });
+
 $('[data-mfp-src="#modal-3"]').magnificPopup({
+  showCloseBtn: false,
+  midClick: true 
+});
+
+$('[data-mfp-src="#modal-4"]').magnificPopup({
   showCloseBtn: false,
   midClick: true 
 });
@@ -217,14 +224,6 @@ $('.slick-4').slick({
         slidesToScroll: 3,
       }
     },
-    // {
-    //   breakpoint: 992,
-    //   settings: {
-    //     arrows: false,
-    //     slidesToShow: 2,
-    //     slidesToScroll: 2,
-    //   }
-    // },
     {
       breakpoint: 768,
       settings: {
@@ -235,6 +234,84 @@ $('.slick-4').slick({
     },
   ]
 });
+
+
+$('.slick-4').slick({
+  dots: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  prevArrow: '<button type="button" class="slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 1501,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+  ]
+});
+
+
+
+$('.slick-5').slick({
+  dots: true,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  infinite: false, 
+  prevArrow: '<button type="button" class="slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 1501,
+      settings: {
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+  ]
+});
+
+
+$('.slider-4__list').magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  gallery: {
+    enabled: true
+  },
+});
+
 
 
 // ========================================================= reseller-progress ===

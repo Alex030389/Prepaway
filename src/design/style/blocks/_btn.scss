@@ -15,6 +15,18 @@
   &._ml_-8 {
     margin-left: -10px;
   }
+
+  &._icon_left {
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: #fff;
+      width: rem(26);
+      height: rem(26);
+      margin-right: rem(15);
+    }
+  }
 }
 
 
@@ -66,10 +78,6 @@
 // ========================================= common ===
 .mxw-250px {
   max-width: 250px;
-}
-
-.w-100 {
-  width: 100%;
 }
 
 .ptb-12 {

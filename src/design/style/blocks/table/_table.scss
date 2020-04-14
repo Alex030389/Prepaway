@@ -245,6 +245,10 @@
     border: 1px solid $c-lite-grey;
     margin-top: -1px;
     padding: rem(10) rem(20);
+
+    @media (max-width: $md) {
+      padding: rem(10);
+    }
   }
 
   th {
@@ -281,7 +285,34 @@
     @media (max-width: $md) {
       color: $c-main;
     }
+
+    &.size {
+      svg {
+        fill: $c-orange-2;
+      }
+    }
+
+    &.views {
+      fill: $c-green-1;
+    }
+
+    &.downloads {
+      fill: $c-orange-1;
+    }
+
+    &.votes {
+      fill: $c-blue-2;
+    }
   }
 
-  
+  &__btn {
+    @extend .btn-reset;
+    background-color: $c-blue-2;
+    color: #fff;
+    padding: rem(1) rem(8) rem(2);
+    border-radius: rem(4);
+    &:hover {
+      color: #fff;
+    }
+  }
 }
