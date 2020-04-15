@@ -13,12 +13,34 @@
   &__wrap-img {
     padding-top: 40px;
     margin: 0 auto;
-    width: 160px;
+    width: 100%;
+    max-width: 160px;
+    position: relative;
 
     @media (max-width: $md) {
       padding-top: 26px;
-      width: 140px;
+      max-width: 140px;
     }
+
+    &._wide {
+      max-width: 250px !important;
+    }
+  }
+
+  &__price-label {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    width: 122px;
+    height: 122px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/design/img/ui/you-save.png) no-repeat center center;
+    background-size: cover;
+    color: #964509;
+    font-size: 20px;
+    font-weight: 700;
   }
 
   &__box-price {

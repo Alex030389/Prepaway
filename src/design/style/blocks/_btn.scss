@@ -10,22 +10,11 @@
 
   &:hover {
     background-color: $c-green-2;
+    color:$c-secondary;
   }
 
   &._ml_-8 {
     margin-left: -10px;
-  }
-
-  &._icon_left {
-    display: flex;
-    align-items: center;
-
-    svg {
-      fill: #fff;
-      width: rem(26);
-      height: rem(26);
-      margin-right: rem(15);
-    }
   }
 }
 
@@ -83,4 +72,16 @@
 .ptb-12 {
   padding-top: rem(12);
   padding-bottom: rem(12);
+}
+
+.btn-icon-left {
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: #fff;
+    width: rem(26);
+    height: rem(26);
+    margin-right: rem(15);
+  }
 }
