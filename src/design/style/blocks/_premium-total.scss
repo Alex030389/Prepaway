@@ -1,118 +1,118 @@
 .premium-total {
-  background-color: #eff4fb;
+	background-color: #eff4fb;
 
-  &__total-box {
-    @media (max-width: $md) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+	&__total-box {
+		@media (max-width: $md) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 
-  &__total {
-    font-family: $ff-title;
-    font-size: rem(45);
-    letter-spacing: -0.07em;
-    margin-bottom: rem(28);
+	&__total {
+		font-family: $ff-title;
+		font-size: rem(45);
+		letter-spacing: -0.07em;
+		margin-bottom: rem(28);
 
-    @media (max-width: $md) {
-      font-size: rem(30);
-    }
+		@media (max-width: $md) {
+			font-size: rem(30);
+		}
 
-    @media (max-width: $md) {
-      margin-bottom: rem(20);
-    }
+		@media (max-width: $md) {
+			margin-bottom: rem(20);
+		}
 
-    span {
-      font-size: rem(55);
+		span {
+			font-size: rem(55);
 
-      @media (max-width: $md) {
-        font-size: rem(30);
-      }
-    }
+			@media (max-width: $md) {
+				font-size: rem(30);
+			}
+		}
 
-  }
+	}
 
-  &__btn {
-    font-size: rem(28);
-    padding: rem(20) rem(42);
-    display: flex;
-    align-items: center;
+	&__btn {
+		font-size: rem(28);
+		padding: rem(20) rem(42);
+		display: flex;
+		align-items: center;
 
-    @media (max-width: $sxl) {
-      font-size: rem(24);
-      padding: rem(10) rem(25);
-    }
-  }
+		@media (max-width: $sxl) {
+			font-size: rem(24);
+			padding: rem(10) rem(25);
+		}
+	}
 
-  &__wrap-btn-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: rem(60);
-    height: rem(60);
-    border: 3px solid rgba(255, 255, 255, 0.39);
-    border-radius: 50%;
-    margin-left: rem(45);
+	&__wrap-btn-svg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: rem(60);
+		height: rem(60);
+		border: 3px solid rgba(255, 255, 255, 0.39);
+		border-radius: 50%;
+		margin-left: rem(45);
 
-    @media (max-width: $sxl) {
-      margin-left: rem(20);
-      width: rem(40);
-      height: rem(40);
-    }
+		@media (max-width: $sxl) {
+			margin-left: rem(20);
+			width: rem(40);
+			height: rem(40);
+		}
 
-    svg {
-      width: rem(22);
-      height: rem(22);
-      fill: #fff;
-    }
-  }
+		svg {
+			width: rem(22);
+			height: rem(22);
+			fill: #fff;
+		}
+	}
 
 
-  &__support-box {
-    @media (max-width: $md) {
-      text-align: center;
-    }
-  }
+	&__support-box {
+		@media (max-width: $md) {
+			text-align: center;
+		}
+	}
 
-  &__link-support {
-    @extend .link-reset;
-    border: 2px solid rgba(52, 183, 52, 0.3);
-    border-radius: 6px;
-    padding: rem(14) rem(18);
-    position: relative;
-    font-size: 17px;
-    margin-bottom: rem(15);
-    display: inline-flex;
-    align-items: center;
-  }
+	&__link-support {
+		@extend .link-reset;
+		border: 2px solid rgba(52, 183, 52, 0.3);
+		border-radius: 6px;
+		padding: rem(14) rem(18);
+		position: relative;
+		font-size: 17px;
+		margin-bottom: rem(15);
+		display: inline-flex;
+		align-items: center;
+	}
 
-  &__wrap-link-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: rem(42);
-    height: rem(42);
-    border: 3px solid rgba(52, 183, 52, 0.3);
-    border-radius: 50%;
-    margin-right: rem(20);
+	&__wrap-link-svg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: rem(42);
+		height: rem(42);
+		border: 3px solid rgba(52, 183, 52, 0.3);
+		border-radius: 50%;
+		margin-right: rem(20);
 
-    svg {
-      width: rem(22);
-      height: rem(22);
-      fill: $c-green-3;
-    }
-  }
+		svg {
+			width: rem(22);
+			height: rem(22);
+			fill: $c-green-3;
+		}
+	}
 
-  &__card-box {
-    // background-color: #E6ECF6;
-    img {
-      display: inline-block;
-      margin-bottom: rem(15);
-    }
+	&__card-box {
+		// background-color: #E6ECF6;
+		img {
+			display: inline-block;
+			margin-bottom: rem(15);
+		}
 
-    @media (max-width: $md) {
-      text-align: center;
-    }
-  }
+		@media (max-width: $md) {
+			text-align: center;
+		}
+	}
 }

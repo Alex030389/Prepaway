@@ -80,93 +80,93 @@
 
 // ================================== custom magnific popup
 .mfp-close {
-  cursor: pointer !important;
+	cursor: pointer !important;
 }
 
 // =================================== common font ===
 
 // color
 .c-subtitle {
-  color: $c-subtitle;
+	color: $c-subtitle;
 }
 
 .c-orange-2 {
-  color: $c-orange-2;
+	color: $c-orange-2;
 }
 
 .c-blue-1 {
-  color: $c-blue-1;
+	color: $c-blue-1;
 }
 
 .c-grey {
-  color: $c-grey;
+	color: $c-grey;
 }
 
 .c-green-1 {
-  color: $c-green-1;
+	color: $c-green-1;
 }
 
-//  font-size
+//	font-size
 .fz {
-  &-16 {
-    font-size: rem(16);
-  }
+	&-16 {
+		font-size: rem(16);
+	}
 
-  &-19 {
-    font-size: rem(19);
-  }
+	&-19 {
+		font-size: rem(19);
+	}
 
-  &-22 {
-    font-size: rem(22);
-  }
+	&-22 {
+		font-size: rem(22);
+	}
 
-  &-26 {
-    font-size: rem(26);
-  }
+	&-26 {
+		font-size: rem(26);
+	}
 
-  &-32 {
-    font-size: rem(32);
-  }
+	&-32 {
+		font-size: rem(32);
+	}
 }
 
 
 // font weight
 .fw {
-  &-400 {
-    font-weight: 400;
-  }
+	&-400 {
+		font-weight: 400;
+	}
 
-  &-700 {
-    font-weight: 700;
-  }
+	&-700 {
+		font-weight: 700;
+	}
 }
 
 
 // text-align
 .ta-center {
-  text-align: center;
+	text-align: center;
 }
 
 .ta-sm-center {
-  @media (max-width: $sm) {
-    text-align: center;
-  }
+	@media (max-width: $sm) {
+		text-align: center;
+	}
 }
 
 
 // overflow
 .overflow-ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
 }
 
 // ======================================================= common size
 .w-100 {
-  width: 100%;
+	width: 100%;
 }
 
 .h-100 {
-  height: 100%;
+	height: 100%;
 }

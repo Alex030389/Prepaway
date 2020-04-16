@@ -1,37 +1,37 @@
 .title {
-  font-family: $ff-title;
-  font-weight: 700;
-  font-size: rem(34);
-  letter-spacing: -1.8px;
+	font-family: $ff-title;
+	font-weight: 700;
+	font-size: rem(34);
+	letter-spacing: -1.8px;
 
-  @media (max-width: $lg) {
-    font-size: rem(26);
-  }
+	@media (max-width: $lg) {
+		font-size: rem(26);
+	}
 
-  @media (max-width: $sm) {
-    text-align: center;
-  }
+	@media (max-width: $sm) {
+		text-align: center;
+	}
 }
 
 .title-2 {
-  font-family: $ff-title;
-  font-size: rem(28);
-  font-weight: 700;
-  letter-spacing: -1.8px;
+	font-family: $ff-title;
+	font-size: rem(28);
+	font-weight: 700;
+	letter-spacing: -1.8px;
 
-  &._fw_600 {
-    font-weight: 600;
-  }
+	&._fw_600 {
+		font-weight: 600;
+	}
 
-  &._lh_1-1 {
-    line-height: 1.1;
-  }
+	&._lh_1-1 {
+		line-height: 1.1;
+	}
 
-  @media (max-width: $lg) {
-    font-size: rem(24);
-  }
+	@media (max-width: $lg) {
+		font-size: rem(24);
+	}
 
-  @media (max-width: $sm) {
-    text-align: center;
-  }
+	@media (max-width: $sm) {
+		text-align: center;
+	}
 }

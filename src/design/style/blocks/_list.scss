@@ -1,63 +1,63 @@
 .list {
-  @extend .list-reset;
-  font-size: rem(19);
+	@extend .list-reset;
+	font-size: rem(19);
 
-  li {
-    padding-left: rem(40);
-    background: url(../img/icon/check.svg) no-repeat left center;
-    background-size: rem(30);
-    margin-bottom: rem(6);
-  }
+	li {
+		padding-left: rem(40);
+		background: url(../img/icon/check.svg) no-repeat left center;
+		background-size: rem(30);
+		margin-bottom: rem(6);
+	}
 }
 
 .list-2 {
-  color: $c-orange-2;
+	color: $c-orange-2;
 
-  li {
-    margin-bottom: rem(12);
-  }
+	li {
+		margin-bottom: rem(12);
+	}
 
-  span {
-    color: $c-main;
-  }
+	span {
+		color: $c-main;
+	}
 
-  &._col_2 {
-    column-count: 2;
-    column-gap: 30px;
+	&._col_2 {
+		column-count: 2;
+		column-gap: 30px;
 
-    @media (max-width: $lg) {
-      column-count: 1;
-    }
-  }
+		@media (max-width: $lg) {
+			column-count: 1;
+		}
+	}
 }
 
 .list-3 {
-  @extend .list-reset;
+	@extend .list-reset;
 
-  li {
-    margin-bottom: rem(8);
-    padding-left: rem(20);
-    position: relative;
-    font-size: rem(19);
+	li {
+		margin-bottom: rem(8);
+		padding-left: rem(20);
+		position: relative;
+		font-size: rem(19);
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      width: 6px;
-      height: 6px;
-      background-color: #d1def1;
-    }
-  }
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 6px;
+			height: 6px;
+			background-color: #d1def1;
+		}
+	}
 
-  &._col_2 {
-    column-count: 2;
-    column-gap: 30px;
+	&._col_2 {
+		column-count: 2;
+		column-gap: 30px;
 
-    @media (max-width: $xl) {
-      // column-count: 1;
-    }
-  }
+		@media (max-width: $xl) {
+			// column-count: 1;
+		}
+	}
 }

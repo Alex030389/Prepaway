@@ -1,10 +1,10 @@
 .add-comments {
-  border: 1px solid #ebeef2;
-  padding: 30px 58px;
-  background-color: #ffffff;
-  box-shadow: 0px 32px 61px 0px rgba(32, 70, 128, 0.21);
+	border: 1px solid #ebeef2;
+	padding: 30px 58px;
+	background-color: #ffffff;
+	box-shadow: 0px 32px 61px 0px rgba(32, 70, 128, 0.21);
 
-  @media (max-width: $xl) {
-    padding: rem(20) rem(30);
-  }
+	@media (max-width: $xl) {
+		padding: rem(20) rem(30);
+	}
 }

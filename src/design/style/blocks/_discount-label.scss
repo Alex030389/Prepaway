@@ -1,22 +1,22 @@
 .discount-label {
-  width: 156px;
+	width: 156px;
 
-  @media (max-width: $lg) {
-    width: 100px;
-  }
+	@media (max-width: $lg) {
+		width: 100px;
+	}
 
-  &__price {
-    position: absolute;
-    top: 27px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 46px;
-    color: #684a17;
-    font-weight: 700;
+	&__price {
+		position: absolute;
+		top: 27px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 46px;
+		color: #684a17;
+		font-weight: 700;
 
-    @media (max-width: $lg) {
-      top: 15px;
-      font-size: 30px;
-    }
-  }
+		@media (max-width: $lg) {
+			top: 15px;
+			font-size: 30px;
+		}
+	}
 }

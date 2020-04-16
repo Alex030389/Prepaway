@@ -1,91 +1,91 @@
 .link {
-  color: $c-link;
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-color: #d8e5f3;
-  transition: .2s;
-  line-height: 1.2;
-  display: inline-block;
+	color: $c-link;
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: #d8e5f3;
+	transition: .2s;
+	line-height: 1.2;
+	display: inline-block;
 
-  &:hover {
-    color: #07a1fb;
-    text-decoration-color: #07a1fb;
-  }
+	&:hover {
+		color: #07a1fb;
+		text-decoration-color: #07a1fb;
+	}
 
-  &._c_grey {
-    color: $c-grey;
-    text-decoration-color: $c-grey;
+	&._c_grey {
+		color: $c-grey;
+		text-decoration-color: $c-grey;
 
-    &:hover {
-      text-decoration-color: $c-grey;
-    }
-  }
+		&:hover {
+			text-decoration-color: $c-grey;
+		}
+	}
 }
 
 
 
 .link-2 {
-  color: $c-link;
-  font-weight: 700;
-  border-bottom: 1px solid #d8e5f3;
-  transition: .2s;
-  line-height: 1.2;
-  display: inline-block;
+	color: $c-link;
+	font-weight: 700;
+	border-bottom: 1px solid #d8e5f3;
+	transition: .2s;
+	line-height: 1.2;
+	display: inline-block;
 
-  &._pb_4 {
-    padding-bottom: 4px;
-  }
+	&._pb_4 {
+		padding-bottom: 4px;
+	}
 
-  &:hover {
-    color: #07a1fb;
-    border-color: #07a1fb;
-    text-decoration: none;
-  }
+	&:hover {
+		color: #07a1fb;
+		border-color: #07a1fb;
+		text-decoration: none;
+	}
 }
 
 
 
 .link-with-icon {
-  @extend .link-reset;
-  color: $c-link;
-  font-weight: 700;
-  border-bottom: 1px solid #d8e5f3;
-  padding-bottom: 4px;
-  transition: .2s;
-  font-size: 19px;
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 30px;
-  
+	@extend .link-reset;
+	color: $c-link;
+	font-weight: 700;
+	border-bottom: 1px solid #d8e5f3;
+	padding-bottom: 4px;
+	transition: .2s;
+	font-size: 19px;
+	display: inline-flex;
+	align-items: center;
+	margin-bottom: 30px;
+	
 
-  svg {
-    width: 22px;
-    height: 22px;
-    margin-right: 10px;
-    fill: $c-link;
-    transition: .15s;
-  }
+	svg {
+		width: 22px;
+		height: 22px;
+		margin-right: 10px;
+		fill: $c-link;
+		transition: .15s;
+	}
 
-  &:hover {
-    color: $c-orange-2;
-    border-color: $c-orange-2;
+	&:hover {
+		color: $c-orange-2;
+		border-color: $c-orange-2;
 
-    svg {
-      fill: $c-orange-2;
-    }
-  }
+		svg {
+			fill: $c-orange-2;
+		}
+	}
 }
 
 
 
 .link-stretched {
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-  }
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+	}
 }

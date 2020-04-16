@@ -1,76 +1,76 @@
 .exam {
-  position: relative;
-  padding: 50px 20px 30px;
-  background-color: $c-lite-blue-2;
-  flex-direction: column;
+	position: relative;
+	padding: 50px 20px 30px;
+	background-color: $c-lite-blue-2;
+	flex-direction: column;
 
-  &__verif-label {
-    position: absolute;
-    top: 10px;
-    left: -12px;
-  }
+	&__verif-label {
+		position: absolute;
+		top: 10px;
+		left: -12px;
+	}
 
-  &__wrap-img {
-    padding-top: 40px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 160px;
-    position: relative;
+	&__wrap-img {
+		padding-top: 40px;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 160px;
+		position: relative;
 
-    @media (max-width: $md) {
-      padding-top: 26px;
-      max-width: 140px;
-    }
+		@media (max-width: $md) {
+			padding-top: 26px;
+			max-width: 140px;
+		}
 
-    &._wide {
-      max-width: 250px !important;
-    }
-  }
+		&._wide {
+			max-width: 250px !important;
+		}
+	}
 
-  &__price-label {
-    position: absolute;
-    right: 0;
-    bottom: -15px;
-    width: 122px;
-    height: 122px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(/design/img/ui/you-save.png) no-repeat center center;
-    background-size: cover;
-    color: #964509;
-    font-size: 20px;
-    font-weight: 700;
-  }
+	&__price-label {
+		position: absolute;
+		right: 0;
+		bottom: -15px;
+		width: 122px;
+		height: 122px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: url(/design/img/ui/you-save.png) no-repeat center center;
+		background-size: cover;
+		color: #964509;
+		font-size: 20px;
+		font-weight: 700;
+	}
 
-  &__box-price {
-    text-align: center;
-    font-weight: 700;
-    font-family: $ff-title;
-  }
+	&__box-price {
+		text-align: center;
+		font-weight: 700;
+		font-family: $ff-title;
+	}
 
-  &__old-price {
-    text-decoration: line-through;
-    color: $c-red;
-    font-size: rem(19);
+	&__old-price {
+		text-decoration: line-through;
+		color: $c-red;
+		font-size: rem(19);
 
-    @media (max-width: $md) {
-      font-size: rem(23);
-    }
-  }
+		@media (max-width: $md) {
+			font-size: rem(23);
+		}
+	}
 
-  &__new-price {
-    color: $c-green-1;
-    font-size: rem(26);
+	&__new-price {
+		color: $c-green-1;
+		font-size: rem(26);
 
-    @media (max-width: $md) {
-      font-size: rem(30);
-    }
-  }
+		@media (max-width: $md) {
+			font-size: rem(30);
+		}
+	}
 
-  &__desc {
-    border-top: 1px solid $c-lite-grey;
-    padding: 20px 0 0 0;
-  }
-  
+	&__desc {
+		border-top: 1px solid $c-lite-grey;
+		padding: 20px 0 0 0;
+	}
+	
 }

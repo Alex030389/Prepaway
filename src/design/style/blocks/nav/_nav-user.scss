@@ -1,39 +1,39 @@
 .nav-user {
 
-  ul {
-    @extend .list-reset;
-    display: flex;
-  }
+	ul {
+		@extend .list-reset;
+		display: flex;
+	}
 
-  li {
-    &:not(:last-child) {
-      margin-right: 40px;
+	li {
+		&:not(:last-child) {
+			margin-right: 40px;
 
-      @media (max-width: $sxl) {
-        margin-right: 20px;
-      }
-    }
-  }
+			@media (max-width: $sxl) {
+				margin-right: 20px;
+			}
+		}
+	}
 
-  a {
-    @extend .link-reset;
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 17px;
-    transition: .2s;
-    color: $c-main;
+	a {
+		@extend .link-reset;
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-size: 17px;
+		transition: .2s;
+		color: $c-main;
 
-    &._orange,
-    &:hover {
-      color: $c-orange-2;
-    }
-  }
+		&._orange,
+		&:hover {
+			color: $c-orange-2;
+		}
+	}
 
-  svg {
-    width: 22px;
-    height: 22px;
-    margin-right: 10px;
-    fill: $c-orange-2;
-  }
+	svg {
+		width: 22px;
+		height: 22px;
+		margin-right: 10px;
+		fill: $c-orange-2;
+	}
 }

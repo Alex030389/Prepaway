@@ -3,66 +3,66 @@
 }
 
 .step {
-  position: relative;
-  max-width: 300px;
-  width: 100%;
-  border-radius: rem(18);
-  box-shadow: 0 10px 150px 0 rgba(203, 212, 227, 0.5), 0 20px 40px -10px #cbd4e3;
-  margin: 0 auto;
+	position: relative;
+	max-width: 300px;
+	width: 100%;
+	border-radius: rem(18);
+	box-shadow: 0 10px 150px 0 rgba(203, 212, 227, 0.5), 0 20px 40px -10px #cbd4e3;
+	margin: 0 auto;
 
-  &__wrap-img {
-    background: linear-gradient(to bottom, #e5ebf9 0%, #d4ddf3 100%);
-    width: 100%;
-    box-shadow: inset 0 -8px 0 0 rgba(255, 255, 255, 0.5);
-    padding: rem(70) rem(20);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: rem(18);
-    border-top-right-radius: rem(18);
+	&__wrap-img {
+		background: linear-gradient(to bottom, #e5ebf9 0%, #d4ddf3 100%);
+		width: 100%;
+		box-shadow: inset 0 -8px 0 0 rgba(255, 255, 255, 0.5);
+		padding: rem(70) rem(20);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top-left-radius: rem(18);
+		border-top-right-radius: rem(18);
 
-    @media (max-width: $sm) {
-      padding: rem(40) rem(15) rem(50);
-    }
-  }
+		@media (max-width: $sm) {
+			padding: rem(40) rem(15) rem(50);
+		}
+	}
 
-  &__box-btn-desc {
-    padding: 0 rem(20) rem(20);
-  }
+	&__box-btn-desc {
+		padding: 0 rem(20) rem(20);
+	}
 
-  &__label {
-    font-size: rem(23);
-    padding: rem(10);
-    color: #fda00a;
-    border-radius: 1.5em;
-    background-color: #ffffff;
-    box-shadow: 0px 14px 24px 0px rgba(32, 70, 128, 0.21);
-    text-align: center;
-    max-width: 176px;
-    margin: rem(-30) auto rem(25);
-  }
+	&__label {
+		font-size: rem(23);
+		padding: rem(10);
+		color: #fda00a;
+		border-radius: 1.5em;
+		background-color: #ffffff;
+		box-shadow: 0px 14px 24px 0px rgba(32, 70, 128, 0.21);
+		text-align: center;
+		max-width: 176px;
+		margin: rem(-30) auto rem(25);
+	}
 
-  &__desc {
-    font-family: $ff-title;
-    font-size: rem(18);
-    color: $c-subtitle;
-    text-align: center;
-  }
+	&__desc {
+		font-family: $ff-title;
+		font-size: rem(18);
+		color: $c-subtitle;
+		text-align: center;
+	}
 
-  &__arrow {
-    position: absolute;
-    top: 50%;
-    right: -13%;
-    width: 20px;
-    height: 20px;
-    fill: $c-grey;
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		right: -13%;
+		width: 20px;
+		height: 20px;
+		fill: $c-grey;
 
-    @media (max-width: $sxl) {
-      right: -10%;
-    }
+		@media (max-width: $sxl) {
+			right: -10%;
+		}
 
-    @media (max-width: $xl) {
-      right: -9%;
-    }
-  }
+		@media (max-width: $xl) {
+			right: -9%;
+		}
+	}
 }

@@ -1,73 +1,73 @@
 .course-card {
-  position: relative;
+	position: relative;
 
-  &__wrap-img {
-    overflow-y: hidden;
-    padding-bottom: 60%;
-    position: relative;
+	&__wrap-img {
+		overflow-y: hidden;
+		padding-bottom: 60%;
+		position: relative;
 
-    img {
-      position: absolute;
-      left: 0;
-      width: 100%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
+		img {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
 
-  &__desc {
-    padding: rem(15) rem(20);
+	&__desc {
+		padding: rem(15) rem(20);
 
-    @media (max-width: $sm) {
-      padding: rem(12);
-    }
-  }
+		@media (max-width: $sm) {
+			padding: rem(12);
+		}
+	}
 
-  &__star-rating {
-    position: absolute;
-    top: rem(22);
-    left: rem(23);
+	&__star-rating {
+		position: absolute;
+		top: rem(22);
+		left: rem(23);
 
-    @media (max-width: $sm) {
-      top: rem(15);
-      left: rem(15);
-    }
-  }
+		@media (max-width: $sm) {
+			top: rem(15);
+			left: rem(15);
+		}
+	}
 
-  &__price-label {
-    position: absolute;
-    top: rem(18);
-    right: rem(23);
+	&__price-label {
+		position: absolute;
+		top: rem(18);
+		right: rem(23);
 
-    @media (max-width: $sm) {
-      display: none;
-    }
-  }
+		@media (max-width: $sm) {
+			display: none;
+		}
+	}
 
-  &__link {
-    @extend .link-reset;
-    @extend .link-stretched;
-    width: 100%;
-    color: #516e84;
-    font-size: rem(20);
-    font-weight: 700;
-    margin-bottom: rem(7);
-    display: inline-block;
+	&__link {
+		@extend .link-reset;
+		@extend .link-stretched;
+		width: 100%;
+		color: #516e84;
+		font-size: rem(20);
+		font-weight: 700;
+		margin-bottom: rem(7);
+		display: inline-block;
 
-    @media (max-width: $sxl) {
-      font-size: rem(16);
-    }
-  }
+		@media (max-width: $sxl) {
+			font-size: rem(16);
+		}
+	}
 
-  &__info {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-weight: 700;
-    color: #516e84;
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		font-weight: 700;
+		color: #516e84;
 
-    & > div:not(:last-child) {
-      margin-right: rem(20);
-    }
-  }
+		& > div:not(:last-child) {
+			margin-right: rem(20);
+		}
+	}
 }

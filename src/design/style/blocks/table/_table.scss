@@ -1,318 +1,318 @@
 .table {
-  width: 100%;
+	width: 100%;
 
-  th, td {
-    padding: 20px 10px;
+	th, td {
+		padding: 20px 10px;
 
-    &:first-child {
-      padding-left: 30px;
+		&:first-child {
+			padding-left: 30px;
 
-      @media (max-width: $lg) {
-        padding-left: 10px;
-      }
-    }
+			@media (max-width: $lg) {
+				padding-left: 10px;
+			}
+		}
 
-    &:nth-child(-n + 2) {
-      width: 170px;
+		&:nth-child(-n + 2) {
+			width: 170px;
 
-      @media (max-width: $sm) {
-        width: 50%px;
-      }
-    }
+			@media (max-width: $sm) {
+				width: 50%px;
+			}
+		}
 
-    @media (max-width: $sm) {
-      padding: 5px 10px;
-    }
-  }
+		@media (max-width: $sm) {
+			padding: 5px 10px;
+		}
+	}
 
-  thead {
+	thead {
 
-    @media (max-width: $sm) {
-      display: none;
-    }
+		@media (max-width: $sm) {
+			display: none;
+		}
 
-    th {
-      font-size: 19px;
-    }
-  }
+		th {
+			font-size: 19px;
+		}
+	}
 
-  tbody {
+	tbody {
 
-    tr {
+		tr {
 
-      &:nth-child(odd) {
-        background-color: $c-lite-grey-2;
-      }
+			&:nth-child(odd) {
+				background-color: $c-lite-grey-2;
+			}
 
-      @media (max-width: $sm) {
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 15px;
-        padding-bottom: 15px;
-      }
-    }
+			@media (max-width: $sm) {
+				display: flex;
+				flex-wrap: wrap;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+		}
 
-    td {
-      @media (max-width: $sm) {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-  }
+		td {
+			@media (max-width: $sm) {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
 
-  &._col_2 {
-    th:nth-child(2) {
-      display: none;
-    }
+	&._col_2 {
+		th:nth-child(2) {
+			display: none;
+		}
 
-    td:nth-child(2) {
-      display: none;
-    }
-  }
+		td:nth-child(2) {
+			display: none;
+		}
+	}
 }
 
 
 
 // ====================================== table-2
 .wrap-table-2 {
-  width: 100%;
+	width: 100%;
 }
 
 .table-2 {
-  width: 100%;
+	width: 100%;
 
-  tr {
-    border: 1px solid $c-lite-grey;
-    margin-top: -1px;
+	tr {
+		border: 1px solid $c-lite-grey;
+		margin-top: -1px;
 
-    @media (max-width: $md) {
-      display: flex;
-      flex-wrap: wrap;
-      padding: rem(10);
-    }
-  }
+		@media (max-width: $md) {
+			display: flex;
+			flex-wrap: wrap;
+			padding: rem(10);
+		}
+	}
 
-  td {
-    padding: rem(10) rem(20);
+	td {
+		padding: rem(10) rem(20);
 
-    @media (max-width: $md) {
-      padding: rem(5) rem(10);
-    }
+		@media (max-width: $md) {
+			padding: rem(5) rem(10);
+		}
 
-    &:nth-child(1) {
-      min-width: 160px;
+		&:nth-child(1) {
+			min-width: 160px;
 
-      @media (max-width: $sxl) {
-        min-width: 120px;
-      }
+			@media (max-width: $sxl) {
+				min-width: 120px;
+			}
 
-      @media (max-width: $md) {
-        min-width: auto;
-        width: 30%;
-      }
+			@media (max-width: $md) {
+				min-width: auto;
+				width: 30%;
+			}
 
-      a {
-        display: block;
+			a {
+				display: block;
 
-        &:first-child {
-          font-size: rem(20);
-          margin-bottom: rem(8);
-        }
-      }
-    }
+				&:first-child {
+					font-size: rem(20);
+					margin-bottom: rem(8);
+				}
+			}
+		}
 
-    &:nth-child(2) {
-      font-size: rem(20);
+		&:nth-child(2) {
+			font-size: rem(20);
 
-      @media (max-width: $md) {
-        order: 1;
-        flex-wrap: wrap;
-      }
+			@media (max-width: $md) {
+				order: 1;
+				flex-wrap: wrap;
+			}
 
-      a {
-        word-break: break-all;
+			a {
+				word-break: break-all;
 
-        @media (max-width: $xl) {
-          font-size: rem(16);
-        }
-      }
-    }
+				@media (max-width: $xl) {
+					font-size: rem(16);
+				}
+			}
+		}
 
-    &:nth-child(3) {
-      min-width: 250px;
-      text-align: center;
+		&:nth-child(3) {
+			min-width: 250px;
+			text-align: center;
 
-      @media (max-width: $md) {
-        min-width: auto;
-        width: 70%;
-      }
-    }
-  }
+			@media (max-width: $md) {
+				min-width: auto;
+				width: 70%;
+			}
+		}
+	}
 }
 
 
 
 // ======================================================== table-3
 .table-3 {
-  width: 100%;
-  table-layout: fixed;
+	width: 100%;
+	table-layout: fixed;
 
 
-  tbody {
-    width: 100%;
-  }
+	tbody {
+		width: 100%;
+	}
 
-  tr {
-    border: 1px solid $c-lite-grey;
-    margin-top: -1px;
+	tr {
+		border: 1px solid $c-lite-grey;
+		margin-top: -1px;
 
-    @media (max-width: $sm) {
-      display: flex;
-      flex-wrap: wrap;
-      padding: rem(10) 0;
-    }
-  }
+		@media (max-width: $sm) {
+			display: flex;
+			flex-wrap: wrap;
+			padding: rem(10) 0;
+		}
+	}
 
-  th, td {
-    padding: rem(20) rem(10);
+	th, td {
+		padding: rem(20) rem(10);
 
-    &:first-child {
-      padding-left: rem(30);
-      width: 25%;
+		&:first-child {
+			padding-left: rem(30);
+			width: 25%;
 
-      @media (max-width: $lg) {
-        padding-left: rem(10);
-      }
-    }
+			@media (max-width: $lg) {
+				padding-left: rem(10);
+			}
+		}
 
-    &:last-child {
-      width: 15%;
-    }
+		&:last-child {
+			width: 15%;
+		}
 
-    @media (max-width: $sm) {
-      padding: rem(5) rem(10);
-    }
-  }
+		@media (max-width: $sm) {
+			padding: rem(5) rem(10);
+		}
+	}
 
-  th {
-    font-size: rem(19);
+	th {
+		font-size: rem(19);
 
-    &:nth-child(3) {
-      text-align:  center;
-    }
-  }
+		&:nth-child(3) {
+			text-align:	center;
+		}
+	}
 
-  td {
+	td {
 
-    &:nth-child(1) {
-      @media (max-width: $sm) {
-        width: 50%;
-      }
-    }
+		&:nth-child(1) {
+			@media (max-width: $sm) {
+				width: 50%;
+			}
+		}
 
-    &:nth-child(2) {
-      @media (max-width: $sm) {
-        order: 3;
-        width: 100%;
-      }
-    }
+		&:nth-child(2) {
+			@media (max-width: $sm) {
+				order: 3;
+				width: 100%;
+			}
+		}
 
-    &:nth-child(3) {
-      text-align:  center;
-      font-weight: 700;
+		&:nth-child(3) {
+			text-align:	center;
+			font-weight: 700;
 
-      @media (max-width: $sm) {
-        width: 50%;
-      }
-    }
+			@media (max-width: $sm) {
+				width: 50%;
+			}
+		}
 
-    div:first-child {
-      font-weight: 700;
-    }
-  }
+		div:first-child {
+			font-weight: 700;
+		}
+	}
 
-  &:not(:last-of-type) {
-    margin-bottom: rem(30);
-  }
+	&:not(:last-of-type) {
+		margin-bottom: rem(30);
+	}
 }
 
 
 // =================================================== table-4
 .table-4 {
-  width: 100%;
+	width: 100%;
 
-  tr {
-    border: 1px solid $c-lite-grey;
-    margin-top: -1px;
-    padding: rem(10) rem(20);
+	tr {
+		border: 1px solid $c-lite-grey;
+		margin-top: -1px;
+		padding: rem(10) rem(20);
 
-    @media (max-width: $md) {
-      padding: rem(10);
-    }
-  }
+		@media (max-width: $md) {
+			padding: rem(10);
+		}
+	}
 
-  th {
-    padding: rem(20);
-  }
+	th {
+		padding: rem(20);
+	}
 
-  td {
-    padding: rem(8);
-  }
+	td {
+		padding: rem(8);
+	}
 
-  &__tr-exam {
-    display: flex;
-    flex-direction: column;
-  }
+	&__tr-exam {
+		display: flex;
+		flex-direction: column;
+	}
 
-  &__box-info {
-    display: flex;
-    justify-content: space-between;
-  }
+	&__box-info {
+		display: flex;
+		justify-content: space-between;
+	}
 
-  &__info {
-    color: $c-grey;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
+	&__info {
+		color: $c-grey;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
 
-    svg {
-      display: inline-block;
-      width: rem(16);
-      height: rem(16);
-      margin-right: rem(6);
-    }
+		svg {
+			display: inline-block;
+			width: rem(16);
+			height: rem(16);
+			margin-right: rem(6);
+		}
 
-    @media (max-width: $md) {
-      color: $c-main;
-    }
+		@media (max-width: $md) {
+			color: $c-main;
+		}
 
-    &.size {
-      svg {
-        fill: $c-orange-2;
-      }
-    }
+		&.size {
+			svg {
+				fill: $c-orange-2;
+			}
+		}
 
-    &.views {
-      fill: $c-green-1;
-    }
+		&.views {
+			fill: $c-green-1;
+		}
 
-    &.downloads {
-      fill: $c-orange-1;
-    }
+		&.downloads {
+			fill: $c-orange-1;
+		}
 
-    &.votes {
-      fill: $c-blue-2;
-    }
-  }
+		&.votes {
+			fill: $c-blue-2;
+		}
+	}
 
-  &__btn {
-    @extend .btn-reset;
-    background-color: $c-blue-2;
-    color: #fff;
-    padding: rem(1) rem(8) rem(2);
-    border-radius: rem(4);
-    &:hover {
-      color: #fff;
-    }
-  }
+	&__btn {
+		@extend .btn-reset;
+		background-color: $c-blue-2;
+		color: #fff;
+		padding: rem(1) rem(8) rem(2);
+		border-radius: rem(4);
+		&:hover {
+			color: #fff;
+		}
+	}
 }

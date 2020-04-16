@@ -1,42 +1,42 @@
 .cart-cert {
-  @extend .link-reset;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid $c-lite-grey;
-  padding: rem(15);
-  background-color: #fff;
-  transition: .1s;
-  height: 180px;
+	@extend .link-reset;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid $c-lite-grey;
+	padding: rem(15);
+	background-color: #fff;
+	transition: .1s;
+	height: 180px;
 
 
-  &__title {
-  }
+	&__title {
+	}
 
-  &__wrap-img {
-    height: 70px;
-    display: flex;
-    align-items: center;
-    
-    img {
-      max-height: 100%;
-    }
+	&__wrap-img {
+		height: 70px;
+		display: flex;
+		align-items: center;
+		
+		img {
+			max-height: 100%;
+		}
 
-    @media (max-width: $sm) {
-      height: 55px;
-    }
-  }
+		@media (max-width: $sm) {
+			height: 55px;
+		}
+	}
 
-  &__num {
+	&__num {
 
-  }
+	}
 
-  &:hover {
-    background-color: $c-lite-grey-2;
-  }
+	&:hover {
+		background-color: $c-lite-grey-2;
+	}
 
-  @media (max-width: $sm) {
-    height: 160px;
-  }
+	@media (max-width: $sm) {
+		height: 160px;
+	}
 }

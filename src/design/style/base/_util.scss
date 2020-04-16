@@ -1,39 +1,39 @@
 .overflow-hidden {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .visually-hidden {
-  position: absolute;
-  z-index: -1;
-  width: 0;
-  height: 0;
-  padding: 0;
-  margin: 0;
-  border: none;
-  overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+	overflow: hidden;
 }
 
 // ===================================== reset ===
 .list-reset {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
 
 .link-reset {
-  color: $c-link;
-  &:hover {
-    text-decoration: none;
-  }
+	color: $c-link;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 .caption-reset {
-  padding: 0;
-  caption-side: top;
-  color: $c-main;
+	padding: 0;
+	caption-side: top;
+	color: $c-main;
 }
 
 .btn-reset {
-  border: none;
-  background-color: transparent;
+	border: none;
+	background-color: transparent;
 }

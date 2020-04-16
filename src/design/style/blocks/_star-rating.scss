@@ -1,11 +1,11 @@
 .star-rating {
-  img {
-    display: inline-block;
-    width: rem(16);
-    height: rem(16);
+	img {
+		display: inline-block;
+		width: rem(16);
+		height: rem(16);
 
-    &:not(:last-child) {
-      margin-right: 2px;
-    }
-  }
+		&:not(:last-child) {
+			margin-right: 2px;
+		}
+	}
 }

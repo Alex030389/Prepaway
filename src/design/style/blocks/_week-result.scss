@@ -1,19 +1,19 @@
 .week-result {
-    width: 100%;
-    background-color: $c-lite-grey-2;
-    border-radius: rem(10);
-    border: 1px solid $c-lite-grey;
-    text-align: center;
-    padding: rem(25);
+		width: 100%;
+		background-color: $c-lite-grey-2;
+		border-radius: rem(10);
+		border: 1px solid $c-lite-grey;
+		text-align: center;
+		padding: rem(25);
 
-  &__num {
-    font-weight: 700;
-    font-size: rem(48);
-    color: $c-blue-1;
-    margin-bottom: rem(15);
+	&__num {
+		font-weight: 700;
+		font-size: rem(48);
+		color: $c-blue-1;
+		margin-bottom: rem(15);
 
-    @media (max-width: $lg) {
-      font-size: rem(36);
-    }
-  }
+		@media (max-width: $lg) {
+			font-size: rem(36);
+		}
+	}
 }

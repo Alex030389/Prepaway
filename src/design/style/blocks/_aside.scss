@@ -1,13 +1,13 @@
 .aside {
 
-  &__s {
+	&__s {
 
-    &:not(:last-child) {
-      margin-bottom: rem(48);
+		&:not(:last-child) {
+			margin-bottom: rem(48);
 
-      @media (max-width: $sm) {
-        // margin-bottom: rem(36);
-      }
-    }
-  }
+			@media (max-width: $sm) {
+				// margin-bottom: rem(36);
+			}
+		}
+	}
 }

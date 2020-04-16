@@ -1,28 +1,28 @@
 .promo {
-  // padding: 40px 0;
-  text-align: center;
+	// padding: 40px 0;
+	text-align: center;
 
-  &__title {
-    font-size: 3.125rem;
-    margin-bottom: 1.875rem;
-    font-family: $ff-title;
-    letter-spacing: -1px;
-    font-weight: 700;
-    line-height: 1.1;
+	&__title {
+		font-size: 3.125rem;
+		margin-bottom: 1.875rem;
+		font-family: $ff-title;
+		letter-spacing: -1px;
+		font-weight: 700;
+		line-height: 1.1;
 
-    @media (max-width: $md) {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-  }
+		@media (max-width: $md) {
+			font-size: 2rem;
+			margin-bottom: 20px;
+		}
+	}
 
-  &__subtitle {
-    font-size: 1.5rem;
-    color: $c-subtitle;
-    letter-spacing: -.5px;
+	&__subtitle {
+		font-size: 1.5rem;
+		color: $c-subtitle;
+		letter-spacing: -.5px;
 
-    @media (max-width: $md) {
-      font-size: 1.3rem;
-    }
-  }
+		@media (max-width: $md) {
+			font-size: 1.3rem;
+		}
+	}
 }

@@ -58,7 +58,7 @@
 
 	&__input:checked + .vote__label._like {
 		.vote__box-icon {
-			background-color: #46b846;	   
+			background-color: #46b846;		 
 			svg {
 				fill: #fff;
 			}
@@ -70,7 +70,7 @@
 			background-color: #fb5e5f;	 
 			svg {
 				fill: #fff;
-			}   	
+			}	 	
 		}
 	}	
 }
