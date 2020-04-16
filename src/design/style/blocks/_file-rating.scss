@@ -11,10 +11,14 @@
   &__progress-line {
     height: 14px;
     border-radius: 5px;
-    background-color: #f5f4f4;
+    background-color: $c-lite-grey;
     position: relative;
     margin-left: rem(24);
     margin-right: rem(24);
+
+    @media (max-width: $sm) {
+      margin: 0;
+    }
   }
 
   &__progress {
