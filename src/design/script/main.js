@@ -99,6 +99,11 @@ $('[data-mfp-src="#modal-6"]').magnificPopup({
 	midClick: true 
 });
 
+$('[data-mfp-src="#modal-7"]').magnificPopup({
+	showCloseBtn: false,
+	midClick: true 
+});
+
 const modalBtnCloseAr = document.querySelectorAll('.modal__btn-close');
 
 if(modalBtnCloseAr != null) {
@@ -440,6 +445,20 @@ for(let i = 0; i < slider5Item2.length; i++) {
 		},1);
 	})
 }
+
+
+// ==================================================== member-nav _mobile
+const membNavMobileLink = document.querySelectorAll('.memb-nav-mobile__link');
+
+if(membNavMobileLink) {
+	for(let i = 0; i < membNavMobileLink.length; i++) {
+		membNavMobileLink[i].addEventListener('click', function() {
+			membNavMobileLink[i].classList.toggle('_active');
+		})
+	}
+}
+
+
 
 // todo scrollTop
 // ========================================================= arrow top

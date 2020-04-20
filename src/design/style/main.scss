@@ -34,6 +34,7 @@
 @import "blocks/nav/nav-main";
 @import "blocks/nav/nav-exams";
 @import "blocks/nav/nav-mbl";
+@import "blocks/nav/memb-nav";
 // ==================================== card ===
 @import "blocks/training-card";
 @import "blocks/course-card";
@@ -117,6 +118,10 @@
 
 .c-green-1 {
 	color: $c-green-1;
+}
+
+.c-green-3 {
+	color: $c-green-2;
 }
 
 //	font-size

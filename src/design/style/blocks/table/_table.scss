@@ -1,3 +1,19 @@
+// ========================================================= common
+.table-border-grey {
+	tr {
+		border: 1px solid $c-lite-grey;
+		margin-top: -1px;
+	}
+
+	&._inner {
+		th:not(:last-child),
+		td:not(:last-child) {
+			border-right: 1px solid $c-lite-grey;
+		}
+	}
+}
+
+// ============================================================ table
 .table {
 	width: 100%;
 
@@ -361,6 +377,9 @@
 		padding: rem(10) rem(15);
 
 		&:nth-child(1) {
+			a {
+				word-break: break-all;
+			}
 			@media (max-width: $md) {
 				width: 100%;
 			}
@@ -399,13 +418,46 @@
 		}
 	}
 }
-	
 
 
-// ========================================================= common
-.table-border-grey {
+// ================================================= table-7
+.table-7 {
+	width: 100%;
+
 	tr {
-		border: 1px solid $c-lite-grey;
-		margin-top: -1px;
+		@media (max-width: $md) {
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: rem(10);
+			padding-bottom: rem(10);
+		}
+	}
+
+	th,td {
+		padding: rem(10);
+	}
+
+	td {
+		min-width: 100px;
+
+		@media (max-width: $md) {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			border-right: none !important;
+		}
+
+		&:not(:first-child) {
+			@media (max-width: $md) {
+				padding-top: rem(2);
+				padding-bottom: rem(2)
+			}
+		}
+	}
+
+	&__name {
+		@media (max-width: $md) {
+			font-weight: 700;
+		}
 	}
 }

@@ -19,6 +19,10 @@
 			fill: #fff;
 			position: relative;
 		}
+
+		&.slick-disabled {
+			opacity: .4;
+		}
 	}
 	
 	.slick-dots {
