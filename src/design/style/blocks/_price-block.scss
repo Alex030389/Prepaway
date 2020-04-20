@@ -1,0 +1,20 @@
+.price-block {
+	text-align: center;
+	font-family: $ff-title;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	line-height: 1;
+	
+	&__old {
+		text-decoration: line-through;
+		color: $c-red;
+		font-size: rem(18);
+		margin-right: 20px;
+	}
+
+	&__new {
+	color: $c-green-1;
+	 font-size: rem(26);
+	}
+}

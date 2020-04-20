@@ -1,0 +1,15 @@
+.about-course {
+	max-height: 126px;
+	overflow-y: hidden;
+	border-bottom: 1px solid $c-lite-grey-2;
+
+	h5 {
+		font-size: rem(19);
+	}
+
+	&._show {
+		max-height: none;
+		border-bottom: 1px solid transparent;
+
+	}
+}

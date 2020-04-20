@@ -1,11 +1,47 @@
 .star-rating {
+	display: flex;
+
 	img {
-		display: inline-block;
 		width: rem(16);
 		height: rem(16);
 
 		&:not(:last-child) {
-			margin-right: 2px;
+			margin-right: rem(4);
+		}		
+	}
+
+	&._middle {
+		img {
+			width: rem(20);
+			height: rem(20);
+
+			&:not(:last-child) {
+				margin-right: rem(4)
+			}
+
+			@media (max-width: $md) {
+				width: rem(16);
+				height: rem(16);
+
+				&:not(:last-child) {
+					margin-right: rem(2)
+				}
+			}
+		}
+	}
+
+	&._large {
+		img {
+			width: rem(28);
+			height: rem(28);
+			&:not(:last-child) {
+				margin-right: rem(8)
+			}
+
+			@media (max-width: $sm) {
+				width: rem(24);
+				height: rem(24);
+			}
 		}
 	}
 }

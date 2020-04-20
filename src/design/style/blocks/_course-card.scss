@@ -13,6 +13,10 @@
 			top: 50%;
 			transform: translateY(-50%);
 		}
+
+		&._large {
+			padding-bottom: 75%;
+		}
 	}
 
 	&__desc {
@@ -21,6 +25,29 @@
 		@media (max-width: $sm) {
 			padding: rem(12);
 		}
+
+		&._p-small {
+			padding: rem(12);
+		}
+	}
+
+	&__box-num-title {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: rem(15);
+	}
+
+	&__num {
+		color: $c-orange-1;
+		font-size: rem(19);
+		margin-bottom: rem(10);
+	}
+
+	&__title {
+		color: #fff;
+		font-weight: 400;
+		line-height: 1.2;
 	}
 
 	&__star-rating {

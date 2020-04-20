@@ -1,0 +1,23 @@
+.certific {
+  border-bottom: 1px solid $c-lite-grey-2;
+  background-image: linear-gradient(to bottom, #fff 0, #fafcff 100%);
+
+  &__title {
+    text-align: start;
+  }
+
+  &__img {
+    max-width: 650px;
+    position: relative;
+  }
+
+  &__best-seller-top {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+
+  &__desc {
+      
+  }
+}

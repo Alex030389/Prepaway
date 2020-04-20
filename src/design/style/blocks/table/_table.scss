@@ -316,3 +316,96 @@
 		}
 	}
 }
+
+
+// ========================================================== table-5
+.table-5 {
+	width: 100%;
+	background-color: $c-lite-grey-2;
+
+	td {
+		padding: rem(16);
+		vertical-align: middle;
+		font-size: rem(18);		
+
+		&:nth-child(1) {
+			width: 20%;
+			font-weight: 700;
+		}
+
+		&:nth-child(2) {
+			width: 80%;
+		}
+	}
+}
+
+
+// ========================================================== table-6
+.table-6 {
+	width: 100%;
+
+	tr {
+
+		@media (max-width: $md) {
+			display: flex;
+			flex-wrap: wrap;
+			padding: rem(8) 0;
+		}
+	}
+
+	th {
+		padding: rem(20) rem(15);
+	}
+
+	td {
+		padding: rem(10) rem(15);
+
+		&:nth-child(1) {
+			@media (max-width: $md) {
+				width: 100%;
+			}
+		}
+
+		&:nth-child(n + 2) {
+			width: 20%;
+
+			@media (max-width: $xl) {
+				width: 170px;
+			}
+
+			@media (max-width: $md) {
+				width: 50%;
+			}
+		}
+
+		@media(max-width: $md) {
+			padding: rem(5) rem(15);
+		}
+	}
+
+	th {
+
+	}
+
+	td {
+	
+	}
+
+	.link {
+		font-size: rem(19);
+
+		@media (max-width: $xl) {
+			font-size: rem(16);
+		}
+	}
+}
+	
+
+
+// ========================================================= common
+.table-border-grey {
+	tr {
+		border: 1px solid $c-lite-grey;
+		margin-top: -1px;
+	}
+}

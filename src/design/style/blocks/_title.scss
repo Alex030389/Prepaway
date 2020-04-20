@@ -11,6 +11,14 @@
 	@media (max-width: $sm) {
 		text-align: center;
 	}
+
+	&._fw_600 {
+		font-weight: 600;
+	}
+
+	&._lh_1-2 {
+		line-height: 1.2;
+	}
 }
 
 .title-2 {

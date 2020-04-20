@@ -1,0 +1,36 @@
+.card-info {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: rem(8) 0;
+
+		svg {
+			width: 1.375rem;
+			height: 1.375rem;
+			margin-right: 6px;
+		}
+
+		&._students {
+			fill: $c-green-1;
+		}
+
+		&._rating {
+			fill: $c-orange-1;
+		}
+
+		&._duration {
+			fill: $c-blue-2;
+		}
+
+		&:not(:last-child) {
+			margin-right: rem(32);
+		}
+
+		@media (max-width: $md) {
+			padding: rem(4) 0;
+		}
+	}
+}

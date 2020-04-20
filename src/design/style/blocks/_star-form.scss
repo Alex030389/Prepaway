@@ -1,0 +1,41 @@
+.star-form {
+	display: flex;
+	justify-content: center;
+
+	
+	&__label {
+		display: block;
+		width: 40px;
+		height: 30px;
+		padding: 0 5px;
+		cursor: pointer;
+
+		img {
+			pointer-events: none;
+		}
+		
+		img:last-child {
+			display: none;
+		}
+
+		&._hover {
+			img:first-of-type {
+				display: none;
+			}
+			
+			img:last-of-type {
+				display: block;
+			}
+		}
+		
+		&._active {
+			img:first-of-type {
+				display: none !important;
+			}
+			
+			img:last-of-type {
+				display: block !important;
+			}
+		}
+	}
+}

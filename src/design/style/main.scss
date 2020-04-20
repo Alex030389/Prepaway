@@ -65,11 +65,24 @@
 @import "blocks/exam";
 @import "blocks/file-rating";
 @import "blocks/vote";
+@import "blocks/certific";
+@import "blocks/best-seller";
+@import "blocks/price-block";
+@import "blocks/card-info";
+@import "blocks/icon-circle";
+@import "blocks/about-course";
+@import "blocks/feedback";
+@import "blocks/box-file-star-rating";
+@import "blocks/star-form";
+@import "blocks/tab-s";
+@import "blocks/icon-play";
+@import "blocks/video-list";
 // ==================================== slider ===
 @import "blocks/slider/slider";
 @import "blocks/slider/slider-2";
 @import "blocks/slider/slider-3";
 @import "blocks/slider/slider-4";
+@import "blocks/slider/slider-5";
 // ==================================== table ===
 @import "blocks/table/table";
 
@@ -153,6 +166,11 @@
 	}
 }
 
+// white-space
+.whs-normal {
+	white-space: normal;
+}
+
 
 // overflow
 .overflow-ellipsis {
@@ -160,6 +178,11 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	width: 100%;
+}
+
+// ====================================================== cursor
+.cu-p {
+	cursor: pointer;
 }
 
 // ======================================================= common size

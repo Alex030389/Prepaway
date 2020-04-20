@@ -1,0 +1,23 @@
+.box-file-star-rating {
+	display: flex;
+	align-items: center;
+
+	&__progress-line {
+		flex-grow: 1;
+
+		@media (max-width: $sm) {
+			margin-right: rem(12);
+		}
+	}
+
+	&__percent {
+		width: 50px;
+		font-weight: bold;
+		text-align: right;
+
+		@media (max-width: $md) {
+			width: 40px;
+			font-size: rem(16);
+		}
+	}
+}

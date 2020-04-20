@@ -1,0 +1,15 @@
+.icon-circle {
+	width: rem(40);
+	height: rem(40);
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	svg {
+		fill: #fff;
+		width: rem(20);
+		height: rem(20);
+	}
+}
