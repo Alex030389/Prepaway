@@ -427,7 +427,7 @@
 	tr {
 		@media (max-width: $md) {
 			display: flex;
-			flex-wrap: wrap;
+			flex-direction: column;
 			padding-top: rem(10);
 			padding-bottom: rem(10);
 		}

@@ -321,6 +321,30 @@ $('.slick-6').slick({
 	]
 });
 
+$('.slick-7').slick({
+	dots: true,
+	speed: 300,
+	slidesToShow: 3,
+	slidesToScroll: 3,
+	arrows: false,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 400,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
+	]
+});
+
 
 
 
