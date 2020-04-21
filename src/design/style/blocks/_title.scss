@@ -35,6 +35,10 @@
 		line-height: 1.1;
 	}
 
+	&._ta_left {
+		text-align: left !important;
+	}
+
 	@media (max-width: $lg) {
 		font-size: rem(24);
 	}
