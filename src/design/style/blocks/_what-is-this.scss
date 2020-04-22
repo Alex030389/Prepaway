@@ -1,0 +1,29 @@
+.what-is-this {
+	display: flex;
+	align-items: center;
+	width: 150px;
+	cursor: pointer;
+	position: relative;
+
+	&__img {
+		margin-right: rem(5);
+	}
+
+	&__img-modal {
+		position: absolute;
+		bottom: calc(100% + 10px);
+		left: 20%;
+		visibility: hidden;
+		opacity: 0;
+		transition: .3s;
+	}
+
+	&__text {
+		white-space: nowrap;
+	}
+
+	&:hover .what-is-this__img-modal {
+		visibility: visible;
+		opacity: 1;
+	}
+}

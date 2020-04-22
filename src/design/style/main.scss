@@ -79,6 +79,8 @@
 @import "blocks/icon-play";
 @import "blocks/video-list";
 @import "blocks/pr-membership";
+@import "blocks/feedback-a";
+@import "blocks/what-is-this";
 // ==================================== slider ===
 @import "blocks/slider/slider";
 @import "blocks/slider/slider-2";
@@ -98,35 +100,58 @@
 	cursor: pointer !important;
 }
 
-// =================================== common font ===
-
+// =================================== font ===
 // color
-.c-subtitle {
-	color: $c-subtitle;
+.c {
+
+	&-subtitle {
+		color: $c-subtitle;
+	}
+
+	&-orange-2 {
+		color: $c-orange-2;
+	}
+
+	&-blue-1 {
+		color: $c-blue-1;
+	}
+
+	&-grey {
+		color: $c-grey;
+	}
+
+	&-green-1 {
+		color: $c-green-1;
+	}
 }
 
-.c-orange-2 {
-	color: $c-orange-2;
-}
+// .c-subtitle {
+// 	color: $c-subtitle;
+// }
 
-.c-blue-1 {
-	color: $c-blue-1;
-}
+// .c-orange-2 {
+// 	color: $c-orange-2;
+// }
 
-.c-grey {
-	color: $c-grey;
-}
+// .c-blue-1 {
+// 	color: $c-blue-1;
+// }
 
-.c-green-1 {
-	color: $c-green-1;
-}
+// .c-grey {
+// 	color: $c-grey;
+// }
 
-.c-green-3 {
-	color: $c-green-2;
-}
+// .c-green-1 {
+// 	color: $c-green-1;
+// }
+
+// .c-green-3 {
+// 	color: $c-green-2;
+// }
 
 //	font-size
 .fz {
+	
 	&-16 {
 		font-size: rem(16);
 	}
@@ -143,8 +168,16 @@
 		font-size: rem(26);
 	}
 
+	&-28 {
+		font-size: rem(28);
+	}
+
 	&-32 {
 		font-size: rem(32);
+	}
+
+	&-40 {
+		font-size: rem(40);
 	}
 }
 

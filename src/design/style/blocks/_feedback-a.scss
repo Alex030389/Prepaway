@@ -1,0 +1,21 @@
+.feedback-a {
+
+	&__item {
+		&:not(:last-child) {
+			border-bottom: 1px solid $c-lite-grey;
+			margin-bottom: rem(20);
+		}
+	}
+
+	&__body {
+		font-style: italic;
+		color: #7894a3;
+	}
+
+	&__footer {
+		font-family: $ff-title;
+		span {
+			display: block;
+		}
+	}
+}

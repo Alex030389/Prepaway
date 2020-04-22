@@ -1,0 +1,158 @@
+//= blocks/head.html
+//= blocks/header/header-2.html
+
+<main class="main flex-shrink-0 flex-grow-1">
+	<div class="container">
+		<ul class="breadcrumb mb-3">
+			<li><a href="#">Home</a></li>
+			<li>Checkout</li>
+		</ul>
+
+		<div class="row pb-3">
+			<div class="col-12 col-xl-8 pb-5">
+				<section>
+					<h2 class="title mb-4 _fw_600">Secure Billing Information</h2>
+
+					<form action="#">
+						<div class="row">
+							<div class="col-12 col-md-6 mb-4 mb-lg-5">
+								<label class="label" for="inp-1">Name on Card:</label>
+								<input class="input" id="inp-1" type="text">
+							</div>
+
+							<div class="col-12 col-md-6 mb-4 mb-lg-5">
+								<label class="label" for="inp-2">Address:</label>
+								<input class="input" id="inp-2" type="text">
+							</div>
+
+							<div class="col-12 col-md-6 mb-4 mb-lg-5">
+								<label class="label" for="inp-3">City:</label>
+								<input class="input" id="inp-3" type="text">
+							</div>
+
+							<div class="col-12 col-md-6 mb-4 mb-lg-5">
+								<label class="label" for="inp-4">State/Province:</label>
+								<input class="input" id="inp-4" type="text">
+							</div>
+
+							<div class="col-12 col-md-6 mb-4 mb-lg-5">
+								<label class="label" for="inp-5">Zip:</label>
+								<input class="input" id="inp-5" type="text">
+							</div>
+
+							<div class="col-12 col-md-6 mb-4 mb-lg-5">
+								<label class="label" for="inp-6">Country:</label>
+								<select class="input" id="inp-6">
+									<option selected disabled>-- Select country --</option>
+									<option value="Albania">Albania</option>
+									<option value="Albania">Albania</option>
+									<option value="Albania">Albania</option>
+									<option value="Albania">Albania</option>
+								</select>
+							</div>
+
+							<div class="col-12 col-md-6 mb-4 mb-lg-5">
+								<label class="label" for="inp-7">E-mail Address:</label>
+								<input class="input" id="inp-7" type="text">
+							</div>
+						</div><!--row-->
+					</form>
+				</section>
+
+				<section>
+					<h2 class="title mb-4 _fw_600">Billing Details</h2>
+
+					<form action="#">
+						<div class="row">
+							<div class="col-12 col-md-6 mb-4 mb-lg-5">
+								<label class="label" for="inp-8">Card Number:</label>
+								<input class="input" id="inp-8" type="text" placeholder="0000 0000 0000 0000">
+							</div>
+	
+							<div class="col-12 col-md-6 mb-4 mb-lg-5">
+								<label class="label" for="inp-9">Expiration Date</label>
+								<div class="d-flex">
+									<select class="input mr-2" name="month" id="inp-9">
+										<option value="1">01</option>
+										<option value="2">02</option>
+										<option value="3">03</option>
+										<option value="4">04</option>
+										<option value="5">05</option>
+										<option value="6">06</option>
+										<option value="7">07</option>
+										<option value="8">08</option>
+										<option value="9">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+
+									<select class="input" name="year">
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+									</select>
+								</div>
+							</div>
+	
+							<div class="col-12 col-md-6 mb-4 mb-lg-5">
+								<label class="label">Security Code (CVV):</label>
+								<div class="d-flex align-items-center">
+									<div class="mr-4">
+										<input class="input" type="text">
+									</div>
+									<div class="what-is-this">
+										<img class="what-is-this__img" src="/design/img/ui/card.png" alt="Card CVV"> 
+										<span class="what-is-this__text c-blue-1 fz-19">What is this?</span>
+										<img class="what-is-this__img-modal" src="/design/img/cvv_info.jpg" alt="Card CVV-2 Info"> 
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-6 mb-4 mb-lg-5 d-flex align-items-end justify-content-between">
+								<img class="mr-2" src="/design/img/ui/sidebar/cards.svg" alt="cards">
+								<img src="/design/img/ui/sidebar/mcafee.png" alt="mcafee">
+							</div>
+
+							<div class="col-12 col-md-6 mb-4 mb-lg-5 d-flex align-items-center">
+								<div class="form-check">
+									<input onclick="blur()" class="checkbox" id="check-1" type="checkbox">
+									<label class="label-2 fz-19" for="check-1">I have read and agree to <a href="#" class="link">Prepaway.com</a>
+										Terms & Conditions</label>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-6 mb-4 mb-lg-5 fz-19">
+								<span>Your products will be available for immediate download after your payment has been received.</span><br>
+								<span class="c-grey">Your purchase with Prepaway is safe and fast.</span>
+							</div>
+	
+							<div class="col-12 col-md-6 pt-2 d-flex justify-content-center justify-content-md-start">
+								<button class="btn-2 mxw-250px w-100 ptb-12 fz-22 align-self-end">Pay Now</button>
+							</div>
+						</div>
+					</form>
+				</section>
+			</div>
+
+			<div class="col-12 col-xl-4 pb-5 pl-sxl-5">
+				<aside class="aside pl-sxl-5 _inner">
+					//= blocks/aside/why-choose.html
+					//= blocks/aside/feedback-a.html
+					//= blocks/aside/contact-us.html
+				</aside>
+			</div>
+		</div><!--row-->
+		
+	</div><!--container-->
+</main>
+
+//= blocks/footer/footer-2.html
+//= blocks/modal/modal-1.html
+//= blocks/scripts.html

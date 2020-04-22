@@ -22,6 +22,11 @@
 		}
 	}
 
+	&._green {
+		border-color: #3EB53E;
+		outline: none;
+	}
+
 	@media (max-width: $lg) {
 		padding: rem(8) rem(15);
 	}

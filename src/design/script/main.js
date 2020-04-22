@@ -470,6 +470,23 @@ for(let i = 0; i < slider5Item2.length; i++) {
 	})
 }
 
+// =================================================== copy discount
+var copyCodeButton = document.querySelector('.promo-code__btn');
+copyCodeButton.addEventListener('click', onCopyCodeButtonClick);
+
+function onCopyCodeButtonClick(evt) {
+	evt.preventDefault();
+	evt.target.classList.add('button--copy--success');
+	evt.target.textContent = 'Copied';
+	var range = document.createRange();
+	range.selectNode(document.querySelector('.promo-code__input'));
+	window.getSelection().removeAllRanges();
+	window.getSelection().addRange(range);
+	document.execCommand('copy');
+	window.getSelection().removeAllRanges();
+};
+
+
 
 // ==================================================== member-nav _mobile
 const membNavMobileLink = document.querySelectorAll('.memb-nav-mobile__link');
@@ -482,9 +499,15 @@ if(membNavMobileLink) {
 	}
 }
 
+// smooth scroll through anchor links
+var $page = $('html, body');
+$('a[href*="#"]').click(function () {
+  $page.animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 400);
+  return false;
+});
 
-
-// todo scrollTop
 // ========================================================= arrow top
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 1500) {
@@ -502,7 +525,6 @@ $('.btn-up').on('click', function () {
 });
 
 
-// todo stickFooter
 // ============================================================ stickFooter
 (function () {
 	let isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
