@@ -1,8 +1,8 @@
 .what-is-this {
 	display: flex;
 	align-items: center;
-	width: 150px;
-	cursor: pointer;
+	width: 190px;
+	flex-shrink: 0;
 	position: relative;
 
 	&__img {
@@ -16,6 +16,10 @@
 		visibility: hidden;
 		opacity: 0;
 		transition: .3s;
+
+		@media (max-width: $sm) {
+			left: 0;
+		}
 	}
 
 	&__text {
@@ -25,5 +29,9 @@
 	&:hover .what-is-this__img-modal {
 		visibility: visible;
 		opacity: 1;
+	}
+
+	@media (max-width: $sm) {
+		width: 100px;
 	}
 }

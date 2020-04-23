@@ -461,3 +461,84 @@
 		}
 	}
 }
+
+
+// =============================================== table-cart
+.table-cart {
+	width: 100%;
+
+	tr {
+		&:not(:last-child) {
+			border-bottom: 1px solid $c-lite-grey;
+		}
+	}
+	
+	th,td {
+		padding: rem(15) rem(10);
+
+		&:nth-child(3) {
+			min-width: 180px;
+
+			@media (max-width: $lg) {
+				min-width: 100px;
+			}
+		}
+	}
+
+	tbody {
+		tr {
+
+			td {
+				vertical-align: middle;
+			}
+			
+			@media (max-width: $sm) {
+				display: flex;
+				flex-wrap: wrap;
+			}
+		}
+	}
+
+	&__tbody-td-1 {
+		@media(max-width: $sm) {
+			width: 100%;
+		}
+	}
+
+	&__tbody-td-2 {
+		@media(max-width: $sm) {
+			width: 20%;			
+			text-align: center;
+		}
+	}
+
+	&__tbody-td-3 {
+		@media(max-width: $sm) {
+			width: 50%;
+		}
+	}
+
+	&__tbody-td-4 {
+		@media(max-width: $sm) {
+			width: 30%;
+			text-align: center;
+		}
+	}
+
+	tfoot {
+
+		td {
+		}
+
+		tr {
+			padding-top: rem(10);
+			padding-bottom: rem(10);
+
+			@media (max-width: $sm) {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+			}
+		}
+	}
+}

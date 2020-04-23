@@ -37,7 +37,18 @@
 	}
 }
 
-
+.btn-3 {
+	background-color: $c-grey;
+	color: #fff;
+	border-radius: rem(4);
+	opacity: .8;
+	transition: .3s;
+	
+	&:hover {
+		color: #fff;
+		opacity: 1;
+	}
+}
 
 .btn-up {
 	width: 35px;

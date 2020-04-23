@@ -47,6 +47,14 @@
 			}
 		}
 
+		&._large {
+			padding: 18px 26px 21px;
+
+			@media (max-width: $sxl) {
+				padding: 14px 24px 14px;
+			}
+		}
+
 		@media (max-width: $sxl) {
 			padding: rem(14) rem(10) rem(14);
 			font-size: rem(13);

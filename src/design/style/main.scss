@@ -3,15 +3,8 @@
 @import "base/var";
 @import "base/global";
 @import "base/util";
-@import "base/mixin";
-@import "base/bootstrap-custom";
+@import "base/lib-custom";
 
-// ================================================ blocks ===
-@import "blocks/time-discount";
-@import "blocks/header/header";
-@import "blocks/logo";
-@import "blocks/search";
-@import "blocks/promo";
 // ==================================== title ===
 @import "blocks/title";
 // ==================================== link ===
@@ -28,7 +21,6 @@
 @import "blocks/form/form-check";
 @import "blocks/form/checkbox";
 @import "blocks/form/input-file";
-
 // ==================================== nav ===
 @import "blocks/nav/nav-user";
 @import "blocks/nav/nav-main";
@@ -39,7 +31,24 @@
 @import "blocks/training-card";
 @import "blocks/course-card";
 @import "blocks/indiv-card";
-// ======================================================== ather ===
+// ==================================== slider ===
+@import "blocks/slider/slider";
+@import "blocks/slider/slider-2";
+@import "blocks/slider/slider-3";
+@import "blocks/slider/slider-4";
+@import "blocks/slider/slider-5";
+// ==================================== table ===
+@import "blocks/table/table";
+// ==================================== modal ===
+@import "blocks/modal/modal";
+// =====================================================
+// ==================================== ather blocks ===
+// =====================================================
+@import "blocks/time-discount";
+@import "blocks/header/header";
+@import "blocks/logo";
+@import "blocks/search";
+@import "blocks/promo";
 @import "blocks/discount-label";
 @import "blocks/subs-opt";
 @import "blocks/premium-total";
@@ -81,27 +90,17 @@
 @import "blocks/pr-membership";
 @import "blocks/feedback-a";
 @import "blocks/what-is-this";
-// ==================================== slider ===
-@import "blocks/slider/slider";
-@import "blocks/slider/slider-2";
-@import "blocks/slider/slider-3";
-@import "blocks/slider/slider-4";
-@import "blocks/slider/slider-5";
-// ==================================== table ===
-@import "blocks/table/table";
+@import "blocks/get-question";
+@import "blocks/prom-cart";
+@import "blocks/post-list";
+@import "blocks/pagination";
+// ============================== blog ===
+
 
 @import "blocks/footer/footer";
-// ==================================== modal ===
-@import "blocks/modal/modal";
 
 
-// ================================== custom magnific popup
-.mfp-close {
-	cursor: pointer !important;
-}
-
-// =================================== font ===
-// color
+// ========================================= font-color
 .c {
 
 	&-subtitle {
@@ -125,33 +124,9 @@
 	}
 }
 
-// .c-subtitle {
-// 	color: $c-subtitle;
-// }
-
-// .c-orange-2 {
-// 	color: $c-orange-2;
-// }
-
-// .c-blue-1 {
-// 	color: $c-blue-1;
-// }
-
-// .c-grey {
-// 	color: $c-grey;
-// }
-
-// .c-green-1 {
-// 	color: $c-green-1;
-// }
-
-// .c-green-3 {
-// 	color: $c-green-2;
-// }
-
-//	font-size
+// ================================== font-size
 .fz {
-	
+
 	&-16 {
 		font-size: rem(16);
 	}
@@ -181,8 +156,7 @@
 	}
 }
 
-
-// font weight
+// ========================================== font-weight
 .fw {
 	&-400 {
 		font-weight: 400;
@@ -205,18 +179,18 @@
 	}
 }
 
-// white-space
-.whs-normal {
-	white-space: normal;
+.ta-right {
+	text-align: right;
+}
+
+.td-through {
+	text-decoration: line-through;
 }
 
 
-// overflow
-.overflow-ellipsis {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	width: 100%;
+// ================================================ white-space
+.whs-normal {
+	white-space: normal;
 }
 
 // ====================================================== cursor
@@ -224,7 +198,7 @@
 	cursor: pointer;
 }
 
-// ======================================================= common size
+// ======================================================= block size
 .w-100 {
 	width: 100%;
 }
