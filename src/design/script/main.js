@@ -15,19 +15,17 @@ const searchBtnBack = document.querySelector('.search__btn-back');
 const searchInput = document.querySelector('.search__input');
 
 window.addEventListener('resize', function() {
-	if(headerTop1) {
-		if(getComputedStyle(headerSearchForm).display != 'none') {
-			hideMblMenu();
-		}
-	
-		if(getComputedStyle(headerTop2).display != 'none') {
-			headerTop1.classList.remove('d-none');
-			headerTop2.classList.add('d-none');
-		}
+	if(headerSearchForm && getComputedStyle(headerSearchForm).display != 'none') {
+		hideMblMenu();
+	}
+
+	if(headerTop2) {
+		headerTop1.classList.remove('d-none');
+		headerTop2.classList.add('d-none');
 	}
 })
 
-if(headerTop1) {
+if(headerMblBtnHamburger) {
 	headerMblBtnHamburger.addEventListener('click', function(e) {
 		showMblMenu();
 	});
@@ -472,20 +470,22 @@ for(let i = 0; i < slider5Item2.length; i++) {
 
 // =================================================== copy discount
 var copyCodeButton = document.querySelector('.promo-code__btn');
-copyCodeButton.addEventListener('click', onCopyCodeButtonClick);
 
-function onCopyCodeButtonClick(evt) {
-	evt.preventDefault();
-	evt.target.classList.add('button--copy--success');
-	evt.target.textContent = 'Copied';
-	var range = document.createRange();
-	range.selectNode(document.querySelector('.promo-code__input'));
-	window.getSelection().removeAllRanges();
-	window.getSelection().addRange(range);
-	document.execCommand('copy');
-	window.getSelection().removeAllRanges();
-};
+if(copyCodeButton) {
+	copyCodeButton.addEventListener('click', onCopyCodeButtonClick);
 
+	function onCopyCodeButtonClick(evt) {
+		evt.preventDefault();
+		evt.target.classList.add('button--copy--success');
+		evt.target.textContent = 'Copied';
+		var range = document.createRange();
+		range.selectNode(document.querySelector('.promo-code__input'));
+		window.getSelection().removeAllRanges();
+		window.getSelection().addRange(range);
+		document.execCommand('copy');
+		window.getSelection().removeAllRanges();
+	};
+}
 
 
 // ==================================================== member-nav _mobile

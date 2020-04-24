@@ -5,15 +5,34 @@
 	display: flex;
 
 	&__btn-back {
-		margin-right: 10px;
+		@extend .btn-reset;
+
+		svg {
+			width: 20px;
+			height: 20px;
+			transform: rotate(180deg);
+			fill: $c-green-1;
+		}
 	}
 
 	&__input {
 		width: 100%;
-		margin-right: 10px;
+		margin: 0 14px 0 10px;
+		border: 1px solid $c-green-1;
+		padding: 0 12px;
+		border-radius: 4px;
+
+		&:focus {
+			outline: none;
+		}
 	}
 
 	&__btn-search {
-
+		@extend .btn-reset;
+		padding: 2px 8px 3px;
+		font-size: 16px;
+		background-color: $c-green-1;
+		color: #fff;
+		border-radius: 4px;
 	}
 }
