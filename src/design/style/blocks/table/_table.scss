@@ -36,6 +36,11 @@
 			}
 		}
 
+		&:last-child {
+			word-break: break-all;
+			// white-space: wrap;
+		}
+
 		@media (max-width: $sm) {
 			padding: 5px 10px;
 		}

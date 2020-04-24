@@ -1,9 +1,21 @@
 .training-card {
-	max-width: 455px;
 	position: relative;
 
 	&__box-img-price {
 		margin-bottom: 22px;
+		width: 100%;
+
+		@media (max-width: $lg) {
+			margin-bottom: 0;
+			padding-right: 20px;
+			width: 40%;
+		}
+	}
+
+	&__desc {
+		@media (max-width: $lg) {
+			width: 60%;
+		}
 	}
 
 	&__price-label {
@@ -12,13 +24,17 @@
 		right: 10px;
 	}
 
-	&__img {
+	&__link {
+		font-size: rem(20);
+		display: inline-block;
+		margin-bottom: rem(18);
 
+		@media (max-width: $lg) {
+			font-size: rem(16);
+		}
 	}
 
-	&__link {
-		font-size: 1.25;
-		display: inline-block;
-		margin-bottom: 1.125rem;
+	@media (max-width: $lg) {
+		display: flex;
 	}
 }

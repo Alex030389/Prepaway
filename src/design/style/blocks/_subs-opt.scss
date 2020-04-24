@@ -5,20 +5,27 @@
 	padding: 42px 30px 36px;
 	transition: .3s;
 	cursor: pointer;
+	height: 100%;
 
-	@media (max-width: $lg) {
-		padding: 25px;
+	&__first {
+		@media(max-width: $sm) {
+			margin-right: rem(14);
+		}
 	}
 
 	&__title {
 		font-family: $ff-title;
 		letter-spacing: -0.05em;
-		font-size: 1.5rem;
+		font-size: rem(24);
 		font-weight: 700;
 		color: #3eb53e;
 		text-transform: uppercase;
 		text-decoration: none;
 		margin-bottom: rem(2);
+		
+		@media (max-width: $md) {
+			font-size: rem(18);
+		}
 	}
 
 	&__desc {
@@ -36,10 +43,19 @@
 			height: 1px;
 			background-color: #a7b9c7;
 			transform: translateX(-50%);
+
+			@media (max-width: $md) {
+				display: none;
+			}
 		}
 
 		@media (max-width: $lg) {
 			margin-bottom: rem(15);
+		}
+
+		@media (max-width: $md) {
+			padding-bottom: 0;
+			margin-bottom: 0;
 		}
 	}
 
@@ -52,6 +68,10 @@
 		@media (max-width: $lg) {
 			font-size: rem(25);
 		}
+
+		@media (max-width: $md) {
+			font-size: rem(18);
+		}
 	}
 
 	&__current {
@@ -61,6 +81,14 @@
 
 		@media (max-width: $lg) {
 			font-size: rem(35);
+		}
+
+		@media (max-width: $md) {
+			font-size: rem(30);
+		}
+
+		@media (max-width: $sm) {
+			font-size: rem(24);
 		}
 	}
 
@@ -83,17 +111,24 @@
 			height: 28px;
 			border-radius: 50%;
 			background: #fff url(../img/icon/check-2.svg) no-repeat center center;
+
+			@media (max-width: $md) {
+				top: 10px;
+				right: 10px;
+				width: 20px;
+				height: 20px;
+				background-size: 80%;
+			}
 		}
 
 		.subs-opt__title,
 		.subs-opt__old,
-		.subs-opt__current {
+		.subs-opt__current,
+		.subs-opt__desc {
 			color: #fff;
 		}
 
 		.subs-opt__desc {
-			color: #62f362;
-
 			&::after {
 				background-color: #fff;
 			}
@@ -102,5 +137,16 @@
 		.subs-opt__month {
 			color: #167f16;
 		}
+	}
+
+	@media (max-width: $lg) {
+		padding: rem(25);
+	}
+
+	@media (max-width: $md) {
+		padding: rem(10) 50px rem(10) rem(10);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 }
