@@ -32,6 +32,7 @@
 @import "blocks/course-card";
 @import "blocks/indiv-card";
 // ==================================== slider ===
+@import "blocks/slider/slick";
 @import "blocks/slider/slider";
 @import "blocks/slider/slider-2";
 @import "blocks/slider/slider-3";
@@ -80,7 +81,6 @@
 @import "blocks/price-block";
 @import "blocks/card-info";
 @import "blocks/icon-circle";
-@import "blocks/about-course";
 @import "blocks/feedback";
 @import "blocks/box-file-star-rating";
 @import "blocks/star-form";
@@ -196,6 +196,20 @@
 // ====================================================== cursor
 .cu-p {
 	cursor: pointer;
+}
+
+// ====================================================== icon
+.icon-size {
+	&-26 {
+		width: rem(26);
+		height: rem(26);
+	}
+}
+
+.icon-fill {
+	&-white {
+		fill: #fff;
+	}
 }
 
 // ======================================================= block size

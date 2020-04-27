@@ -53,9 +53,6 @@
 .btn-up {
 	width: 35px;
 	height: 35px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	border-radius: 50%;
 	background-color: $c-green-1;
 	position: fixed;
@@ -71,7 +68,10 @@
 		width: 15px;
 		height: 15px;
 		fill: #fff;
-		transform: rotate(-90deg);
+		transform: rotate(-90deg) translate(50%, -50%);
+		position: absolute;
+		top: 50%;
+		left: 50%;
 	}
 
 	&:hover {
@@ -93,18 +93,5 @@
 
 // todo переделать
 .btn-icon-left {
-	display: flex;
-	align-items: center;
 
-	svg {
-		fill: #fff;
-		width: rem(26);
-		height: rem(26);
-		margin-right: rem(15);
-	}
-}
-
-.btn-icon {
-	display: flex;
-	align-items: center;
 }

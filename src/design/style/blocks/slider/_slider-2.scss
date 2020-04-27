@@ -59,42 +59,6 @@
 		}
 	}
 
-	&__btn-scale {
-		cursor: pointer;
-		z-index: 1;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transition-duration: 0.3s;
-		transform: translate(-50%, -50%);
-		background-color: #ffffff;
-		width: 99px;
-		height: 99px;
-		border-radius: 50%;
-		box-shadow: 0 10px 30px 5px rgba(59, 91, 117, 0.3);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		&:hover {
-
-			svg {
-				transform: scale(1.2);
-			}
-		}
-
-		@media (max-width: $lg) {
-			width: 60px;
-			height: 60px;
-		}
-
-		svg {
-			width: 34px;
-			height: 34px;
-			fill: #8292a7;
-			transition: .3s;
-		}
-	}
 
 	&__arrow {
 		@extend .btn-reset;

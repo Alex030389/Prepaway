@@ -394,9 +394,9 @@ Array.prototype.forEach.call(inputFile, function (input) {
 });
 
 
-// =================================================== btn-about-course
-const aboutCourse = document.querySelector('.about-course');
-const btnAboutCourse = document.querySelector('.btn-about-course');
+// =================================================== btn-about
+const aboutCourse = document.querySelector('.about');
+const btnAboutCourse = document.querySelector('.btn-about');
 
 if(btnAboutCourse) {
 	btnAboutCourse.addEventListener('click', function() {

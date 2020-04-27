@@ -23,9 +23,13 @@
 
 	&__top-inner-2 {
 		display: flex;
-		justify-content: center;
+		// justify-content: center;
 		align-items: center;
 		height: 100%;
+	}
+
+	&__search {
+		margin: 0 auto;
 	}
 
 	&__mobile-btn {

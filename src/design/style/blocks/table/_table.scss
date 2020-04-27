@@ -511,6 +511,7 @@
 	}
 
 	&__tbody-td-2 {
+		text-align: center;
 		@media(max-width: $sm) {
 			width: 20%;			
 			text-align: center;
