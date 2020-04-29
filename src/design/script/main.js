@@ -120,8 +120,8 @@ $('.slick-1').slick({
 	speed: 300,
 	slidesToShow: 5,
 	slidesToScroll: 5,
-	prevArrow: '<button type="button" class="slider__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
-	nextArrow: '<button type="button" class="slider__arrow slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-arrow slick-prev _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 1200,
@@ -163,8 +163,8 @@ $('.slick-2').slick({
 	slidesToScroll: 1,
 	centerMode: true,
 	variableWidth: true,
-	prevArrow: '<button type="button" class="slider-2__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
-	nextArrow: '<button type="button" class="slider-2__arrow slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-arrow slick-prev _grey"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-arrow slick-next _grey"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 992,
@@ -182,8 +182,8 @@ $('.slick-3').slick({
 	speed: 300,
 	slidesToShow: 4,
 	slidesToScroll: 4,
-	prevArrow: '<button type="button" class="slider__arrow slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
-	nextArrow: '<button type="button" class="slider__arrow slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-arrow slick-prev _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 1200,
@@ -218,8 +218,8 @@ $('.slick-4').slick({
 	speed: 300,
 	slidesToShow: 4,
 	slidesToScroll: 4,
-	prevArrow: '<button type="button" class="slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-arrow slick-prev _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 1501,
@@ -254,8 +254,8 @@ $('.slick-5').slick({
 	slidesToShow: 5,
 	slidesToScroll: 5,
 	infinite: false, 
-	prevArrow: '<button type="button" class="slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-arrow slick-prev _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 1501,
@@ -288,8 +288,8 @@ $('.slick-6').slick({
 	slidesToShow: 3,
 	slidesToScroll: 3,
 	waitForAnimate: false,
-	prevArrow: '<button type="button" class="slick-prev"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-arrow slick-prev _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 1200,

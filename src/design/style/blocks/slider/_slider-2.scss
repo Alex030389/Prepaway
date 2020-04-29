@@ -5,6 +5,34 @@
 	padding-top: 57px;
 	padding-bottom: 57px;
 
+	.slick-center {
+		transform: scale(1);
+	}
+
+	.slick-arrow {
+		top: 50%;
+		transform: translateY(-50%);	
+		width: 70px;
+		height: 70px;
+
+		@media (max-width: $sm) {
+			display: none;
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	.slick-prev {
+		left: 15px;
+	}
+
+	.slick-next {
+		right: 15px;
+	}
+
 	@media (max-width: $sxl) {
 		padding-top: 90px;
 	}
@@ -15,6 +43,12 @@
 
 	@media (max-width: $lg) {
 		padding-top: 57px;
+	}
+
+	&._pt-xl-57px {
+		@media (max-width: $xl) {
+			padding-top: 57px;
+		}
 	}
 
 	&__discount-label {
@@ -52,56 +86,6 @@
 
 		@media (max-width: $sm) {
 			max-width: 200px;
-		}
-
-		&.slick-center {
-			transform: scale(1);
-		}
-	}
-
-
-	&__arrow {
-		@extend .btn-reset;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		z-index: 1;
-		background: linear-gradient(to top, #e9f1f8 0%, #ffffff 100%);
-		box-shadow: 0 10px 30px 5px rgba(59, 91, 117, 0.3);
-		width: 70px;
-		height: 70px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 50%;
-
-		@media (max-width: $sm) {
-			display: none;
-		}
-
-		svg {
-			width: 20px;
-			height: 20px;
-			fill: #8292a7;
-		}
-
-		&.slick-prev {
-			left: 15px;
-
-			svg {
-				position: relative;
-				right: 3px;
-			}
-
-		}
-
-		&.slick-next {
-			right: 15px;
-
-			svg {
-				position: relative;
-				left: 3px;
-			}
 		}
 	}
 }

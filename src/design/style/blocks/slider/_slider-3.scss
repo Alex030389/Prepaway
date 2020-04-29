@@ -64,14 +64,6 @@
 	.slick-arrow {
 		width: 50px;
 		height: 50px;
-		border-radius: 50%;
-		border: none;
-		background-image: linear-gradient(180deg, #fdb726 0%, #fca218 100%);
-		box-shadow: 0px 21px 50px -10px rgba(252, 101, 0, 0.4);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: absolute;
 		top: 30%;
 
 		@media (max-width: 1700px) {
@@ -82,8 +74,6 @@
 		svg {
 			width: 20px;
 			height: 20px;
-			fill: #fff;
-			position: relative;
 
 			@media (max-width: 1700px) {
 				width: 20px;
@@ -94,67 +84,14 @@
 
 	.slick-prev {
 		left: 8px;
-		z-index: 10;
-
-		@media (max-width: 1700px) {
-		}
-
-		svg {
-			right: 3px;
-		}
 	}
 
 	.slick-next {
 		right: 8px;
-		z-index: 10;
-
-		@media (max-width: 1700px) {
-		}
-
-		svg {
-			left: 3px;
-		}
 	}
 
 	.slick-dots {
-		@extend .list-reset;
 		padding-top: 20px;
-		text-align: center;
-		margin: 0;
-		width: 100%;
-		max-width: 100%;
-		overflow-x: auto;
-	}
-
-	.slick-dots li {
-		position: relative;
-		display: inline-block;
-		cursor: pointer;
-	}
-
-	.slick-dots li button {
-		transition-duration: 0.3s;
-		display: inline-block;
-		font-size: 0;
-		color: transparent;
-		width: 9px;
-		height: 9px;
-		padding: 0;
-		margin: 5px;
-		border-radius: 50%;
-		outline: none;
-
-		border: 1px solid #ccdff3;
-		background-color: #ddeaf7;
-	}
-
-	.slick-dots li.slick-active button {
-		width: 9px;
-		height: 9px;
-		border: 1px solid #fbc140;
-		margin: none;
-		background-color: #fbc140;
-		background-image: linear-gradient(to bottom, #fceb65 0%, #faa537 100%);
 	}
 
 	@media (max-width: $sm) {
