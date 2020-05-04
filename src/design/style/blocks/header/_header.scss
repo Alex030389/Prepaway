@@ -34,12 +34,13 @@
 
 	&__mobile-btn {
 		@extend .btn-reset;
+		display: inline-block;
 
 		&:first-child {
-			margin-right: 8px;
+			margin-right: 14px;
 
 			@media (max-width: 370px) {
-				margin-right: 5px;
+				margin-right: 8px;
 			}
 		}
 
@@ -48,8 +49,8 @@
 			height: 24px;
 
 			@media (max-width: 370px) {
-				width: 18px;
-				height: 18px;
+				width: 20px;
+				height: 20px;
 			}
 		}
 

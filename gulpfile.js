@@ -162,6 +162,15 @@ function cssBuild() {
     .pipe(dest(path.dist.style,))
 }
 
+function cssHost() {
+  return src(path.src.style)
+    .pipe(sass())
+    .pipe(cleancss())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(autoprefixer(['last 15 versions']))
+    .pipe(dest('x:/htdocs/design/css'))
+}
+
 
 // =============================================================== js
 function jsLib() {
@@ -187,6 +196,14 @@ function jsBuild() {
     .pipe(dest(path.dist.script))
 }
 
+function jsHost() {
+  return src(path.src.script)
+    .pipe(babel({ presets: ['@babel/env'] }))
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(dest('x:/htdocs/design/js'))
+}
+
 
 // =============================================================== watcher
 function watcher() {
@@ -196,7 +213,9 @@ function watcher() {
   watch(path.src.sprite, sprite);
   watch(path.src.styleLib, cssLib)
   watch(path.src.styleWatch, css);
+  watch(path.src.styleWatch, cssHost);
   watch(path.src.script, js);
+  watch(path.src.script, jsHost);
 }
 
 
@@ -210,8 +229,10 @@ exports.default = series(
     sprite,
     cssLib,
     css,
+    cssHost,
     jsLib,
     js,
+    jsHost,
   ),
   parallel(
     watcher,

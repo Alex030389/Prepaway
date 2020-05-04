@@ -102,8 +102,18 @@ $('[data-mfp-src="#modal-7"]').magnificPopup({
 	midClick: true 
 });
 
-const modalBtnCloseAr = document.querySelectorAll('.modal__btn-close');
 
+if(document.querySelector('#modal-8')) {
+	$.magnificPopup.open({
+		items: {
+			src: '#modal-8'
+		},
+		showCloseBtn: false,
+		midClick: true 
+	});
+}
+
+const modalBtnCloseAr = document.querySelectorAll('.modal__btn-close');
 if(modalBtnCloseAr != null) {
 	for(let i = 0; i < modalBtnCloseAr.length; i++) {
 		modalBtnCloseAr[i].addEventListener('click', function() {
@@ -112,10 +122,18 @@ if(modalBtnCloseAr != null) {
 	}	
 }
 
+const modalBtnCloseAr2 = document.querySelectorAll('.modal__btn-close-2');
+if(modalBtnCloseAr2 != null) {
+	for(let i = 0; i < modalBtnCloseAr2.length; i++) {
+		modalBtnCloseAr2[i].addEventListener('click', function() {
+			$.magnificPopup.close();
+		})
+	}	
+}
 
 // ================================================== slider ===
 $('.slick-1').slick({
-	// infinite: false,
+	// lazyLoad: 'progressive',
 	dots: true,
 	speed: 300,
 	slidesToShow: 5,

@@ -4,7 +4,6 @@ visually-hidden
 overflow
 list-reset
 link-reset
-caption-reset
 btn-reset
 */
 
@@ -47,13 +46,8 @@ btn-reset
 	}
 }
 
-.caption-reset {
-	padding: 0;
-	caption-side: top;
-	color: $c-main;
-}
-
 .btn-reset {
 	border: none;
 	background-color: transparent;
+	padding: 0;
 }
