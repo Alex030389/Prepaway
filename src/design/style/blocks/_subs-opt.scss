@@ -1,4 +1,5 @@
 .subs-opt {
+	display: block;
 	border: 2px solid #bdf0bd;
 	border-radius: 8px;
 	text-align: center;
@@ -6,6 +7,11 @@
 	transition: .3s;
 	cursor: pointer;
 	height: 100%;
+	margin: 0;
+
+	span {
+		display: block;
+	}
 
 	&__first {
 		@media(max-width: $sm) {
@@ -97,46 +103,10 @@
 		font-size: rem(19);
 	}
 
+
+
 	&._active {
-		border: 2px solid #34b734;
-		background-color: #34b734;
-		position: relative;
-
-		&::after {
-			content: "";
-			position: absolute;
-			top: 20px;
-			right: 20px;
-			width: 28px;
-			height: 28px;
-			border-radius: 50%;
-			background: #fff url(../img/icon/check-2.svg) no-repeat center center;
-
-			@media (max-width: $md) {
-				top: 10px;
-				right: 10px;
-				width: 20px;
-				height: 20px;
-				background-size: 80%;
-			}
-		}
-
-		.subs-opt__title,
-		.subs-opt__old,
-		.subs-opt__current,
-		.subs-opt__desc {
-			color: #fff;
-		}
-
-		.subs-opt__desc {
-			&::after {
-				background-color: #fff;
-			}
-		}
-
-		.subs-opt__month {
-			color: #167f16;
-		}
+	
 	}
 
 	@media (max-width: $lg) {
@@ -148,5 +118,47 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+}
+
+input:checked + .subs-opt {
+	border: 2px solid #34b734;
+	background-color: #34b734;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		background: #fff url(../img/icon/check-2.svg) no-repeat center center;
+
+		@media (max-width: $md) {
+			top: 10px;
+			right: 10px;
+			width: 20px;
+			height: 20px;
+			background-size: 80%;
+		}
+	}
+
+	.subs-opt__title,
+	.subs-opt__old,
+	.subs-opt__current,
+	.subs-opt__desc {
+		color: #fff;
+	}
+
+	.subs-opt__desc {
+		&::after {
+			background-color: #fff;
+		}
+	}
+
+	.subs-opt__month {
+		color: #167f16;
 	}
 }

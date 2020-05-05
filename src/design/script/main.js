@@ -176,7 +176,6 @@ $('.slick-1').slick({
 
 
 $('.slick-2').slick({
-	speed: 300,
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	centerMode: true,
@@ -373,9 +372,22 @@ $('.slider-4__list').magnificPopup({
 	},
 });
 
+$('.slider-2__list').magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	gallery: {
+		enabled: true
+	},
+});
 
 
-
+// ============================================================== premium: change total price
+$('input[type=radio][name=preferredSubscription]').on('change', function () {
+	$('#product_id').val($(this).val());
+	$('#mCount').text($(this).data('month'));
+	$('#mCaption').text($(this).data('month-label'));
+	$('#total_price').text($(this).data('price'));
+});
 
 // ========================================================= reseller-progress ===
 const resProgrLevels = document.querySelectorAll('.res-progr__level');
