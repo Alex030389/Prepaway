@@ -8,16 +8,23 @@
 	padding: rem(15);
 	background-color: #fff;
 	transition: .1s;
-	height: 180px;
-
+	// height: 180px;
+	height: 200px;
 
 	&__title {
+		text-align: center;
+		line-height: 1.1;
+
+		@media (max-width: $sxl) {
+			font-size: 16px;
+		}
 	}
 
 	&__wrap-img {
 		height: 70px;
 		display: flex;
 		align-items: center;
+		padding: 10px 20px;
 		
 		img {
 			max-height: 100%;

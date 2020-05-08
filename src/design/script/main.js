@@ -131,6 +131,17 @@ if(modalBtnCloseAr2 != null) {
 	}	
 }
 
+// ================================================== trim string
+// trimString(".cart-cert__title", 13);
+
+// function trimString(string, stringLength) {
+//   $(string).text(function (i, text) {
+//     if (text.length >= stringLength) {
+//       $(this).addClass('overflow-ellipsis');
+//     }
+//   });
+// }
+
 // ================================================== slider ===
 $('.slick-1').slick({
 	// lazyLoad: 'progressive',
@@ -412,15 +423,27 @@ Array.prototype.forEach.call(inputFile, function (input) {
 	inputFileStatus = label.querySelector('.input-file__status').innerText;
 
 	input.addEventListener('change', function (e) {
+		let fileName = '';
+		fileName = e.target.value.split('\\').pop();
+
 		let countFiles = '';
 		if (this.files && this.files.length >= 1)
 			countFiles = this.files.length;
 
 		if (countFiles)
-			label.querySelector('.input-file__status').innerText = 'Selected: ' + countFiles;
+		
+			// label.querySelector('.input-file__status').innerText = 'Selected: ' + countFiles;
+			label.querySelector('.input-file__status').innerText = fileName;
 		else
 			label.querySelector('.input-file__status').innerText = inputFileStatus;
 	});
+});
+
+$('#upload-form').submit(function (e) {
+	if (!($('#file-load')[0].files[0].size < 62914560)) { // 60 MB (this size is in bytes)
+			alert("File is over 60Mb in size!");
+			e.preventDefault();
+	}
 });
 
 

@@ -201,6 +201,10 @@
 			padding-left: rem(30);
 			width: 25%;
 
+			@media (max-width: $xl) {
+				width: 35%;
+			}
+
 			@media (max-width: $lg) {
 				padding-left: rem(10);
 			}

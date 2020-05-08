@@ -222,3 +222,16 @@
 .h-100 {
 	height: 100%;
 }
+
+
+// ================================================= my anchor
+.my-anchor {
+	font-size: 20px;
+	color: yellow;
+	background-color: red;
+	padding: 0 10px;
+
+	&.hide {
+		display: none;
+	}
+}
