@@ -47,6 +47,8 @@ const path = {
     ],
     scriptLib: [
       'node_modules/jquery/dist/jquery.min.js',
+      // 'node_modules/lozad/dist/lozad.min.js',
+      'src/design/script/libs/lazyload.min.js',
       'node_modules/svg4everybody/dist/svg4everybody.min.js',
       'node_modules/slick-carousel/slick/slick.min.js',
       'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',

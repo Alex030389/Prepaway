@@ -561,6 +561,13 @@ $('a[href*="#"]').click(function () {
   return false;
 });
 
+
+// ==================================================== lazy load
+const lazyLoadInstance = new LazyLoad({
+	elements_selector: ".lazy"
+	// ... more custom settings?
+});
+
 // ========================================================= arrow top
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 1500) {
