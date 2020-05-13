@@ -25,6 +25,14 @@
 		&._wide {
 			max-width: 250px !important;
 		}
+
+		&._px {
+
+			@media (max-width: $sxl) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
 	}
 
 	&__price-label {
