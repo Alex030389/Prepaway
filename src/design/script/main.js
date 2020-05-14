@@ -102,16 +102,21 @@ $('[data-mfp-src="#modal-7"]').magnificPopup({
 	midClick: true 
 });
 
+$('[data-mfp-src="#modal-8"]').magnificPopup({
+	showCloseBtn: false,
+	midClick: true 
+});
 
-if(document.querySelector('#modal-8')) {
-	$.magnificPopup.open({
-		items: {
-			src: '#modal-8'
-		},
-		showCloseBtn: false,
-		midClick: true 
-	});
-}
+
+// if(document.querySelector('#modal-8')) {
+// 	$.magnificPopup.open({
+// 		items: {
+// 			src: '#modal-8'
+// 		},
+// 		showCloseBtn: false,
+// 		midClick: true 
+// 	});
+// }
 
 const modalBtnCloseAr = document.querySelectorAll('.modal__btn-close');
 if(modalBtnCloseAr != null) {
@@ -520,6 +525,13 @@ for(let i = 0; i < slider5Item2.length; i++) {
 		},1);
 	})
 }
+
+
+// ============================================== hide empty table
+$("table:not(:has(td))").each(function (index) {
+	$(this).hide();
+});
+
 
 // =================================================== copy discount
 var copyCodeButton = document.querySelector('.promo-code__btn');

@@ -3,6 +3,10 @@
 	padding: 50px 20px 30px;
 	background-color: $c-lite-blue-2;
 	flex-direction: column;
+	
+	&._white {
+		background-color: #fff;
+	}
 
 	&__verif-label {
 		position: absolute;
@@ -23,15 +27,11 @@
 		}
 
 		&._wide {
-			max-width: 250px !important;
+			max-width: 200px;
 		}
 
-		&._px {
-
-			@media (max-width: $sxl) {
-				padding-left: 10px;
-				padding-right: 10px;
-			}
+		&._s-wide {
+			max-width: 300px;
 		}
 	}
 

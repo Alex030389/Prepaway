@@ -41,6 +41,15 @@
 		padding: rem(15) rem(60);
 		background-color: #ffffff;
 		box-shadow: 0 3px 14px rgba(2, 29, 79, 0.06);
+
+		&._ta-left {
+			text-align: left;
+		}
+
+		&._box-exam {
+			text-align: left;
+			padding: rem(15);
+		}
 	}
 
 	&__title {
