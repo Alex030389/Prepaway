@@ -215,9 +215,9 @@ function watcher() {
   watch(path.src.sprite, sprite);
   watch(path.src.styleLib, cssLib)
   watch(path.src.styleWatch, css);
-  // watch(path.src.styleWatch, cssHost);
   watch(path.src.script, js);
-  // watch(path.src.script, jsHost);
+  watch(path.src.styleWatch, cssHost);
+  watch(path.src.script, jsHost);
 }
 
 
@@ -231,9 +231,9 @@ exports.default = series(
     sprite,
     cssLib,
     css,
-    // cssHost,
     jsLib,
     js,
+    // cssHost,
     // jsHost,
   ),
   parallel(

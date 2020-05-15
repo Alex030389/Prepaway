@@ -102,21 +102,16 @@ $('[data-mfp-src="#modal-7"]').magnificPopup({
 	midClick: true 
 });
 
-$('[data-mfp-src="#modal-8"]').magnificPopup({
-	showCloseBtn: false,
-	midClick: true 
-});
+if(typeof examIdAr != 'undefined') {
+	for(let i = 0; i < examIdAr.length; i++) {
+		let examIdArEl = `[data-mfp-src="#modal-${examIdAr[i]}"]`;
 
-
-// if(document.querySelector('#modal-8')) {
-// 	$.magnificPopup.open({
-// 		items: {
-// 			src: '#modal-8'
-// 		},
-// 		showCloseBtn: false,
-// 		midClick: true 
-// 	});
-// }
+		$(examIdArEl).magnificPopup({
+			showCloseBtn: false,
+			midClick: true 
+		});
+	}
+}
 
 const modalBtnCloseAr = document.querySelectorAll('.modal__btn-close');
 if(modalBtnCloseAr != null) {
@@ -579,6 +574,12 @@ const lazyLoadInstance = new LazyLoad({
 	elements_selector: ".lazy"
 	// ... more custom settings?
 });
+
+// ===================================================== style
+const indivCardAr = document.querySelectorAll('.indiv-card');
+if(indivCardAr) {
+	indivCardAr[indivCardAr.length - 1].style.borderColor = 'transparent';
+}
 
 // ========================================================= arrow top
 $(window).scroll(function () {
