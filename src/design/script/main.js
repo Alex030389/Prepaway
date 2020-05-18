@@ -559,7 +559,7 @@ if(membNavMobileLink) {
 	}
 }
 
-// smooth scroll through anchor links
+// ===================================================== smooth scroll through anchor links
 var $page = $('html, body');
 $('a[href*="#"]').click(function () {
   $page.animate({
@@ -572,12 +572,11 @@ $('a[href*="#"]').click(function () {
 // ==================================================== lazy load
 const lazyLoadInstance = new LazyLoad({
 	elements_selector: ".lazy"
-	// ... more custom settings?
 });
 
 // ===================================================== style
 const indivCardAr = document.querySelectorAll('.indiv-card');
-if(indivCardAr) {
+if(indivCardAr.length) {
 	indivCardAr[indivCardAr.length - 1].style.borderColor = 'transparent';
 }
 
