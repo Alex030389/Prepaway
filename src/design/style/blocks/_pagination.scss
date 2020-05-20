@@ -17,6 +17,8 @@
 		}
 		
 		&._prev {
+			background-color: #f1f2f3;
+			margin-right: rem(50);
 
 			svg {
 				margin-right: rem(8)
@@ -24,6 +26,9 @@
 		}
 
 		&._next {
+			background-color: #f1f2f3;
+			margin-left: rem(50);
+
 			svg {
 				margin-left: rem(8)
 			}
@@ -33,7 +38,6 @@
 	&__list {
 		@extend .list-reset;
 		display: flex;
-		margin: 0 rem(50);
 
 		@media (max-width: $xl) {
 			margin: 0 rem(30);
@@ -55,7 +59,7 @@
     font-size: rem(19);
     font-weight: bold;
     display: inline-block;
-    border: 2px solid #f1f2f3;
+		border: 2px solid #f1f2f3;
     padding: rem(15) rem(22);
     color: #5d7b92;
     border-radius: rem(4);
@@ -67,10 +71,10 @@
 		}
 
 		&._active {
-			background-image: linear-gradient(180deg, #fdb726 0%, #fca218 100%);
-			color: #ffffff;
-			border-color: transparent;
-			box-shadow: 0 21px 32px -10px rgba(252, 101, 0, 0.3);
+		// 	background-image: linear-gradient(180deg, #fdb726 0%, #fca218 100%);
+		// 	color: #ffffff;
+		// 	border-color: transparent;
+		// 	box-shadow: 0 21px 32px -10px rgba(252, 101, 0, 0.3);
 
 			svg {
 				fill: #fff;

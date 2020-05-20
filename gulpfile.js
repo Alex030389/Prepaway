@@ -47,15 +47,14 @@ const path = {
     ],
     scriptLib: [
       'node_modules/jquery/dist/jquery.min.js',
-      // 'node_modules/lozad/dist/lozad.min.js',
-      'src/design/script/libs/lazyload.min.js',
       'node_modules/svg4everybody/dist/svg4everybody.min.js',
+      'src/design/script/libs/lazyload.min.js',
       'node_modules/slick-carousel/slick/slick.min.js',
       'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
       // 'node_modules/selectric/public/jquery.selectric.min.js',
     ],
-    script: 'src/design/script/**',
-    scriptWatch: 'src/design/script/**'
+    script: 'src/design/script/main.js',
+    scriptWatch: 'src/design/script/main.js'
   },
 };
 
@@ -233,8 +232,8 @@ exports.default = series(
     css,
     jsLib,
     js,
-    // cssHost,
-    // jsHost,
+    cssHost,
+    jsHost,
   ),
   parallel(
     watcher,
