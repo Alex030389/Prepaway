@@ -2,11 +2,9 @@
 	display: flex;
 	justify-content: center;
 
-&__label {
-		display: inline-flex;
+	&__label {
+		display: flex;
 		align-items: center;
-		font-weight: 700;
-		font-size: rem(19);
 		cursor: pointer;
 
 		&:not(:last-child) {
@@ -25,7 +23,6 @@
 			}
 
 			&._active {}
-
 		}
 
 		&._dislike {
@@ -39,6 +36,11 @@
 				}
 			}
 		}
+	}
+
+	&__value {
+		font-weight: 700;
+		font-size: rem(19);
 	}
 
 	&__box-icon {

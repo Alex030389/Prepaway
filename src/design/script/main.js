@@ -87,7 +87,7 @@ $('[data-mfp-src="#modal-4"]').magnificPopup({
 	midClick: true 
 });
 
-$('[data-mfp-src="#modal-5"]').magnificPopup({
+$('[data-mfp-src="#login_popup"]').magnificPopup({
 	showCloseBtn: false,
 	midClick: true 
 });
@@ -98,6 +98,11 @@ $('[data-mfp-src="#modal-6"]').magnificPopup({
 });
 
 $('[data-mfp-src="#modal-7"]').magnificPopup({
+	showCloseBtn: false,
+	midClick: true 
+});
+
+$('[data-mfp-src="#product_popup"]').magnificPopup({
 	showCloseBtn: false,
 	midClick: true 
 });
