@@ -528,9 +528,9 @@ for(let i = 0; i < slider5Item2.length; i++) {
 
 
 // ============================================== hide empty table
-$("table:not(:has(td))").each(function (index) {
-	$(this).hide();
-});
+// $("table:not(:has(td))").each(function (index) {
+// 	$(this).hide();
+// });
 
 
 // =================================================== copy discount

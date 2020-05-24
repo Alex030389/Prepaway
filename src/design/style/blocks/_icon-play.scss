@@ -1,9 +1,5 @@
 .icon-play {
 	max-width: rem(30);
+	width: 100%;
 	position: relative;
-	// top: px;
-
-	@media (max-width: $sm) {
-		top: -2px;
-	}
 }
