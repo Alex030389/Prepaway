@@ -377,8 +377,6 @@ $('.slick-7').slick({
 });
 
 
-
-
 // ============================================================== slider-magnific
 $('.slider-4__list').magnificPopup({
 	delegate: 'a',
@@ -507,6 +505,13 @@ const slider5List = document.querySelector('.slider-5__list');
 const slider5Item2 = document.querySelectorAll('.slider-5__item-2');
 const tabS = document.querySelector('.tab-s');
 const tabSItems = document.querySelectorAll('.tab-s__item');
+
+const btnOpenTab = document.querySelector('[data-btn="open-tab"]');
+if(btnOpenTab) {
+	btnOpenTab.addEventListener('click', function() {
+		slider5Item2[0].click();
+	})
+}
 
 for(let i = 0; i < slider5Item2.length; i++) {
 	slider5Item2[i].addEventListener('click', function() {

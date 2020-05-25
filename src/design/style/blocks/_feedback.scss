@@ -18,7 +18,8 @@
 
 	&__text {
 		font-size: rem(19);
-
+		text-transform: uppercase;
+		
 		@media (max-width: $md) {
 			font-size: rem(16);
 		}
