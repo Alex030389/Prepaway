@@ -77,32 +77,37 @@ $('[data-mfp-src="#modal-2"]').magnificPopup({
 	midClick: true 
 });
 
-$('[data-mfp-src="#modal-3"]').magnificPopup({
+$('[data-mfp-src="#how-it-works"]').magnificPopup({
 	showCloseBtn: false,
 	midClick: true 
 });
 
-$('[data-mfp-src="#modal-4"]').magnificPopup({
+$('[data-mfp-src="#reseller-how-it-works"]').magnificPopup({
 	showCloseBtn: false,
 	midClick: true 
 });
 
-$('[data-mfp-src="#login_popup"]').magnificPopup({
+$('[data-mfp-src="#not-convinced"]').magnificPopup({
 	showCloseBtn: false,
 	midClick: true 
 });
 
-$('[data-mfp-src="#modal-6"]').magnificPopup({
+$('[data-mfp-src="#login"]').magnificPopup({
 	showCloseBtn: false,
 	midClick: true 
 });
 
-$('[data-mfp-src="#modal-7"]').magnificPopup({
+$('[data-mfp-src="#premium-file"]').magnificPopup({
 	showCloseBtn: false,
 	midClick: true 
 });
 
-$('[data-mfp-src="#product_popup"]').magnificPopup({
+$('[data-mfp-src="#register"]').magnificPopup({
+	showCloseBtn: false,
+	midClick: true 
+});
+
+$('[data-mfp-src="#premium-bundle"]').magnificPopup({
 	showCloseBtn: false,
 	midClick: true 
 });
@@ -589,6 +594,11 @@ const indivCardAr = document.querySelectorAll('.indiv-card');
 if(indivCardAr.length) {
 	indivCardAr[indivCardAr.length - 1].style.borderColor = 'transparent';
 }
+
+
+
+
+
 
 // ========================================================= arrow top
 $(window).scroll(function () {
