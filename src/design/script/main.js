@@ -544,17 +544,17 @@ for(let i = 0; i < slider5Item2.length; i++) {
 
 
 // =================================================== copy discount
-var copyCodeButton = document.querySelector('.promo-code__btn');
+var copyCodeButton = document.querySelector('[data-promo-code="copy"]');
 
 if(copyCodeButton) {
 	copyCodeButton.addEventListener('click', onCopyCodeButtonClick);
 
 	function onCopyCodeButtonClick(evt) {
 		evt.preventDefault();
-		evt.target.classList.add('button--copy--success');
+		// evt.target.classList.add('button--copy--success');
 		evt.target.textContent = 'Copied';
 		var range = document.createRange();
-		range.selectNode(document.querySelector('.promo-code__input'));
+		range.selectNode(document.querySelector('[data-promo-code="value"]'));
 		window.getSelection().removeAllRanges();
 		window.getSelection().addRange(range);
 		document.execCommand('copy');
@@ -594,10 +594,6 @@ const indivCardAr = document.querySelectorAll('.indiv-card');
 if(indivCardAr.length) {
 	indivCardAr[indivCardAr.length - 1].style.borderColor = 'transparent';
 }
-
-
-
-
 
 
 // ========================================================= arrow top
