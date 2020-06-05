@@ -89,32 +89,19 @@ select {
 	display: none;
 }
 
-select {
-	//-webkit-appearance: none;
-	//-moz-appearance: none;
-	//appearance: none;
-}
-
-select::-ms-expand {
-	//display: none;
-}
-
-:focus {
-	//outline: none;
-}
-
- //.no-touch {
- //	&:hover,
- //	&:focus {
- //
- //	}
- //}
-
 /* изменить цвет автозаполнения формы */
 :-webkit-autofill {
 	box-shadow: 0 0 100px #fff inset;
 	-webkit-text-fill-color: currentColor;
 }
+
+// remove arrows input type="text"
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+// ====
 
 .main {
 	flex-grow: 1;

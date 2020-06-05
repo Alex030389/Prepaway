@@ -67,12 +67,13 @@ function hideMblMenu() {
 }
 
 // ================================================= modal
-$('[data-mfp-src="#modal-1"]').magnificPopup({
-	showCloseBtn: false,
-	midClick: true 
-});
+// $('[data-mfp-src="#get-discount"]').magnificPopup({
+// 	showCloseBtn: false,
+// 	midClick: true
+// }).magnificPopup('open');
 
-$('[data-mfp-src="#modal-2"]').magnificPopup({
+
+$('[data-mfp-src="#get-discount-2"]').magnificPopup({
 	showCloseBtn: false,
 	midClick: true 
 });
@@ -109,7 +110,7 @@ $('[data-mfp-src="#register"]').magnificPopup({
 
 $('[data-mfp-src="#premium-bundle"]').magnificPopup({
 	showCloseBtn: false,
-	midClick: true 
+	midClick: true
 });
 
 if(typeof examIdAr != 'undefined') {
@@ -123,7 +124,7 @@ if(typeof examIdAr != 'undefined') {
 	}
 }
 
-const modalBtnCloseAr = document.querySelectorAll('.modal__btn-close');
+const modalBtnCloseAr = document.querySelectorAll('[data-btn="close-modal"]');
 if(modalBtnCloseAr != null) {
 	for(let i = 0; i < modalBtnCloseAr.length; i++) {
 		modalBtnCloseAr[i].addEventListener('click', function() {
@@ -132,7 +133,7 @@ if(modalBtnCloseAr != null) {
 	}	
 }
 
-const modalBtnCloseAr2 = document.querySelectorAll('.modal__btn-close-2');
+const modalBtnCloseAr2 = document.querySelectorAll('[data-btn="close-modal-2"]');
 if(modalBtnCloseAr2 != null) {
 	for(let i = 0; i < modalBtnCloseAr2.length; i++) {
 		modalBtnCloseAr2[i].addEventListener('click', function() {
@@ -611,6 +612,133 @@ $('.btn-up').on('click', function () {
 		scrollTop: 0
 	}, 500);
 });
+
+
+// ======================================================= like dislike
+$('#likeBtn').on('click', 'a', function () {
+	var type, check;
+	if ($(this).attr('id') == 'ilike') {
+		type = 'like_click';
+	}	else {
+		type = 'dislike_click';
+	}
+
+	check = $(this).attr("class");
+	$.ajax({
+		type: "POST",
+		url: urlVote,
+		data: {'action': type, 'check': check, 'exam': fileId},
+		cache: false,
+		success: function (response) {
+			document.location.reload(true)
+		}
+	});
+});
+
+// ======================================================= video player
+let videoListOpen = document.querySelectorAll('[data-video-list="open"]');
+
+for (let i = 0; i < videoListOpen.length; i++) {
+  videoListOpen[i].addEventListener('click', function(event) {
+		let videoListBtnAr = this.querySelectorAll('.video-list__btn');
+		let indexCurrentElement = Number(event.target.getAttribute('data-index'));
+		openPlayer(makeVideoList(videoListBtnAr), indexCurrentElement);
+  })
+}
+
+function makeVideoList(videoListBtnAr) {
+  let videoList = [];
+
+  for (let i = 0; i < videoListBtnAr.length; i++) {
+    let id = videoListBtnAr[i].getAttribute('data-id');
+    let title = videoListBtnAr[i].getAttribute('data-title');
+    videoList.push(new Object({id: id, title: title}))
+  }
+  return videoList;
+}
+
+
+function openPlayer(videoList, index) {
+  const player = new Plyr('#player', {
+    controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen']
+  });
+
+  $.magnificPopup.open({
+    items: {
+      src: '#video-popup'
+    },
+    // closeBtnInside: false,
+    type: 'inline',
+    callbacks: {
+      beforeClose: function() {
+        player.destroy();
+      }
+    }
+  }, 0);
+
+
+  let videoPlayer = document.querySelector('#player');
+
+  let plyrControls = document.querySelector('.plyr__controls');
+  let plyrControl = document.querySelector('.plyr__control');
+
+  plyrControls.insertAdjacentHTML('afterbegin', '<div class="player-title"></div>');
+  let videoTitle = document.querySelector('.player-title');
+
+  plyrControl.insertAdjacentHTML('beforebegin', '<button type="button" class="plyr-prev"></button>');
+  plyrControl.insertAdjacentHTML('afterend', '<button type="button" class="plyr-next"></button>');
+
+  let plyrPrev = document.querySelector('.plyr-prev');
+  let plyrNext = document.querySelector('.plyr-next');
+
+
+  let source = videoPath + videoList[index].id;
+
+  videoPlayer.setAttribute('src', source);
+  videoTitle.innerHTML = videoList[index].title;
+
+  checkButtons(videoList, index);
+
+
+  plyrPrev.addEventListener('click', function() {
+    index--;
+
+    source = videoPath + videoList[index].id;
+
+    videoPlayer.setAttribute('src', source);
+
+    videoTitle.innerHTML = videoList[index].title;
+
+    checkButtons(videoList, index);
+  });
+
+  plyrNext.addEventListener('click', function() {
+    index++;
+
+    source = videoPath + videoList[index].id;
+
+    videoPlayer.setAttribute('src', source);
+
+    videoTitle.innerHTML = videoList[index].title;
+
+    checkButtons(videoList, index);
+  });
+
+
+  function checkButtons(videoList, index) {
+    if (index === 0) {
+      plyrPrev.setAttribute('disabled', 'disabled');
+    } else {
+      plyrPrev.removeAttribute('disabled');
+
+    }
+    if (index === videoList.length - 1) {
+      plyrNext.setAttribute('disabled', 'disabled');
+    } else {
+      plyrNext.removeAttribute('disabled');
+    }
+  }
+}
 
 
 // ============================================================ stickFooter

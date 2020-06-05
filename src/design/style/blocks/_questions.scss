@@ -1,0 +1,30 @@
+.questions {
+
+	&__title {
+		h2 {
+			font-family: $ff-title;
+			font-size: rem(28);
+			font-weight: 700;
+			letter-spacing: -1.8px;
+		}
+		margin-bottom: rem(14);
+	}
+
+	&__text {
+
+	}
+
+	&__list {
+
+	}
+
+	&__item {
+
+	}
+
+	&__answer {
+		h5 {
+			font-size: rem(22);
+		}
+	}
+}

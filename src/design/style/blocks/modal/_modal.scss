@@ -98,18 +98,32 @@
 	}
 
 	&__label {
+		width: 140px;
+		height: 140px;
 		position: absolute;
-		bottom: 12%;
-		right: 10%;
-		color: #964509;
-		font-size: 26px;
-		width: 100px;
-		font-weight: 700;
-		text-align: center;
+		bottom: 0;
+		right: 19px;
+		background: url(/design/img/ui/you-save.png) center center no-repeat;
+		background-size: 100%;
 
 		@media (max-width: $lg) {
-			font-size: 18px;
-			right: 1%;
+			width: 120px;
+			height: 120px;
+			right: 0;
+		}
+		
+		span {
+			position: absolute;
+			bottom: 35%;
+			right: 0;
+			width: 100%;
+			color: #964509;
+			font-size: 26px;
+			font-weight: 700;
+			text-align: center;
+			@media (max-width: $lg) {
+				font-size: 18px;
+			}
 		}
 	}
 

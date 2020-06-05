@@ -42,6 +42,7 @@
 @import "blocks/table/table";
 // ==================================== modal ===
 @import "blocks/modal/modal";
+@import "blocks/modal/video-popup";
 // =====================================================
 // ==================================== ather blocks ===
 // =====================================================
@@ -94,10 +95,11 @@
 @import "blocks/prom-cart";
 
 @import "blocks/search-result";
+@import "blocks/questions";
 // ============================== blog ===
-@import "blocks/post-list";
-@import "blocks/pagination";
-@import "blocks/post";
+// @import "blocks/post-list";
+// @import "blocks/pagination";
+// @import "blocks/post";
 
 @import "blocks/footer/footer";
 

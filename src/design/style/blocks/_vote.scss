@@ -22,7 +22,14 @@
 				}
 			}
 
-			&._active {}
+			&._active {
+				.vote__box-icon {
+					background-color: #46b846;		 
+					svg {
+						fill: #fff;
+					}
+				}
+			}
 		}
 
 		&._dislike {
@@ -33,6 +40,15 @@
 
 				svg {
 					fill: #fb5e5f;
+				}
+			}
+
+			&._active {
+				.vote__box-icon {
+					background-color: #fb5e5f;	 
+					svg {
+						fill: #fff;
+					}
 				}
 			}
 		}

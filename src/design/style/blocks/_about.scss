@@ -6,6 +6,10 @@
 	margin-bottom: rem(16);
 	font-size: rem(19);
 
+	&._large {
+		max-height: 235px;
+	}
+
 	&::after {
 		content: "";
 		position: absolute;
