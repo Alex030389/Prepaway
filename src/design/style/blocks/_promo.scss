@@ -1,18 +1,27 @@
 .promo {
-	// padding: 40px 0;
 	text-align: center;
+	padding: 42px 0 42px;
+
+	@media (max-width: $md) {
+		padding: 20px 0 20px;
+	}
 
 	&__title {
-		font-size: 3.125rem;
-		margin-bottom: 1.875rem;
+		font-size: 3.5rem;
+		margin-bottom: 28px;
 		font-family: $ff-title;
-		letter-spacing: -1px;
-		font-weight: 700;
-		line-height: 1.1;
+		letter-spacing: -3.5px;
+		font-weight: 600;
+		line-height: 1.08;
+
+		@media (max-width: $xl) {
+			font-size: 2.7rem;
+			margin-bottom: 20px;
+		}
 
 		@media (max-width: $md) {
 			font-size: 2rem;
-			margin-bottom: 20px;
+			letter-spacing: -1px;
 		}
 	}
 
@@ -20,6 +29,10 @@
 		font-size: 1.5rem;
 		color: $c-subtitle;
 		letter-spacing: -.5px;
+		
+		p {
+			margin-bottom: 12px;
+		}
 
 		@media (max-width: $md) {
 			font-size: 1.3rem;

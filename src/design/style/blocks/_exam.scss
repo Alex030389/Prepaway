@@ -57,13 +57,12 @@
 
 	&__box-price {
 		text-align: center;
-		font-weight: 700;
 		font-family: $ff-title;
 	}
 
 	&__old-price {
 		text-decoration: line-through;
-		color: $c-red;
+		color: #fc766b;
 		font-size: rem(19);
 
 		@media (max-width: $md) {
@@ -72,7 +71,7 @@
 	}
 
 	&__new-price {
-		color: $c-green-1;
+		color: #46b846;
 		font-size: rem(26);
 
 		@media (max-width: $md) {

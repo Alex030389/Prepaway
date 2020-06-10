@@ -1,5 +1,6 @@
 .premium-total {
 	background-color: #eff4fb;
+	overflow: hidden;
 
 	&__total-box {
 		@media (max-width: $md) {
@@ -104,8 +105,30 @@
 		}
 	}
 
+	&__bg-blue {
+		position: relative;
+		
+		&::before {
+			content: "";
+			position: absolute;
+			top: -100px;
+			left: 0;
+			background-color: #E6ECF6;
+			bottom: -100px;
+			width: 3000px;
+			z-index: 1;
+
+			@media (max-width: $lg) {
+				top: -1rem;
+				width: 100%;
+				bottom: 0;
+			}
+		}
+	}
+
 	&__card-box {
-		// background-color: #E6ECF6;
+		position: relative;
+		z-index: 10;
 		img {
 			display: inline-block;
 			margin-bottom: rem(15);
@@ -115,4 +138,6 @@
 			text-align: center;
 		}
 	}
+
+
 }

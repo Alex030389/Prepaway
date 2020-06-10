@@ -1,7 +1,7 @@
 .comments {
 
 	&__title {
-		margin-bottom: rem(24);
+		margin-bottom: 9px;
 
 		span {
 			font-weight: 600;			
@@ -13,6 +13,7 @@
 			font-size: rem(16);
 			display: inline-block;
 			margin-left: 30px;
+			letter-spacing: -0.3px;
 		}
 	}
 
@@ -21,8 +22,8 @@
 	}
 	
 	&__item {
-		padding-bottom: rem(28);
-		margin-bottom: rem(22);
+		padding-bottom: rem(33);
+		margin-bottom: rem(14);
 		
 		&:not(:last-child) {
 			border-bottom: 1px solid $c-lite-grey;

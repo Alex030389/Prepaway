@@ -1,25 +1,15 @@
 .slider {
 	background: url("/design/img/ui/slider-bg.jpg") repeat-x bottom center;
-	background-size: auto 240px;
+	background-size: auto 233px;
 	padding-bottom: 40px;
 
 	.slick-arrow {
 		width: 70px;
 		height: 70px;		
 
-		@media (max-width: 1700px) {
-			width: 50px;
-			height: 50px;
-		}
-
 		svg {
-			width: 30px;
-			height: 30px;
-
-			@media (max-width: 1700px) {
-				width: 20px;
-				height: 20px;
-			}
+			width: 28px;
+			height: 28px;
 		}
 	}
 
@@ -28,7 +18,11 @@
 		z-index: 10;
 
 		@media (max-width: 1700px) {
-			right: 97%;
+			right: calc(100% - 65px);
+		}
+
+		@media (max-width: 1550px) {
+			right: calc(100% - 100px);
 		}
 	}
 
@@ -37,7 +31,11 @@
 		z-index: 10;
 
 		@media (max-width: 1700px) {
-			left: 97%;
+			left: calc(100% - 65px);
+		}
+
+		@media (max-width: 1550px) {
+			left: calc(100% - 100px);
 		}
 	}
 
@@ -45,16 +43,23 @@
 	&__list {
 		margin: 0 -30px;
 
-		@media (max-width: 1700px) {
+		@media (max-width: 1530px) {
+			margin: 0 -15px;
+		}
+
+		@media (max-width: $md) {
 			margin: 0;
 		}
 
 		.slick-arrow {
-			top: 21%;
+			top: 19%;
 
-			@media (max-width: 1700px) {
-				opacity: .8;
-				top: 25%;
+			@media (max-width: 1550px) {
+				opacity: .3;
+
+				&:hover {
+					opacity: 1;
+				}
 			}
 		}
 
@@ -65,6 +70,7 @@
 
 	&__list-2 {
 		margin: 0 -20px;
+
 
 		@media (max-width: $md) {
 			margin: 0 -5px;
@@ -78,8 +84,9 @@
 	&__item {
 		position: relative;
 		margin: 0 30px;
+		max-width: 315px;
 
-		@media (max-width: 1700px) {
+		@media(max-width: $md) {
 			margin: 0 10px;
 		}
 	}
@@ -100,6 +107,11 @@
 	&__link {
 		display: block;
 		text-align: center;
+		font-size: rem(18);
+
+		@media (max-width: $sm) {
+			font-size: rem(16);
+		}
 	}
 
 	&__wrap-img {
@@ -112,11 +124,16 @@
 		background-color: #ffffff;
 		border: 1px solid #eff1f2;
 		border-radius: 4px;
-		box-shadow: 0 15px 15px 0px rgba(32, 70, 128, 0.21);
+		// box-shadow: 0 15px 15px 0px rgba(32, 70, 128, 0.21);
+		box-shadow: 0 20px 60px -10px rgba(32, 70, 128, 0.21);
 		
 		img {
 			max-height: 100%;
 			flex-shrink: 0;
+		}
+
+		@media (max-width: 1700px) {
+			padding: 15px 40px;
 		}
 
 		@media (max-width: $sxl) {
@@ -138,6 +155,19 @@
 
 	@media (max-width: $sm) {
 		padding-bottom: 20px;
-		background-size: auto 140px;
+		background-size: auto 200px;
 	}
+}
+
+.slider__list,
+.slider__list-2,
+.slider-3__list {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 1s ease;
+}
+
+.slick-initialized {
+	visibility: visible;
+	opacity: 1;    
 }

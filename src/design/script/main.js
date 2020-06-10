@@ -164,35 +164,34 @@ $('.slick-1').slick({
 	nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
 	responsive: [
 		{
+			breakpoint: 1700,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 4,
+			}
+		},
+		{
 			breakpoint: 1200,
 			settings: {
-				arrows: false
+				slidesToShow: 3,
+				slidesToScroll: 3,
 			}
 		},
 		{
 			breakpoint: 992,
 			settings: {
-				arrows: false,
-				slidesToShow: 3,
-				slidesToScroll: 3,
+				slidesToShow: 2,
+				slidesToScroll: 2,
 			}
 		},
 		{
 			breakpoint: 768,
 			settings: {
 				arrows: false,
-				slidesToShow: 3,
-				slidesToScroll: 3,
-			}
-		},
-		{
-			breakpoint: 576,
-			settings: {
-				arrows: false,
 				slidesToShow: 2,
 				slidesToScroll: 2,
 			}
-		},
+		}
 	]
 });
 
@@ -255,10 +254,12 @@ $('.slick-3').slick({
 $('.slick-4').slick({
 	dots: true,
 	speed: 300,
-	slidesToShow: 4,
-	slidesToScroll: 4,
+	slidesToShow: 3,
+	slidesToScroll: 3,
 	prevArrow: '<button type="button" class="slick-arrow slick-prev _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+	centerMode: true,
+	centerPadding: '50px',
 	responsive: [
 		{
 			breakpoint: 1501,
@@ -270,7 +271,8 @@ $('.slick-4').slick({
 		{
 			breakpoint: 1200,
 			settings: {
-				arrows: false,
+				centerMode: false,
+				centerPadding: '0px',
 				slidesToShow: 3,
 				slidesToScroll: 3,
 			}
@@ -635,14 +637,24 @@ $('#likeBtn').on('click', 'a', function () {
 	});
 });
 
+// ============================================================================ btn-scale
+const btnScale = document.querySelector('[data-js="btn-scale"]');
+if(btnScale) {
+	btnScale.addEventListener('click', function() {
+		document.querySelector('.slick-current').click();
+	})
+}
+
 // ======================================================= video player
-let videoListOpen = document.querySelectorAll('[data-video-list="open"]');
+let videoListOpen = document.querySelectorAll('[data-js="video-list"]');
 
 for (let i = 0; i < videoListOpen.length; i++) {
   videoListOpen[i].addEventListener('click', function(event) {
-		let videoListBtnAr = this.querySelectorAll('.video-list__btn');
-		let indexCurrentElement = Number(event.target.getAttribute('data-index'));
-		openPlayer(makeVideoList(videoListBtnAr), indexCurrentElement);
+		let videoListBtnAr = this.querySelectorAll('[data-video-btn="open"]');
+		let indexCurrentElement = Number(event.target.getAttribute('data-index')) - 1;
+		if(videoListBtnAr.length) {
+			openPlayer(makeVideoList(videoListBtnAr), indexCurrentElement);
+		}
   })
 }
 

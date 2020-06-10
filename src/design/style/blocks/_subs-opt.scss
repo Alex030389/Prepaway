@@ -23,7 +23,7 @@
 		font-family: $ff-title;
 		letter-spacing: -0.05em;
 		font-size: rem(24);
-		font-weight: 700;
+		font-weight: 600;
 		color: #3eb53e;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -65,10 +65,14 @@
 		}
 	}
 
+	&__second {
+		letter-spacing: -0.1em;
+	}
+
 	&__old {
 		font-family: $ff-title;
 		font-size: rem(32);
-		font-weight: 700;
+		font-weight: 600;
 		text-decoration: line-through;
 
 		@media (max-width: $lg) {
@@ -83,7 +87,9 @@
 	&__current {
 		font-family: $ff-title;
 		font-size: rem(56);
-		font-weight: 700;
+		font-weight: 600;
+		line-height: 1.1;
+		margin-bottom: rem(8);
 
 		@media (max-width: $lg) {
 			font-size: rem(35);
@@ -91,6 +97,7 @@
 
 		@media (max-width: $md) {
 			font-size: rem(30);
+			margin-bottom: 0;
 		}
 
 		@media (max-width: $sm) {
@@ -101,12 +108,6 @@
 	&__month {
 		color: #a7b9c7;
 		font-size: rem(19);
-	}
-
-
-
-	&._active {
-	
 	}
 
 	@media (max-width: $lg) {
@@ -147,9 +148,12 @@ input:checked + .subs-opt {
 
 	.subs-opt__title,
 	.subs-opt__old,
-	.subs-opt__current,
-	.subs-opt__desc {
+	.subs-opt__current {
 		color: #fff;
+	}
+
+	.subs-opt__desc {
+		color: #62f362;
 	}
 
 	.subs-opt__desc {

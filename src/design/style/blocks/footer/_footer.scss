@@ -3,32 +3,29 @@
 	background-color: $c-lite-grey-3;
 
 	&__logo {
+		margin-left: 120px;
 
+		@media (max-width: $sxl) {
+			margin-left: 0px;
+		}
 	}
 
 	&__nav {
-		margin: 0 -10px;
+		margin: 0 -6px;
+		max-width: 745px;
 
 		ul {
 			@extend .list-reset;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center;
-
-			@media (max-width: $md) {
-				justify-content: start;
-			}
 		}
 
 		li {
-			margin: 0 10px 16px;
+			margin: 0 6px 16px;
 		}
 	}
 
 	&__copyright {
-		border-top: 1px solid $c-lite-blue;
-		text-align: center;
-		padding: 15px 0;
 		color: $c-subtitle;
 	}
 }

@@ -61,8 +61,8 @@
 
 		tr {
 
-			&:nth-child(odd) {
-				background-color: $c-lite-grey-2;
+			&:nth-child(even) {
+				background-color: #f7f8fa;
 			}
 
 			@media (max-width: $sm) {
@@ -327,18 +327,6 @@
 			fill: $c-blue-2;
 		}
 	}
-
-	&__btn {
-		@extend .btn-reset;
-		background-color: $c-blue-2;
-		color: #fff;
-		padding: rem(1) rem(8) rem(2);
-		border-radius: rem(4);
-		&:hover {
-			color: #fff;
-			text-decoration: none;
-		}
-	}
 }
 
 
@@ -498,6 +486,10 @@
 // =============================================== table-cart
 .table-cart {
 	width: 100%;
+
+	@media (max-width: $md) {
+		font-size: rem(16) !important;
+	}
 
 	tr {
 		&:not(:last-child) {

@@ -27,6 +27,10 @@
 
 		&:not(:last-child) {
 			margin-right: rem(32);
+
+			@media (max-width: $xl) {
+				margin-right: rem(16);
+			}
 		}
 
 		@media (max-width: $md) {

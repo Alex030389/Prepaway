@@ -1,9 +1,8 @@
 .about {
-	max-height: 120px;
+	max-height: 50px;
 	overflow-y: hidden;
-	border-bottom: 1px solid $c-lite-grey-2;
 	position: relative;
-	margin-bottom: rem(16);
+	margin-bottom: 10px;
 	font-size: rem(19);
 
 	&._large {

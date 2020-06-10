@@ -1,9 +1,9 @@
 .input {
 	border: 1px solid $c-lite-grey;
 	color: #354c5e;
+	background-color: #fbfcff;
 	letter-spacing: -0.8px;
-	padding: rem(13) rem(20);
-	border-radius: rem(4);
+	padding: rem(13) rem(20);	
 	font-size: rem(19);
 
 	&:focus {
@@ -25,14 +25,18 @@
 	&._green {
 		border-color: #3EB53E;
 		outline: none;
+		border-radius: .25rem;
+	}
+
+	&._bc_white {
+		background-color: #fff;
+		border-radius: rem(4);
 	}
 
 	@media (max-width: $lg) {
 		padding: rem(8) rem(15);
 	}
 }
-
-
 
 .input-readonly {
 	border: none;
@@ -47,4 +51,17 @@
 	@media (max-width: $md) {
 		text-align: center;
 	}
+}
+
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+	appearance: none;
+	padding-right: 24px !important;
+	background: url(/design/img/ui/select-arrow.svg) no-repeat 95% center;
+}
+
+select::-ms-expand {
+  display: none;
 }

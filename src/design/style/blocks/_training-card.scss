@@ -5,7 +5,7 @@
 		margin-bottom: 22px;
 		width: 100%;
 
-		@media (max-width: $lg) {
+		@media (max-width: $md) {
 			margin-bottom: 0;
 			padding-right: 20px;
 			width: 40%;
@@ -13,7 +13,7 @@
 	}
 
 	&__desc {
-		@media (max-width: $lg) {
+		@media (max-width: $md) {
 			width: 60%;
 		}
 	}
@@ -29,12 +29,12 @@
 		display: inline-block;
 		margin-bottom: rem(18);
 
-		@media (max-width: $lg) {
+		@media (max-width: $md) {
 			font-size: rem(16);
 		}
 	}
 
-	@media (max-width: $lg) {
+	@media (max-width: $md) {
 		display: flex;
 	}
 }

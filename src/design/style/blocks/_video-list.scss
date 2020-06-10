@@ -14,5 +14,9 @@
 	&__btn {
 		padding-right: rem(15);
 		text-align: left;
+
+		& * {
+			pointer-events: none;
+		}
 	}
 }

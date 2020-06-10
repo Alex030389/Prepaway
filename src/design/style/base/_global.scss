@@ -11,6 +11,7 @@ body {
 	flex-direction: column;
 	font-family: $ff-main;
 	color: $c-main;
+	min-width: 320px;
 }
 
 img {

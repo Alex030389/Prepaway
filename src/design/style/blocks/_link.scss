@@ -43,22 +43,22 @@
 	}
 }
 
-
 .link-with-icon {
 	@extend .link-reset;
 	color: $c-link;
 	font-weight: 700;
 	border-bottom: 1px solid #d8e5f3;
-	padding-bottom: 4px;
+	padding-bottom: 1px;
 	transition: .2s;
 	font-size: 19px;
 	display: inline-flex;
 	align-items: center;
+	letter-spacing: -0.4px;
 
 	svg {
 		width: 22px;
 		height: 22px;
-		margin-right: 10px;
+		margin-right: 9px;
 		fill: $c-link;
 		transition: .15s;
 	}

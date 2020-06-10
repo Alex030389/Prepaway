@@ -1,9 +1,13 @@
 .time-discount {
 	background-color: $c-orange-1;
+
+	.container {
+		position: relative;
+	}
+
 	&__body {
-		max-width: 400px;
-		width: 100%;
-		padding: 10px 40px;
+		max-width: 380px;
+		padding: 10px 41px 10px 19px;
 		text-align: center;
 		position: relative;
 		font-size: 18px;
@@ -13,6 +17,7 @@
 
 		@media (max-width: $sm) {
 			font-size: 16px;
+			padding: 10px 25px 10px 20px;
 		}
 	}
 
@@ -22,17 +27,14 @@
 
 	&__btn {
 		position: absolute;
-		top: 10px;
-		right: 5px;
-		border: none;
-		background-color: transparent;
+		top: 9px;
+		right: 10px;
 		padding: 5px;
+		font-size: 18px;
+		color: #354c5e;
 
-
-		svg {
-			fill: black;
-			width: 20px;
-			height: 20px;
+		@media (max-width: $md) {
+			right: 10px;
 		}
 	}
 }
