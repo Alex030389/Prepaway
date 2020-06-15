@@ -1,6 +1,6 @@
 .exam {
 	position: relative;
-	padding: 50px 20px 30px;
+	padding: 36px 34px 30px;
 	background-color: $c-lite-blue-2;
 	flex-direction: column;
 	
@@ -10,7 +10,7 @@
 
 	&__verif-label {
 		position: absolute;
-		top: 10px;
+		top: 8px;
 		left: -12px;
 	}
 
@@ -27,7 +27,7 @@
 		}
 
 		&._wide {
-			max-width: 200px;
+			max-width: 190px;
 		}
 
 		&._s-wide {
@@ -56,8 +56,20 @@
 	}
 
 	&__box-price {
-		text-align: center;
+		text-align: right;
 		font-family: $ff-title;
+		font-weight: 500;
+	}
+
+	&__new-price {
+		color: #46b846;
+		font-size: rem(26);
+		margin-bottom: 15px;
+
+		@media (max-width: $md) {
+			font-size: rem(30);
+			margin-bottom: 0;
+		}
 	}
 
 	&__old-price {
@@ -70,18 +82,13 @@
 		}
 	}
 
-	&__new-price {
-		color: #46b846;
-		font-size: rem(26);
-
-		@media (max-width: $md) {
-			font-size: rem(30);
-		}
-	}
-
 	&__desc {
 		border-top: 1px solid $c-lite-grey;
 		padding: 20px 0 0 0;
+
+		@media (max-width: $sxl) {
+			margin-bottom: 20px;
+		}
 	}
 	
 }

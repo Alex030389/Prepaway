@@ -61,7 +61,7 @@
 @import "blocks/contact-us";
 @import "blocks/req-exam-s";
 @import "blocks/step";
-@import "blocks/premium-box";
+@import "blocks/box-blue";
 @import "blocks/res-progr";
 @import "blocks/res-list";
 @import "blocks/faq";
@@ -123,6 +123,10 @@
 		color: $c-grey;
 	}
 
+	&-grey-2 {
+		color: grey;
+	}
+
 	&-green-1 {
 		color: $c-green-1;
 	}
@@ -163,6 +167,10 @@
 		font-size: rem(32);
 	}
 
+	&-38 {
+		font-size: rem(38);
+	}
+
 	&-40 {
 		font-size: rem(40);
 	}
@@ -172,6 +180,10 @@
 .fw {
 	&-400 {
 		font-weight: 400;
+	}
+
+	&-600 {
+		font-weight: 600;
 	}
 
 	&-700 {

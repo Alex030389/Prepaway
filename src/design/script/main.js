@@ -272,7 +272,7 @@ $('.slick-4').slick({
 			breakpoint: 1200,
 			settings: {
 				centerMode: false,
-				centerPadding: '0px',
+				centerPadding: '50px',
 				slidesToShow: 3,
 				slidesToScroll: 3,
 			}
@@ -280,6 +280,8 @@ $('.slick-4').slick({
 		{
 			breakpoint: 768,
 			settings: {
+				centerMode: false,
+				centerPadding: '0',
 				arrows: false,
 				slidesToShow: 2,
 				slidesToScroll: 2,
@@ -290,10 +292,10 @@ $('.slick-4').slick({
 
 
 $('.slick-5').slick({
-	dots: true,
+	dots: false,
 	speed: 300,
-	slidesToShow: 5,
-	slidesToScroll: 5,
+	slidesToShow: 6,
+	slidesToScroll: 6,
 	infinite: false, 
 	prevArrow: '<button type="button" class="slick-arrow slick-prev _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',

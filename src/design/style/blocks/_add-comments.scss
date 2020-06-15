@@ -7,4 +7,33 @@
 	@media (max-width: $xl) {
 		padding: rem(20) rem(30);
 	}
+
+	&__btn {
+		padding: rem(22) rem(35);
+
+		@media (max-width: $md) {
+			padding: rem(15) rem(70);
+		}
+	}
+
+	&__box-like-btn {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: $sxl) {
+			flex-direction: column;
+		}
+	}
+
+	&__like-dislike {
+
+	}
+
+	&__wrap-btn {
+		margin-left: auto;
+
+		@media (max-width: $md) {
+			margin: 0 auto;
+		}
+	}
 }

@@ -1,14 +1,14 @@
 // ========================================================= common
 .table-border-grey {
 	tr {
-		border: 1px solid $c-lite-grey;
+		border: 1px solid #eff1f2;
 		margin-top: -1px;
 	}
 
 	&._inner {
 		th:not(:last-child),
 		td:not(:last-child) {
-			border-right: 1px solid $c-lite-grey;
+			border-right: 1px solid #eff1f2
 		}
 	}
 }
@@ -103,7 +103,7 @@
 	width: 100%;
 
 	tr {
-		border: 1px solid $c-lite-grey;
+		border: 1px solid #eff1f2;
 		margin-top: -1px;
 
 		@media (max-width: $md) {
@@ -184,7 +184,7 @@
 	}
 
 	tr {
-		border: 1px solid $c-lite-grey;
+		border: 1px solid #eff1f2;
 		margin-top: -1px;
 
 		@media (max-width: $sm) {
@@ -268,9 +268,8 @@
 	width: 100%;
 
 	tr {
-		border: 1px solid $c-lite-grey;
+		border: 1px solid #eff1f2;
 		margin-top: -1px;
-		// padding: rem(10) rem(20);
 
 		@media (max-width: $md) {
 			padding: rem(10);
@@ -293,7 +292,7 @@
 	}
 
 	&__info {
-		color: $c-grey;
+		color: #9ba9b5;
 		font-weight: 700;
 		display: flex;
 		align-items: center;
@@ -333,12 +332,14 @@
 // ========================================================== table-5
 .table-5 {
 	width: 100%;
-	background-color: $c-lite-grey-2;
+	background-color: #fafcff;
 
 	td {
 		padding: rem(16);
 		vertical-align: middle;
-		font-size: rem(18);		
+		font-size: rem(16);	
+		font-family: $ff-title;
+		font-weight: 500;
 
 		&:nth-child(1) {
 			width: 20%;
@@ -493,7 +494,7 @@
 
 	tr {
 		&:not(:last-child) {
-			border-bottom: 1px solid $c-lite-grey;
+			border-bottom: 1px solid #eff1f2;
 		}
 	}
 	
