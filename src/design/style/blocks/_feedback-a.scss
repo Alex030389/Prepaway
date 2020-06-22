@@ -10,12 +10,17 @@
 	&__body {
 		font-style: italic;
 		color: #7894a3;
+		line-height: 1.15;
 	}
 
 	&__footer {
 		font-family: $ff-title;
 		span {
 			display: block;
+			
+			&:last-child {
+				font-weight: 500;
+			}
 		}
 	}
 }

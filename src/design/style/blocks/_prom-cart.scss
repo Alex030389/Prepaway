@@ -1,9 +1,10 @@
 .prom-cart {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 	background-color: #fff;
-	padding: rem(15);
+	padding: rem(8) rem(12);
 	border-radius: rem(8);
-	max-width: 300px;
+	max-width: 260px;
+	line-height: 1.2;
 
 	&__link {
 		img {

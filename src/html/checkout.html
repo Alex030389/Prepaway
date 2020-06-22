@@ -1,33 +1,32 @@
 //= blocks/head.html
 //= blocks/header/header-2.html
 
-<main class="main flex-shrink-0 flex-grow-1">
+<main class="main flex-shrink-0 flex-grow-1 checkout">
 	<div class="container">
-		<ul class="breadcrumb mb-3">
+		<ul class="breadcrumb mb-2">
 			<li><a href="#">Home</a></li>
 			<li>Checkout</li>
 		</ul>
 
 		<div class="row pb-3">
 			<div class="col-12 col-xl-8 pb-5">
-				<section class="mb-5">
+				<section class="mb-4">
 					<h1 class="title mb-3 _fw_600">Fast & Secure, One Step Checkout</h1>
-					<p class="fz-19">Your Products Will Be Made Available Immediately After Purchase</p>
+					<p class="fz-19 mb-0">Your Products Will Be Made Available Immediately After Purchase</p>
 
-					<table class="table-cart fz-19">
+					<table class="table-checkout">
 						<thead>
-							<tr class="d-none d-sm-table-row">
+							<tr class="d-none d-md-table-row">
+								<th>Qty</th>
 								<th>Item Description</th>
-								<th class="ta-center">Qty</th>
-								<th class="ta-right">Price</th>
-								<th class="ta-center"></th>
+								<th>Price</th>
+								<th></th>
 							</tr>
 						</thead>
-
-						<tfoot class="box-blue fz-16">
+						<tfoot class="fz-16">
 							<tr>
 								<td colspan="4">
-									<div class="d-flex flex-column align-items-end flex-md-row align-items-md-center">
+									<div class="d-flex flex-column align-items-end flex-md-row align-items-md-center p-3 pl-4">
 										<div class="prom-cart d-flex align-items-center mr-md-auto mb-3 mb-md-0">
 											<div class="prom-cart__text fw-700 c-green-1 ta-center mr-3">Promotion code: 40.00% discount.</div>
 											<a class="prom-cart__link flex-shrink-0" href="№">
@@ -35,15 +34,15 @@
 											</a>
 										</div><!--prom-cart-->
 
-										<div class="px-3">
-											<div class="c-blue-1 ta-right">
-												Subtotal: <span class="fz-22 td-through">$273.25</span>
+										<div class="px-3 fw-700">
+											<div class="d-flex align-items-center c-blue-1 ta-righ mb-lg-2 fz-13">
+												<span class="mr-2">Subtotal:</span> <span class="fz-26">$273.25</span>
 											</div>
-											<div class="c-grey ta-right">
-												Discount: <span class="fz-22">$109.30</span>
+											<div class="d-flex align-items-center c-grey ta-righ mb-lg-2 fz-13">
+												<span class="mr-2">Discount:</span> <span class="fz-26">$109.30</span>
 											</div>
-											<div class="c-blue-1 ta-right">
-												Total : <span class="fz-22">$163.95</span>
+											<div class="d-flex align-items-center c-blue-1 ta-righ">
+												<span class="mr-2">Total:</span> <span class="fz-32">$163.95</span>
 											</div>
 										</div>
 									</div><!--/d-flex-->
@@ -53,34 +52,45 @@
 
 						<tbody>
 							<tr>
-								<td class="table-cart__tbody-td-1 c-blue-1">
-									Unlimited Access to Premium Files: Semi-Annual Subscription
-								</td>
-								<td class="table-cart__tbody-td-2">
-									<span class="d-inline-block d-sm-none mr-1">Qty</span>
+								<td>
+									<span class="d-inline-block d-md-none mr-1">Qty</span>
 									<span>1</span>
 								</td>
-								<td class="table-cart__tbody-td-3 ta-right">
+								<td>
+									<a href="#" class="link">Unlimited Access to Premium Files: Semi-Annual Subscription</a>
+								</td>								
+								<td>
 									<div>$143.96</div>
-									<div>40% OFF  <span class="td-through">$239.94</span></div>
+									<div>40%&nbsp;OFF  <span class="td-through">$239.94</span></div>
+									<div class="free">Free</div>
 								</td>
-								<td class="table-cart__tbody-td-4">
-									<a href="#" class="btn-3 link-reset fz-16 px-2 py-1">Remove</a>
+								<td>
+									<a href="#" class="btn-3 link-reset">Remove</a>
 								</td>
 							</tr>
+
 							<tr>
-								<td class="table-cart__tbody-td-1 c-blue-1">
+								<td>
+									<span class="d-inline-block d-md-none mr-1">Qty</span>
+									<span>1</span>
+								</td>
+								<td>
 									<a href="#" class="link">Unlimited Access to Premium Files: Semi-Annual Subscription</a>
-									<div class="pt-3 pb-3 pl-sm-4">
-										<div class="get-question d-flex align-items-center mb-3">
-											<div class="mr-3">
+									<div class="pt-2 lh-115">
+										<div>- 220-1001 Premium File</div>
+										<div>- 220-1001 Training Course</div>
+										<div>- 220-1001 Study Guide</div>
+									</div>
+									<div class="get-question">
+										<div class="get-question__desc">
+											<div class="get-question__text">
 												Get New Question Updates for:
 											</div>
-											<svg class="flex-shrink-0" aria-hidden="true">
+											<svg class="get-question__icon flex-shrink-0" aria-hidden="true">
 												<use xlink:href="/design/img/symbol/sprite.svg#question-circle-regular"></use>
 											</svg>
-										</div>
-										<select class="input" style="max-width: 220px;">
+										</div><!--/get-question__desc-->
+										<select class="get-question__input input" style="max-width: 220px;">
 											<option value="0">
 												31 days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FREE
 											</option>
@@ -93,18 +103,15 @@
 												12 Months&nbsp;&nbsp;&nbsp;$17.99
 											</option>
 										</select>
-									</div>
-								</td>
-								<td class="table-cart__tbody-td-2">
-									<span class="d-inline-block d-sm-none mr-1">Qty</span>
-									<span>1</span>
-								</td>
-								<td class="table-cart__tbody-td-3 ta-right">
+									</div><!--/get-question-->
+								</td>								
+								<td>
 									<div>$143.96</div>
-									<div>40% OFF  <span class="td-through">$239.94</span></div>
+									<div>40%&nbsp;OFF  <span class="td-through">$239.94</span></div>
+									<div class="free">Free</div>
 								</td>
-								<td class="table-cart__tbody-td-4">
-									<a href="#" class="btn-3 link-reset fz-16 px-2 py-1">Remove</a>
+								<td>
+									<a href="#" class="btn-3 link-reset">Remove</a>
 								</td>
 							</tr>
 						</tbody>
@@ -112,7 +119,7 @@
 				</section>
 
 				<section>
-					<h2 class="title mb-4 _fw_600">Secure Billing Information</h2>
+					<h2 class="title mb-4 mb-md-5 _fw_600">Secure Billing Information</h2>
 
 					<form action="#">
 						<div class="row">
@@ -161,7 +168,7 @@
 				</section>
 
 				<section>
-					<h2 class="title mb-4 _fw_600">Billing Details</h2>
+					<h2 class="title mb-4 mb-md-5 _fw_600">Billing Details</h2>
 
 					<form action="#">
 						<div class="row">
@@ -173,7 +180,7 @@
 							<div class="col-12 col-md-6 mb-4 mb-lg-5">
 								<label class="label" for="inp-9">Expiration Date</label>
 								<div class="d-flex">
-									<select class="input mr-2" name="month" id="inp-9">
+									<select class="input mr-4" name="month" id="inp-9">
 										<option value="1">01</option>
 										<option value="2">02</option>
 										<option value="3">03</option>
@@ -205,7 +212,7 @@
 							<div class="col-12 col-md-6 mb-5 mb-md-4 mb-lg-5">
 								<label class="label">Security Code (CVV):</label>
 								<div class="d-flex align-items-center">
-									<input class="input mr-4" type="text">
+									<input class="input mr-5" type="text">
 									<div class="what-is-this cu-p">
 										<img class="what-is-this__img d-none d-sm-block" src="/design/img/ui/card.png" alt="Card CVV"> 
 										<span class="what-is-this__text c-blue-1 fz-19">What is this?</span>
@@ -214,7 +221,7 @@
 								</div>
 							</div>
 
-							<div class="col-12 col-md-6 mb-5 mb-md-4 mb-lg-5 d-flex align-items-end">
+							<div class="col-12 col-md-6 mb-5 mb-md-4 mb-lg-5 d-flex align-items-center">
 								<div class="pr-3" style="width: 80%">
 									<img class="mr-2" src="/design/img/ui/sidebar/cards.svg" alt="cards">
 								</div>
@@ -223,21 +230,22 @@
 								</div>
 							</div>
 
-							<div class="col-12 col-md-6 mb-4 mb-lg-5 d-flex align-items-center">
+							<div class="col-12 col-md-6 mb-4 mb-lg-4 d-flex align-items-center">
 								<div class="form-check">
-									<input onclick="blur()" class="checkbox visually-hidden" id="check-1" type="checkbox">
-									<label class="label-2 fz-19" for="check-1">I have read and agree to <a href="#" class="link">Prepaway.com</a>
-										Terms & Conditions</label>
+									<input onclick="blur()" class="checkbox" id="check-1" type="checkbox">
+									<label class="label-3 fz-19 lh-115" for="check-1">
+										<span><i></i></span>
+										I have read and agree to <a href="#" class="link">Prepaway.com</a>	Terms & Conditions</label>
 								</div>
 							</div>
 
-							<div class="col-12 col-md-6 mb-4 mb-lg-5 fz-19">
-								<span>Your products will be available for immediate download after your payment has been received.</span><br>
-								<span class="c-grey">Your purchase with Prepaway is safe and fast.</span>
+							<div class="col-12 col-md-6 mb-4 mb-lg-4 fz-19">
+								<div class="mb-3 lh-115">Your products will be available for immediate download after your payment has been received.</div>
+								<div class="c-grey">Your purchase with Prepaway is safe and fast.</div>
 							</div>
 	
 							<div class="col-12 col-md-6 pt-2 d-flex justify-content-center justify-content-md-start">
-								<button class="btn-2 mxw-250px w-100 ptb-12 fz-22 align-self-end">Pay Now</button>
+								<button class="btn-2 mxw-310px w-100  fz-24 align-self-end">Pay Now</button>
 							</div>
 						</div>
 					</form>

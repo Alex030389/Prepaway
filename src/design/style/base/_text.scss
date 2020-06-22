@@ -1,0 +1,129 @@
+// ========================================= font-color
+.c {
+	&-subtitle {
+		color: $c-subtitle;
+	}
+
+	&-orange-2 {
+		color: $c-orange-2;
+	}
+
+	&-blue-1 {
+		color: $c-blue-1;
+	}
+
+	&-grey {
+		color: $c-grey;
+	}
+
+	&-grey-2 {
+		color: grey;
+	}
+
+	&-green-1 {
+		color: $c-green-1;
+	}
+
+	&-red {
+		color: rgb(252, 66, 66);
+	}
+}
+
+// ================================== font-size
+.fz {
+	&-13 {
+		font-size: 13px;
+	}
+
+	&-16 {
+		font-size: rem(16);
+	}
+
+	&-19 {
+		font-size: rem(19);
+	}
+
+	&-22 {
+		font-size: rem(22);
+	}
+
+	&-24 {
+		font-size: rem(24);
+	}
+
+	&-26 {
+		font-size: rem(26);
+	}
+
+	&-28 {
+		font-size: rem(28);
+	}
+
+	&-32 {
+		font-size: rem(32);
+	}
+
+	&-38 {
+		font-size: rem(38);
+	}
+
+	&-40 {
+		font-size: rem(40);
+	}
+}
+
+// ========================================== font-weight
+.fw {
+	&-400 {
+		font-weight: 400;
+	}
+
+	&-600 {
+		font-weight: 600;
+	}
+
+	&-700 {
+		font-weight: 700;
+	}
+}
+
+.lh {
+	&-115 {
+		line-height: 1.15;
+	}
+}
+
+
+// text-align
+.ta-center {
+	text-align: center;
+}
+
+.ta-sm-center {
+	@media (max-width: $sm) {
+		text-align: center;
+	}
+}
+
+.ta-left {
+	text-align: left;
+}
+
+.ta-right {
+	text-align: right;
+}
+
+.td-through {
+	text-decoration: line-through;
+}
+
+
+// ================================================ white-space
+.whs-normal {
+	white-space: normal;
+}
+
+.break-all {
+	word-break: break-all;
+	overflow-wrap: break-word;
+}

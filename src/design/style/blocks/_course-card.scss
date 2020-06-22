@@ -42,12 +42,20 @@
 		color: $c-orange-1;
 		font-size: rem(19);
 		margin-bottom: rem(10);
+
+		@media (max-width: $sm) {
+			margin-bottom: rem(6);
+		}
 	}
 
 	&__title {
 		color: #fff;
 		font-weight: 400;
 		line-height: 1.2;
+
+		@media (max-width: $sm) {
+			font-size: rem(17);
+		}
 	}
 
 	&__star-rating {

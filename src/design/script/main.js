@@ -250,45 +250,54 @@ $('.slick-3').slick({
 	]
 });
 
+if($('.slick-4 .slider-3__item').length > 1) {
+	$('.slick-4').slick({
+		dots: true,
+		speed: 300,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		prevArrow: '<button type="button" class="slick-arrow slick-prev _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
+		nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
+		centerMode: true,
+		// centerPadding: '50px',
+		// centerPadding: '25px',
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					centerMode: false,
+					centerPadding: '25px',
+					slidesToShow: 4,
+					slidesToScroll: 4,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					centerMode: false,
+					centerPadding: '25px',
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					centerMode: false,
+					arrows: false,
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+			},
+		]
+	});
+} else {
+	$('.slick-4').slick({
+		slidesToShow: 1
+	})
+}
 
-$('.slick-4').slick({
-	dots: true,
-	speed: 300,
-	slidesToShow: 3,
-	slidesToScroll: 3,
-	prevArrow: '<button type="button" class="slick-arrow slick-prev _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
-	nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
-	centerMode: true,
-	centerPadding: '50px',
-	responsive: [
-		{
-			breakpoint: 1501,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-			}
-		},
-		{
-			breakpoint: 1200,
-			settings: {
-				centerMode: false,
-				centerPadding: '50px',
-				slidesToShow: 3,
-				slidesToScroll: 3,
-			}
-		},
-		{
-			breakpoint: 768,
-			settings: {
-				centerMode: false,
-				centerPadding: '0',
-				arrows: false,
-				slidesToShow: 2,
-				slidesToScroll: 2,
-			}
-		},
-	]
-});
+
 
 
 $('.slick-5').slick({
@@ -338,8 +347,6 @@ $('.slick-6').slick({
 			breakpoint: 1200,
 			settings: {
 				arrows: false,
-				slidesToShow: 2,
-				slidesToScroll: 2,
 			}
 		},
 		{
