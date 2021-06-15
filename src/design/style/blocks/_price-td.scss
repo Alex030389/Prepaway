@@ -1,0 +1,20 @@
+.price-td {
+  font-family: $ff-title;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.price-td__price {
+}
+
+.price-td__discount {
+  color: $c-green-1;
+
+  span:nth-child(2) {
+    text-decoration: line-through;
+  }
+}
+
+.price-td__free {
+  color: $c-green-1;
+}

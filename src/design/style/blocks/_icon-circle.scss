@@ -7,6 +7,14 @@
 	align-items: center;
 	justify-content: center;
 
+	&._green {
+		border-color: rgba(62, 181, 62, 0.7);
+		
+		svg {
+			fill: $c-green-1;
+		}
+	}
+	
 	svg {
 		fill: #fff;
 		width: rem(20);

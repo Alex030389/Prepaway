@@ -1,0 +1,17 @@
+.why-choose {
+  background-color: rgba(239, 244, 251, 0.502);
+
+  &__title {
+    font-size: 24px;
+
+    @media (max-width: $sm) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    @media (max-width: $sxl) {
+      font-size: 16px;
+    }
+  }
+}

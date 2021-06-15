@@ -5,15 +5,15 @@
 	}
 	
 	&__list {
-		border: 1px solid $c-lite-grey-2;
-		background: linear-gradient(to bottom, #FAFCFF 0%, #F2F4F9 25%, #F2F4F9 75%, #FAFCFF 100%);
+		// border: 1px solid $c-lite-grey-2;
+		// background: linear-gradient(to bottom, #FAFCFF 0%, #F2F4F9 25%, #F2F4F9 75%, #FAFCFF 100%);
 		padding: 30px 0 15px;
 	}
 
 	&__item {
 		position: relative;
-		padding-left: 25px;
-		padding-right: 25px;		
+		padding-left: 15px;
+		padding-right: 15px;		
 		padding-bottom: 2px !important;
 
 		@media (max-width: $sxl) {
@@ -93,5 +93,9 @@
 		@media (max-width: $xl) {
 			right: 0;
 		}
+	}
+
+	.slick-track {
+		margin: 0 !important;
 	}
 }

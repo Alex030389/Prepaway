@@ -122,7 +122,7 @@
 	}
 }
 
-input:checked + .subs-opt {
+.subs-opt.active {
 	border: 2px solid #34b734;
 	background-color: #34b734;
 	position: relative;

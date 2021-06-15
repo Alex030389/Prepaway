@@ -93,13 +93,20 @@
 @import "blocks/what-is-this";
 @import "blocks/get-question";
 @import "blocks/prom-cart";
-
+@import "blocks/btn-about";
 @import "blocks/search-result";
 @import "blocks/questions";
+@import "blocks/vum";
+@import "blocks/error-message";
+@import "blocks/cart-footer";
+@import "blocks/price-td";
+@import "blocks/why-choose";
+@import "blocks/loader";
+
 // ============================== blog ===
-// @import "blocks/post-list";
-// @import "blocks/pagination";
-// @import "blocks/post";
+@import "blocks/post-list";
+@import "blocks/post";
+@import "blocks/pagination";
 
 @import "base/text";
 @import "blocks/footer/footer";

@@ -2,6 +2,14 @@
 	border-bottom: 1px solid $c-lite-grey;
 	padding-top: rem(32);
 	padding-bottom: rem(28);
+
+	@media (max-width: $xl) {
+		border-color: transparent;
+	}
+
+	@media (max-width: $md) {
+		border-color: $c-lite-grey;
+	}
 	 
 	&__img {
 		max-width: 130px;
@@ -27,6 +35,10 @@
 				max-width: 110px;
 		}
 		}
+
+		&._narrow {
+			max-width: 110px;
+		}
 	}
 
 	&__desc {
@@ -34,12 +46,12 @@
 
 	&__title {
 		color: $c-blue-1;
-		font-size: rem(26);
+		font-size: rem(20);
 		line-height: 1.1;
 		margin-bottom: rem(14);
 
 		@media (max-width: $sxl) {
-			font-size: rem(22);
+			font-size: rem(18);
 		}
 	}
 
@@ -47,18 +59,31 @@
 		display: flex;
 		margin-bottom: rem(15);
 		align-items: center;
+		font-size: rem(18);
 	}
 
 	&__old-price {
 		text-decoration: line-through;
 		margin-right: rem(10);
-		font-size: rem(18);
 		color: $c-red;
 	}
 
 	&__new-price {
-		font-size: rem(24);
 		font-weight: 700;
 		color: $c-subtitle;
 	}
+
+	&__btn {
+		font-size: rem(19);
+		padding: rem(16) rem(20);
+
+		@media (max-width: $sxl) {
+			padding: rem(12) rem(16);			
+		}
+	}
+}
+
+.modal .indiv-card {
+	padding-top: 16px;
+	padding-bottom: 10px;
 }

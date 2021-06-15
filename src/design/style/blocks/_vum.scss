@@ -1,0 +1,184 @@
+.vum {
+  max-width: 1160px !important;
+}
+
+.vum__header {
+}
+
+.vum__title {
+  font-weight: 34px;
+  letter-spacing: 0;
+}
+
+.vum__logo {
+  
+  &._prepaway {
+    width: 186px;
+    height: auto;
+  }
+
+  &._vumingo {
+    width: 192px;
+    height: auto;
+  }
+}
+
+.vum__top {
+  font-size: 23px;
+
+  @media (max-width: $sm) {
+    font-size: 18px; 
+  }
+}
+
+.vum__list {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.vum__box-img-discount {
+  position: relative;
+  padding-top: 45px;
+
+  @media (max-width: $lg) {
+    padding-top: 0;
+  }
+}
+
+.vum__img {
+  
+}
+
+.vum__discount-label {
+  position: absolute;
+  top: -33px;
+  right: 10px;
+  width: 156px;
+  height: 156px;
+
+  @media (max-width: $lg) {
+    top: 0;
+    width: 100px;
+    height: 100px;
+    right: 20%;
+  }
+}
+
+.vum__btn {
+  font-size: 24px;
+}
+
+.vum__total {
+  font-size: 45px;
+  display: flex;
+  font-family: $ff-title;
+  align-items: center;
+
+  @media (max-width: $md) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+    font-size: 20px;
+  }
+}
+
+.vum__total-text {
+  margin-right: 10px;
+}
+
+.vum__total-price {
+  position: relative;
+  top: -4px;
+}
+
+.vum__price-old {
+  text-decoration: line-through;
+  font-size: 30px;
+
+  @media (max-width: $sm) {
+    font-size: 30px;
+  }
+}
+
+.vum__price-new {
+  font-weight: 700;
+  color: $c-blue-1;
+  font-size: 56px;
+
+  @media (max-width: $md) {
+    font-size: 40px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 30px;
+  }
+}
+
+.vum__box-save-support {
+  padding: 20px;
+  display: flex;
+  background-color: #f9f9f8;
+  border: 1px solid #efefee;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.vum__save {
+  display: flex;
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+  }
+}
+
+.vum__save-label {
+  width: 160px;
+  height: 90px;
+  position: relative;
+  background: url(/design/img/saving.png) center center no-repeat;
+  background-size: 160px;
+  flex-shrink: 0;
+  margin-right: 30px;
+
+  @media (max-width: $sm) {
+    margin-bottom: 20px;
+    margin-right:auto;
+    margin-left: auto;
+  }
+}
+
+.vum__save-sum {
+  color: #684a17;
+  font-size: 27px;
+  font-weight: 700;
+  position: absolute;
+  top: 6px;
+  right: 5px;
+}
+
+.vum__save-text {
+  font-size: 18px;
+  margin-right: 30px;
+
+  @media (max-width: $md) {
+    margin-right: 0;
+  }
+
+  p:first-child {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+}
+
+.vum__support {
+  flex-shrink: 0;
+}

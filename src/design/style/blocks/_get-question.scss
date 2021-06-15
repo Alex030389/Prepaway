@@ -1,19 +1,19 @@
 .get-question {
 	display: flex;
 	padding-top: 40px;
+	flex-direction: column;
 
-	@media (max-width: $sxl) {
-		flex-direction: column;
+	@media (max-width: $md) {
+		padding-top: 12px;
 	}
 
 	&__desc {
 		display: flex;
 		align-items: center;
-		margin-right: 20px;
+		margin-bottom: rem(16);
 
-		@media (max-width: $sxl) {
-			padding-bottom: 10px;
-			margin-right: 0;
+		@media (max-width: $sm) {
+			margin-bottom: rem(8);
 		}
 	}
 
@@ -29,9 +29,12 @@
 	&__icon {
 		width: rem(30);
 		height: rem(30);
+
+		@media (max-width: $md) {
+			display: none;
+		}
 	}
 
 	&__input {
-
 	}
 }

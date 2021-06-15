@@ -35,26 +35,40 @@
 
 	&:hover {
 		filter: brightness(0.93);
+		color: $c-secondary;
+		text-decoration: none;
 	}
 }
 
 .btn-3 {
-	background-color: #cadaf0;
-	padding: rem(14) rem(20);
-	color: #fff;
+	background-color: #F2F4F7;
+	padding: rem(17) rem(45) rem(15);
+	color: #7A8EA5;
 	border-radius: rem(4);
-	font-size: rem(19);
+	font-size: rem(15);
 	transition: .3s;
+	font-family: $ff-title;
+	font-weight: 600;
+	text-align: center;
 	
 	&:hover {
-		color: #fff;
-		filter: brightness(0.93)
+		background-color: #eaeef3;
+		color: #7A8EA5;
 	}
 
 	@media (max-width: $lg) {
-		font-size: rem(16);
-		padding: rem(6) rem(10);
-	} 
+		padding: rem(8) rem(12);
+	}
+
+	@media (max-width: $md) {
+		font-size: 0;
+		width: 14px;
+		height: 17px;
+		padding: 0;
+		background: url(/design/img/icon-trash.png) center center no-repeat;
+		background-size: 100%;
+	}
+
 }
 
 .btn-download {
@@ -139,14 +153,37 @@
 }
 
 
+.btn-option {
+	font-size: rem(16);
+	font-family: $ff-title;
+	font-weight: 600;
+	width: 160px;
+
+	@media (max-width: $sm) {
+		width: 100%;
+	}
+}
+
 
 // ========================================= common ===
 .mxw-250px {
 	max-width: 250px;
 }
 
+.mxw-290px {
+	max-width: 290px;
+}
+
 .mxw-310px {
 	max-width: 310px;
+}
+
+.w-135px {
+	width: 135px;
+
+	@media (max-width: $sm) {
+		width: 100%;
+	}
 }
 
 .ptb-12 {

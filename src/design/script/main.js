@@ -19,7 +19,7 @@ window.addEventListener('resize', function() {
 		hideMblMenu();
 	}
 
-	if(headerTop2) {
+	if(headerTop2 && getComputedStyle(headerSearchForm).display != 'none') {
 		headerTop1.classList.remove('d-none');
 		headerTop2.classList.add('d-none');
 	}
@@ -254,27 +254,22 @@ if($('.slick-4 .slider-3__item').length > 1) {
 	$('.slick-4').slick({
 		dots: true,
 		speed: 300,
-		slidesToShow: 3,
+		slidesToShow: 4,
 		slidesToScroll: 3,
 		prevArrow: '<button type="button" class="slick-arrow slick-prev _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-prev"></use></svg></button>',
 		nextArrow: '<button type="button" class="slick-arrow slick-next _orange"><svg aria-hidden="true"><use xlink:href="../design/img/symbol/sprite.svg#slider-arrow-next"></use></svg></button>',
 		centerMode: true,
-		// centerPadding: '50px',
-		// centerPadding: '25px',
+		centerPadding: '50px',
 		responsive: [
 			{
-				breakpoint: 1200,
+				breakpoint: 1510,
 				settings: {
-					centerMode: false,
 					centerPadding: '25px',
-					slidesToShow: 4,
-					slidesToScroll: 4,
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					centerMode: false,
 					centerPadding: '25px',
 					slidesToShow: 3,
 					slidesToScroll: 3,
@@ -293,6 +288,7 @@ if($('.slick-4 .slider-3__item').length > 1) {
 	});
 } else {
 	$('.slick-4').slick({
+
 		slidesToShow: 1
 	})
 }
@@ -412,13 +408,6 @@ $('.slider-2__list').magnificPopup({
 });
 
 
-// ============================================================== premium: change total price
-$('input[type=radio][name=preferredSubscription]').on('change', function () {
-	$('#product_id').val($(this).val());
-	$('#mCount').text($(this).data('month'));
-	$('#mCaption').text($(this).data('month-label'));
-	$('#total_price').text($(this).data('price'));
-});
 
 // ========================================================= reseller-progress ===
 const resProgrLevels = document.querySelectorAll('.res-progr__level');
@@ -468,15 +457,10 @@ $('#upload-form').submit(function (e) {
 
 
 // =================================================== btn-about
-const aboutCourse = document.querySelector('.about');
-const btnAboutCourse = document.querySelector('.btn-about');
-
-if(btnAboutCourse) {
-	btnAboutCourse.addEventListener('click', function() {
-		aboutCourse.classList.add('_show');
-		btnAboutCourse.classList.add('d-none');
-	})
-}
+$('.btn-about').on('click', function() {
+	$(this).prev().addClass('_show');
+	$(this).addClass('d-none');
+});
 
 
 // ==================================================== rating star

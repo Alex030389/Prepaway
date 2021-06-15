@@ -1,9 +1,10 @@
 .about {
-	max-height: 50px;
+	max-height: 70px;
 	overflow-y: hidden;
 	position: relative;
 	margin-bottom: 10px;
 	font-size: rem(19);
+	line-height: 1.89;
 
 	&._large {
 		max-height: 235px;

@@ -1,0 +1,24 @@
+.success-payment-message .error-message {
+	position: relative;
+	border: 1px solid #fda00a;
+	display: block;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	padding: 10px 10px 10px 30px;
+	border-radius: 8px;
+	max-width: 260px;
+	font-size: 16px;
+
+	&::before {
+		content: "!";
+		position: absolute;
+		left: 7px;
+		top: -3px;
+		bottom: 0;
+		margin: auto;
+		display: inline-block;
+		text-align: center;
+		font-size: 50px;
+		color: #fda00a;
+	}
+}

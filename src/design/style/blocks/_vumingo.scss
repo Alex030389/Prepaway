@@ -1,8 +1,9 @@
 .vumingo {
 	padding: rem(36) rem(20) rem(40);
 	text-align: center;
-	background: #eff6ff;
-	background: linear-gradient(to bottom, #eff6ff 0%, #c2d8f7 100%);
+	// background: #eff6ff;
+	// background: linear-gradient(to bottom, #eff6ff 0%, #c2d8f7 100%);
+	background-color: #E9F2FE;
 
 	&__logo {
 		max-width: rem(220);
@@ -57,8 +58,9 @@
 				&:nth-child(1) {
 					margin-right: rem(20);
 
-					@media (max-width: $xl) {
-						display: block;
+					@media (max-width: $sxl) {
+						// display: block;
+						margin-right: rem(10)
 					}
 
 					@media (max-width: $lg) {
@@ -93,6 +95,16 @@
 		&:hover {
 			color: $c-lite-blue;
 			filter: brightness(0.95);
+		}
+
+		@media (max-width: $sxl) {
+			font-size: rem(17);
+			padding: rem(13) rem(18);
+		}
+
+		@media (max-width: $xl) {
+			font-size: rem(24);
+			padding: rem(16) rem(24);
 		}
 	}
 }

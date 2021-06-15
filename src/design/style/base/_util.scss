@@ -18,6 +18,7 @@ btn-reset
   width: 1px;
   height: 1px;
   margin: -1px;
+	// display: none;
 }
 
 // ====================================== overflow
@@ -50,4 +51,21 @@ btn-reset
 	border: none;
 	background-color: transparent;
 	padding: 0;
+}
+
+// ==================================
+.lh-2 {
+	line-height: 1.89;
+}
+
+.fz-19 {
+	font-size: 19px;
+
+	@media (max-width: $sm) {
+		font-size: 16px;
+	}
+}
+
+.italic {
+	font-style: italic;
 }

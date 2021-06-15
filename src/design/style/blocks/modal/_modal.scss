@@ -8,6 +8,10 @@
 	box-shadow: 0 26px 70px 0 rgba(0, 0, 0, 0.15);
 	overflow: hidden;
 
+	&._wide {
+		max-width: 1200px;
+	}
+
 	p {
 		width: 100%;
 	}
@@ -50,7 +54,7 @@
 
 		&._box-exam {
 			text-align: left;
-			padding: rem(15);
+			padding: rem(5) rem(10);
 		}
 	}
 
